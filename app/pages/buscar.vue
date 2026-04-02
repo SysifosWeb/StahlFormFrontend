@@ -1,5 +1,4 @@
 <script setup>
-import { Noticias } from '@/assets/data/noticias.js'
 import { Servicios } from '@/assets/data/servicios.js'
 import { Proyectos } from '@/assets/data/proyectos.js'
 
@@ -22,19 +21,11 @@ const results = computed(() => {
   
   const query = normalize(searchQuery.value)
   
-  // Search in Noticias
-  const newsResults = Noticias.filter(noticia => 
-    normalize(noticia.title).includes(query) ||
-    normalize(noticia.deck).includes(query) ||
-    (noticia.content && noticia.content.some(item => 
-      item.text && normalize(item.text).includes(query)
-    ))
-  ).map(item => ({ ...item, type: 'news' }))
-
   // Search in Servicios
   const servicesResults = Servicios.filter(servicio => 
     normalize(servicio.title).includes(query) ||
-    normalize(servicio.deck).includes(query)
+    normalize(servicio.deck).includes(query) ||
+    normalize(servicio.description).includes(query)
   ).map(item => ({ ...item, type: 'service' }))
 
   // Search in Proyectos
@@ -43,13 +34,13 @@ const results = computed(() => {
     normalize(proyecto.description).includes(query)
   ).map(item => ({ ...item, type: 'project' }))
 
-  return [...newsResults, ...servicesResults, ...projectsResults]
+  return [...servicesResults, ...projectsResults]
 })
 
 useHead({
-  title: () => searchQuery.value ? `Búsqueda: ${searchQuery.value} | FAREMIN` : 'Buscar | FAREMIN',
+  title: () => searchQuery.value ? `Búsqueda: ${searchQuery.value} | StahlForm` : 'Buscar | StahlForm',
   meta: [
-    { name: 'description', content: 'Encuentra noticias y servicios en Maestranza FAREMIN.' }
+    { name: 'description', content: 'Encuentra servicios y proyectos en StahlForm.' }
   ]
 })
 </script>
@@ -69,15 +60,9 @@ useHead({
 
       <div v-if="results.length > 0" class="space-y-12">
         <div v-for="item in results" :key="item.type + '-' + item.id">
-          <!-- News Result -->
-          <NewsCardHorizontal 
-            v-if="item.type === 'news'"
-            :newsData="item" 
-          />
-          
           <!-- Service Result -->
           <NuxtLink
-            v-else-if="item.type === 'service'"
+            v-if="item.type === 'service'"
             :to="item.to"
             class="block group w-full"
           >

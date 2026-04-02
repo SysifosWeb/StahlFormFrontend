@@ -4,10 +4,15 @@ import { useRoute } from 'vue-router'
 import logoStahlForm from '~/assets/img/stahlform_logo.png'
 
 const isMenuOpen = ref(false)
+const isScrolled = ref(false)
 const isMounted = ref(false)
 const route = useRoute()
 
 const currentRoute = computed(() => route.path)
+
+const handleScroll = () => {
+  isScrolled.value = window.scrollY > 20
+}
 
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value
@@ -19,21 +24,19 @@ const closeMenu = () => {
 
 onMounted(() => {
   isMounted.value = true
+  window.addEventListener('scroll', handleScroll)
 })
 </script>
 
 <template>
-  <nav class="fixed top-0 left-0 w-full z-[1002] transition-all duration-300" 
-       :class="{'glass py-2': isMounted, 'bg-transparent py-4': !isMounted}">
+  <nav class="fixed top-0 left-0 w-full z-[1002] bg-transparent py-6">
     <div class="custom-container flex items-center justify-between">
 
       <!-- LOGO -->
       <NuxtLink to="/" class="flex items-center group">
-        <img
-          :src="logoStahlForm"
-          alt="StahlForm Logo"
-          class="max-w-[140px] md:max-w-[180px] transition-transform duration-300 group-hover:scale-105"
-        />
+        <span class="text-white font-bold tracking-[0.4em] uppercase text-2xl group-hover:scale-105 transition-transform duration-300">
+          STAHLFORM
+        </span>
       </NuxtLink>
 
       <!-- MENÚ DESKTOP -->
@@ -42,9 +45,7 @@ onMounted(() => {
           <li v-for="item in [
             { to: '/', label: 'INICIO' },
             { to: '/nuestra-empresa', label: 'NOSOTROS' },
-            { to: '/capacidades-tecnologia', label: 'CAPACIDADES' },
             { to: '/servicios', label: 'SERVICIOS' },
-            { to: '/noticias', label: 'NOTICIAS' },
             { to: '/contacto', label: 'CONTACTO' }
           ]" :key="item.to">
             <NuxtLink
@@ -91,9 +92,7 @@ onMounted(() => {
             v-for="item in [
               { to: '/', label: 'INICIO' },
               { to: '/nuestra-empresa', label: 'NOSOTROS' },
-              { to: '/capacidades-tecnologia', label: 'CAPACIDADES' },
               { to: '/servicios', label: 'SERVICIOS' },
-              { to: '/noticias', label: 'NOTICIAS' },
               { to: '/contacto', label: 'CONTACTO' }
             ]"
             :key="item.to"

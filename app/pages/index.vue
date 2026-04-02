@@ -8,11 +8,8 @@
 </script>
 
 <template>
-  <HomeFloatingButton/>
-  <HomeAbout />
-  <HomeCertifications />
-  <HomeServices />
-  <HomeClients />
-  <HomeProjects />
-  <HomeNews />
+  <HomeValue />
+  <HomeBusinessUnits />
+  <HomeTrust />
+  <HomeBanner />
 </template>
