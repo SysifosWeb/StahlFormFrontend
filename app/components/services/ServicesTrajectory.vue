@@ -1,7 +1,7 @@
 <template>
   <section class="relative w-full bg-[#fafafa] py-32 overflow-hidden font-sans border-t border-gray-100">
     <!-- Sophisticated Technical Layers -->
-    <div class="absolute inset-x-0 top-0 h-full bg-[radial-gradient(circle_at_50%_0%,white_0%,transparent_100%)]"></div>
+    <div class="absolute inset-x-0 top-0 h-full premium-glow"></div>
     
     <!-- Fine Technical Grid -->
     <div class="absolute inset-0 z-0 technical-grid opacity-[0.03] pointer-events-none"></div>
@@ -69,7 +69,10 @@
 
 <style scoped>
 .technical-grid {
-    background-image: radial-gradient(var(--primary) 1px, transparent 0);
+    background: radial-gradient(var(--primary) 1px, transparent 0);
     background-size: 50px 50px;
+}
+.premium-glow {
+    background: radial-gradient(circle at 50% 0%, white 0%, transparent 100%);
 }
 </style>

@@ -7,12 +7,13 @@ definePageMeta({
 useHead({
   title: 'Nuestros Servicios | StahlForm',
   meta: [
-    { name: 'description', content: 'Ofrecemos servicios de mantenimiento ferroviario, industrial, mecánica y montaje de puentes grúa con los más altos estándares de calidad.' }
+    { name: 'description', content: 'Servicios especializados de StahlForm en ingeniería aplicada, mantención en terreno y taller. Soluciones críticas para minería y maquinaria pesada, respaldadas por informes técnicos, ensayos END y riguroso control de calidad.' }
   ]
 })
 </script>
+
 <template>
-    <ServicesExperience />
+    <ServicesTrajectory />
     <ServicesMainCards />
     <ServicesSpecialization />
     <ServicesQuality />

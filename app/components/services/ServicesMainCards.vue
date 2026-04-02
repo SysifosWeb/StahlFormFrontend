@@ -1,7 +1,7 @@
 <template>
   <section class="relative w-full bg-[#fcfcfc] py-24 overflow-hidden font-sans border-t border-gray-100">
     <!-- Premium Technical Layering -->
-    <div class="absolute inset-x-0 top-0 h-full bg-[radial-gradient(circle_at_50%_0%,white_0%,transparent_100%)]"></div>
+    <div class="absolute inset-x-0 top-0 h-full premium-glow"></div>
     <div class="absolute inset-0 z-0 technical-grid opacity-[0.02] pointer-events-none"></div>
     
     <!-- Blueprint Detail Accent -->
@@ -111,3 +111,12 @@
     </div>
   </section>
 </template>
+<style scoped>
+.technical-grid {
+    background-image: radial-gradient(var(--accent) 1px, transparent 0);
+    background-size: 60px 60px;
+}
+.premium-glow {
+    background: radial-gradient(circle at 50% 0%, white 0%, transparent 100%);
+}
+</style>

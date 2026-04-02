@@ -5,9 +5,9 @@ definePageMeta({
 })
 
 useHead({
-  title: 'Contacto | FAREMIN',
+  title: 'Contacto | StahlForm',
   meta: [
-    { name: 'description', content: 'Contacta con FAREMIN para servicios industriales, mantenimiento ferroviario y soluciones de ingeniería en Chile.' }
+    { name: 'description', content: 'Contacta con StahlForm para servicios industriales, mantenimiento ferroviario y soluciones de ingeniería en Chile.' }
   ]
 })
 </script>

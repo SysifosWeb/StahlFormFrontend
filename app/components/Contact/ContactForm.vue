@@ -1,4 +1,5 @@
 <script setup>
+import { ref } from 'vue'
 // SEO con useHead nativo de Nuxt
 const formData = ref({
   nombre: '',
@@ -73,155 +74,143 @@ const handleSubmit = async () => {
 </script>
 
 <template>
-  <div class="bg-slate-50 min-h-screen">
+  <div class="relative bg-white overflow-hidden font-sans">
+    <!-- Technical Blueprint Backdrop (Subtle Whisper) -->
+    <div class="absolute inset-0 z-0 opacity-[0.05] grayscale pointer-events-none">
+       <img src="/img/blueprint_bg.png" alt="Engineering Blueprint" class="w-full h-full object-cover" />
+       <div class="absolute inset-0 bg-gradient-to-b from-white/20 via-transparent to-white/20"></div>
+    </div>
 
-    <section id="formulario-contacto" class="py-12 lg:py-20">
-      <div class="container mx-auto px-4">
-        <div class="max-w-4xl mx-auto">
-          <div class="bg-white p-6 md:p-12 shadow-xl rounded-2xl border border-slate-100">
-            
-            <div class="text-center mb-10">
-              <h2 class="text-2xl lg:text-3xl font-bold text-medium mb-4 leading-tight">
-                ¿En qué podemos ayudarte?<br />Escríbenos
-              </h2>
-              <p class="text-medium font-light max-w-2xl mx-auto leading-relaxed mt-4">
-                Si tienes consultas generales sobre nuestros servicios o necesitas más información, completa el formulario y nos pondremos en contacto contigo lo antes posible.
-              </p>
-            </div>
+    <!-- Coordinate Accents in Corners for "Engineering Terminal" feel -->
+    <div class="absolute top-12 left-12 opacity-30 cursor-default">
+       <span class="text-[9px] font-mono text-secondary uppercase tracking-widest">[ 29.9880° S, 71.3535° W ]</span>
+    </div>
+    <div class="absolute bottom-12 right-12 opacity-30 cursor-default">
+       <span class="text-[9px] font-mono text-secondary uppercase tracking-widest">S-TLFRM // SYS_2024</span>
+    </div>
 
-            <form @submit.prevent="handleSubmit" class="space-y-6">
-              <div class="grid grid-cols-2 gap-6">
+    <section id="formulario-contacto" class="relative z-10 py-12 lg:py-20">
+      <div class="custom-container">
+        <div class="flex flex-col lg:flex-row gap-16 lg:gap-24 items-center">
+          
+          <!-- Left Column: Narrative & Technical Contacts -->
+          <div class="lg:w-2/5 space-y-12">
+             <div class="space-y-6">
+                <div class="flex items-center gap-4">
+                   <div class="h-[2px] w-12 bg-primary"></div>
+                   <span class="text-[10px] font-bold text-primary uppercase tracking-[0.4em]">StahlForm Core Ingeniería</span>
+                </div>
                 
-                <div class="flex flex-col gap-2">
-                  <label class="text-sm font-semibold text-medium">Nombre</label>
-                  <input
-                    v-model="formData.nombre"
-                    type="text"
-                    placeholder="Jane Smith"
-                    class="w-full px-4 py-3 rounded-lg border bg-slate-50 transition-all outline-none focus:ring-2 focus:ring-[var(--detail-primary)]/20 focus:border-[var(--detail-primary)]"
-                    :class="errors.nombre ? 'border-detail-primary bg-red-50' : 'border-gray-200'"
-                  />
-                  <span v-if="errors.nombre" class="text-xs text-detail-primary italic">{{ errors.nombre[0] }}</span>
+                <h2 class="text-4xl lg:text-7xl font-bold text-secondary uppercase tracking-tighter leading-none">
+                   Inicie su <br/>
+                   <span class="text-primary italic">Proyecto</span>
+                </h2>
+
+                <p class="text-gray-500 font-light text-lg leading-relaxed max-w-md">
+                   Proporcione los detalles técnicos iniciales para que nuestro equipo pueda realizar una evaluación preliminar de sus activos.
+                </p>
+             </div>
+
+             <!-- Contact Stats Integrated -->
+             <div class="space-y-10 pt-4">
+                <div class="flex items-center gap-6 group">
+                   <div class="w-1.5 h-12 bg-primary group-hover:scale-y-125 transition-transform origin-bottom duration-500"></div>
+                   <div>
+                      <p class="text-[9px] font-bold text-gray-400 uppercase tracking-widest mb-1">Ingeniería & Ventas</p>
+                      <p class="text-xl font-bold text-secondary">contacto@stahlform.cl</p>
+                   </div>
                 </div>
-
-                <div class="flex flex-col gap-2">
-                  <label class="text-sm font-semibold text-medium">Correo</label>
-                  <input
-                    v-model="formData.email"
-                    type="email"
-                    placeholder="jane@gmail.com"
-                    class="w-full px-4 py-3 rounded-lg border bg-slate-50 transition-all outline-none focus:ring-2 focus:ring-[var(--detail-primary)]/20 focus:border-[var(--detail-primary)]"
-                    :class="errors.email ? 'border-detail-primary bg-red-50' : 'border-gray-200'"
-                  />
-                  <span v-if="errors.email" class="text-xs text-detail-primary italic">{{ errors.email[0] }}</span>
+                <div class="flex items-center gap-6 group">
+                   <div class="w-1.5 h-12 bg-primary group-hover:scale-y-125 transition-transform origin-bottom duration-500"></div>
+                   <div>
+                      <p class="text-[9px] font-bold text-gray-400 uppercase tracking-widest mb-1">Asistencia Crítica</p>
+                      <p class="text-xl font-bold text-secondary">+56 2 2345 6789</p>
+                   </div>
                 </div>
-
-                <div class="flex flex-col gap-2 col-span-2">
-                  <label class="text-sm font-semibold text-medium">Teléfono</label>
-                  <input
-                    v-model="formData.telefono"
-                    type="tel"
-                    placeholder="+56.."
-                    class="w-full px-4 py-3 rounded-lg border bg-slate-50 transition-all outline-none focus:ring-2 focus:ring-[var(--detail-primary)]/20 focus:border-[var(--detail-primary)]"
-                    :class="errors.telefono ? 'border-detail-primary bg-red-50' : 'border-gray-200'"
-                  />
-                  <span v-if="errors.telefono" class="text-xs text-detail-primary italic">{{ errors.telefono[0] }}</span>
-                </div>
-
-                <div class="flex flex-col gap-2 col-span-2">
-                  <label class="text-sm font-semibold text-medium">Mensaje</label>
-                  <textarea
-                    v-model="formData.mensaje"
-                    rows="4"
-                    placeholder="Tu mensaje..."
-                    class="w-full px-4 py-3 rounded-lg border bg-slate-50 transition-all outline-none focus:ring-2 focus:ring-[var(--detail-primary)]/20 focus:border-[var(--detail-primary)]"
-                    :class="errors.mensaje ? 'border-detail-primary bg-red-50' : 'border-gray-200'"
-                  ></textarea>
-                  <span v-if="errors.mensaje" class="text-xs text-detail-primary italic">{{ errors.mensaje[0] }}</span>
-                </div>
-
-                <div class="flex flex-col gap-2 col-span-2">
-                  <label class="text-sm font-semibold text-medium">Motivo</label>
-                <select
-                v-model="formData.motivo"
-                class="w-full px-4 py-3 rounded-lg border bg-slate-50 transition-all
-                        outline-none appearance-none text-medium
-                        focus:outline-none focus:ring-0 focus:border-[var(--detail-primary)]"
-                :class="errors.motivo ? 'border-detail-primary bg-red-50' : 'border-gray-200'"
-                >
-                    <option value="" disabled>Seleccione un motivo</option>
-                    <option value="cotizar">Cotizar producto/Servicio</option>
-                    <option value="postular">Postular Trabajo</option>
-                    <option value="ofrecer">Ofrecer un servicio</option>
-                    <option value="otro">Otro</option>
-                  </select>
-                  <span v-if="errors.motivo" class="text-xs text-detail-primary italic">{{ errors.motivo[0] }}</span>
-                </div>
-
-                <div v-if="formData.motivo === 'otro'" class="flex flex-col gap-2 col-span-2">
-                  <label class="text-sm font-semibold text-medium">Especifique el motivo</label>
-                  <input
-                    v-model="formData.otroMotivo"
-                    type="text"
-                    placeholder="¿En qué podemos ayudarte?"
-                    class="w-full px-4 py-3 rounded-lg border bg-slate-50 border-gray-200 outline-none focus:border-[var(--detail-primary)]"
-                  />
-                </div>
-
-                <div v-if="formData.motivo === 'postular'" class="flex flex-col gap-2 col-span-2">
-                  <label class="text-sm font-semibold text-medium">Adjuntar CV (PDF o Word)</label>
-                  <div class="relative">
-                    <input
-                      type="file"
-                      accept=".pdf,.doc,.docx"
-                      @change="handleFileChange"
-                      class="w-full text-sm text-medium file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-red-50 file:text-detail-primary hover:file:bg-red-100 cursor-pointer"
-                    />
-                  </div>
-                  <p v-if="fileName" class="text-sm text-green-600 font-medium">✓ {{ fileName }}</p>
-                  <span v-if="errors.documento" class="text-xs text-detail-primary italic">{{ errors.documento[0] }}</span>
-                </div>
-              </div>
-
-              <div v-if="errors.general" class="p-4 bg-red-50 border border-red-200 text-detail-primary rounded-lg text-sm text-center">
-                {{ errors.general[0] }}
-              </div>
-
-              <div class="text-center pt-4">
-                <button
-                type="submit"
-                :disabled="loading"
-                class="flex w-full max-w-xs mx-auto items-center justify-center gap-3
-                    bg-detail-primary hover:bg-detail-primary/80 text-white font-bold
-                    py-3 rounded-lg shadow-lg transition-all active:scale-95
-                    disabled:opacity-70 disabled:cursor-not-allowed"
-                >
-                  <svg v-if="loading" class="animate-spin h-5 w-5 text-white" fill="none" viewBox="0 0 24 24">
-                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                  </svg>
-                  <span>{{ loading ? 'Enviando...' : 'Enviar' }}</span>
-                </button>
-              </div>
-            </form>
+             </div>
           </div>
+
+          <!-- Right Column: High-Precision Technical Sheet (Form) -->
+          <div class="lg:w-3/5 w-full">
+            <div class="bg-white/95 backdrop-blur-sm shadow-[0_40px_100px_-20px_rgba(0,0,0,0.12)] rounded-[40px] border border-gray-100 relative overflow-hidden group">
+               <!-- System Status Label -->
+               <div class="absolute top-0 right-0 p-10 opacity-0 group-hover:opacity-100 transition-opacity duration-700 hidden lg:flex flex-col items-end">
+                  <div class="flex items-center gap-2 mb-1">
+                     <div class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></div>
+                     <span class="text-[8px] font-mono text-gray-400 uppercase tracking-widest">Sys_Ready</span>
+                  </div>
+                  <span class="text-[7px] font-mono text-gray-300 uppercase tracking-widest">Form_ID: S-TL_602</span>
+               </div>
+
+               <div class="p-8 md:p-14">
+                  <form @submit.prevent="handleSubmit" class="space-y-10">
+                     <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                        
+                        <div class="relative group">
+                           <label class="absolute -top-3 left-0 bg-white px-2 text-[10px] font-bold uppercase tracking-widest text-primary z-10 transition-colors group-focus-within:text-secondary">Nombre Completo</label>
+                           <input
+                              v-model="formData.nombre"
+                              type="text"
+                              placeholder="Ej. Juan Pérez"
+                              class="w-full bg-transparent border-b-2 border-gray-100 py-4 outline-none focus:border-primary transition-colors text-secondary placeholder:text-gray-200"
+                           />
+                        </div>
+
+                        <div class="relative group">
+                           <label class="absolute -top-3 left-0 bg-white px-2 text-[10px] font-bold uppercase tracking-widest text-primary z-10 transition-colors group-focus-within:text-secondary">Correo Directo</label>
+                           <input
+                              v-model="formData.email"
+                              type="email"
+                              placeholder="empresa@correo.cl"
+                              class="w-full bg-transparent border-b-2 border-gray-100 py-4 outline-none focus:border-primary transition-colors text-secondary placeholder:text-gray-200"
+                           />
+                        </div>
+
+                        <div class="relative group md:col-span-2">
+                           <label class="absolute -top-3 left-0 bg-white px-2 text-[10px] font-bold uppercase tracking-widest text-primary z-10 transition-colors group-focus-within:text-secondary">Número de Contacto</label>
+                           <input
+                              v-model="formData.telefono"
+                              type="tel"
+                              placeholder="+56 9 ...."
+                              class="w-full bg-transparent border-b-2 border-gray-100 py-4 outline-none focus:border-primary transition-colors text-secondary placeholder:text-gray-200"
+                           />
+                        </div>
+
+                        <div class="relative group md:col-span-2">
+                           <label class="absolute -top-3 left-0 bg-white px-2 text-[10px] font-bold uppercase tracking-widest text-primary z-10 transition-colors group-focus-within:text-secondary">Especificaciones del Requerimiento</label>
+                           <textarea
+                              v-model="formData.mensaje"
+                              rows="3"
+                              placeholder="Describa el equipo, falla o necesidad técnica..."
+                              class="w-full bg-transparent border-b-2 border-gray-100 py-4 outline-none focus:border-primary transition-colors text-secondary placeholder:text-gray-200 resize-none"
+                           ></textarea>
+                        </div>
+                     </div>
+
+                     <!-- Optimized Action Area -->
+                     <div class="flex flex-col md:flex-row items-center justify-between gap-6 pt-2 mt-4">
+                        <p class="text-[9px] text-gray-400 uppercase tracking-widest font-bold">Respuesta Técnica: <span class="text-secondary">En menos de 24h</span></p>
+
+                        <button
+                           type="submit"
+                           :disabled="loading"
+                           class="w-full md:w-auto h-16 px-12 rounded-xl bg-primary text-white font-bold flex items-center justify-center gap-5 group hover:bg-[#1a5c4d] transition-all shadow-xl shadow-primary/10 hover:shadow-[#1a5c4d]/30"
+                        >
+                           <span class="text-xs uppercase tracking-[0.2em] italic">{{ loading ? 'Procesando...' : 'Enviar Requerimiento' }}</span>
+                           <svg v-if="!loading" class="w-5 h-5 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </button>
+                     </div>
+                  </form>
+               </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
-
-    <Footer />
   </div>
 </template>
 
 <style scoped>
 /* Las fuentes se cargan en nuxt.config.ts para mejor rendimiento */
-select {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
-  background-position: right 0.5rem center;
-  background-repeat: no-repeat;
-  background-size: 1.5em 1.5em;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
 </style>

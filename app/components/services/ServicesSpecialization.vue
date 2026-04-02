@@ -12,7 +12,7 @@
     <div class="absolute inset-0 z-0 technical-grid opacity-[0.02] pointer-events-none"></div>
     
     <!-- Dark Vignette Overlay for focus -->
-    <div class="absolute inset-0 z-0 bg-[radial-gradient(circle_at_center,transparent_0%,#0a0a0a_80%)]"></div>
+    <div class="absolute inset-0 z-0 dark-vignette"></div>
 
     <div class="custom-container relative z-10">
       
@@ -138,5 +138,8 @@
 .technical-grid {
     background-image: radial-gradient(var(--accent) 1px, transparent 0);
     background-size: 60px 60px;
+}
+.dark-vignette {
+    background: radial-gradient(circle at center, transparent 0%, #0a0a0a 80%);
 }
 </style>
