@@ -5,17 +5,15 @@ definePageMeta({
 })
 
 useHead({
-  title: 'Nuestros Servicios | FAREMIN',
+  title: 'Nuestros Servicios | StahlForm',
   meta: [
     { name: 'description', content: 'Ofrecemos servicios de mantenimiento ferroviario, industrial, mecánica y montaje de puentes grúa con los más altos estándares de calidad.' }
   ]
 })
 </script>
 <template>
-  <ServicesIndustrialSection/>
-  <ServicesMechanicalSection/>
-  <ServicesPuenteSection/>
-  <ServicesFerroviariaSection/>
-  <ServicesWhyChooseUsSection/>
+    <ServicesExperience />
+    <ServicesMainCards />
+    <ServicesSpecialization />
+    <ServicesQuality />
 </template>
-    
