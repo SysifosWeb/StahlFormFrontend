@@ -1,7 +1,4 @@
 <script setup>
-// En Nuxt 3, si tu archivo se llama components/Navbar.vue, 
-// NO necesitas el import. Nuxt lo hace por ti automáticamente.
-
 defineProps({
     title: {
         type: String,
@@ -11,58 +8,56 @@ defineProps({
 </script>
 
 <template>
-    <header class="secondary-header">
-        <div class="header-content">
-            <h1 class="text-light font-bold">{{ title }}</h1>
+    <header class="secondary-header-container bg-[#1a1a1a] relative overflow-hidden flex items-center">
+        <!-- Background Technical Layers -->
+        <div class="technical-bg-layer absolute inset-0 opacity-10 pointer-events-none"></div>
+        <div class="absolute inset-0 z-0 technical-grid opacity-5"></div>
+        
+        <div class="w-full relative z-10 flex flex-col lg:flex-row h-full">
+            <!-- Left Column: Title & Identity -->
+            <div class="w-full lg:w-1/2 flex items-center px-8 lg:px-20 py-12 lg:py-0 h-full relative">
+                <div class="border-l-4 border-accent pl-10">
+                    <h5 class="text-[10px] font-bold uppercase tracking-[0.4em] text-accent mb-4 opacity-70">StahlForm | Ingeniería</h5>
+                    <h1 class="text-4xl lg:text-6xl font-bold text-white uppercase tracking-tighter leading-[0.95] drop-shadow-xl">
+                      {{ title }}
+                    </h1>
+                </div>
+            </div>
+
+            <!-- Right Column: Industrial Visual -->
+            <div class="w-full lg:w-1/2 relative h-56 lg:h-full overflow-hidden">
+                <img src="/img/secondary_header_bg.png" alt="Industrial Detail" class="w-full h-full object-cover grayscale brightness-75 transition-all duration-700 hover:grayscale-0 hover:scale-105" />
+                <!-- 60% Black Overlay -->
+                <div class="absolute inset-0 bg-black/60"></div>
+                <!-- Technical Gradient blending -->
+                <div class="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-[#1a1a1a] to-transparent hidden lg:block"></div>
+            </div>
         </div>
     </header>
 </template>
 
 <style scoped>
-.secondary-header {
-    position: relative;
-    width: 100%;
-    height: 280px;
-    /* En Nuxt usamos ~/ para referenciar la raíz del proyecto */
-    background-image: url('~/assets/img/banner.webp');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+.secondary-header-container {
+    height: 320px; /* Reduced base height */
 }
 
-.secondary-header::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 1; /* Aseguramos que el overlay esté debajo del contenido */
+@media (min-width: 1500px) {
+    .secondary-header-container {
+        height: 380px; /* Proportional taller on very wide screens */
+    }
 }
 
-.header-content {
-    position: absolute;
-    bottom: 30px;
-    left: 50px;
-    z-index: 2;
+.technical-bg-layer {
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 10l80 80M90 10L10 90' stroke='%23ffffff' stroke-opacity='0.1' stroke-width='0.5' fill='none'/%3E%3Ccircle cx='50' cy='50' r='5' stroke='%23ffffff' stroke-opacity='0.1' fill='none'/%3E%3C/svg%3E");
+    background-size: 150px 150px;
+}
+
+.technical-grid {
+    background-image: radial-gradient(var(--accent) 1px, transparent 0);
+    background-size: 40px 40px;
 }
 
 h1 {
-    /* Si no tienes definida esta variable CSS en Nuxt, puedes usar 3rem o un valor de Tailwind */
-    font-size: var(--size-3xl, 3rem); 
-    margin: 0;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-@media (max-width: 768px) {
-    .header-content {
-        left: 20px;
-        bottom: 20px;
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
+    text-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
 </style>

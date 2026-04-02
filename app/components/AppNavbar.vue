@@ -58,10 +58,6 @@ onMounted(() => {
           </li>
         </ul>
 
-        <!-- BOTÓN ACCIÓN -->
-        <NuxtLink to="/contacto" class="btn-stahl text-xs py-2 px-4 ml-4">
-          SOLICITAR COTIZACIÓN
-        </NuxtLink>
       </div>
 
       <!-- BOTÓN HAMBURGUESA -->

@@ -5,7 +5,7 @@ definePageMeta({
 })
 
 useHead({
-  title: 'Nosotros | Mi Empresa',
+  title: 'Nosotros | StahlForm',
   meta: [
     { name: 'description', content: 'Conoce más sobre la trayectoria, valores e infraestructura de nuestra empresa.' }
   ]
@@ -13,9 +13,8 @@ useHead({
 </script>
 
 <template>
-    <CompanyOur/>
-    <CompanyValue/>
-    <CompanyCommitment/>
-    <CompanySustainability/>
-    <CompanyQuality/>
+    <CompanyAboutHero />
+    <CompanyPillars />
+    <CompanyChallenges />
+    <CompanyBenefits />
 </template>
