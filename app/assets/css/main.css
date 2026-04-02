@@ -1,0 +1,170 @@
+@import "./base.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ==============================
+   ELEMENTOS DECORATIVOS
+================================ */
+.bg-detail-primary {
+  background-color: var(--detail-primary);
+}
+.text-detail-primary {
+  color: var(--detail-primary);
+}
+
+.bg-dark-primary {
+  background-color: var(--background-dark);
+}
+.background-light {
+  background-color: var(--background-light);
+}
+.background-medium {
+  background-color: var(--background-medium);
+}
+.background-secondary {
+  background-color: rgba(
+    117,
+    117,
+    117,
+    0.7
+  ); /* --detail-quaternary con 70% opacidad */
+}
+.text-light {
+  color: var(--background-light);
+}
+/* Línea decorativa bajo títulos */
+.title-accent {
+  width: 120px;
+  height: 4px;
+  background-color: var(--accent);
+  border-radius: 2px;
+}
+
+.title-accent--short {
+  width: 60px;
+  height: 4px;
+  background-color: var(--accent);
+  border-radius: 2px;
+}
+
+.title-accent--special {
+  width: 100px;
+  height: 4px;
+  background-color: var(--accent);
+  margin-top: 0.5rem;
+  border-radius: 2px;
+}
+
+.text-light {
+  color: var(--text-light);
+}
+.text-medium {
+  color: var(--text-medium);
+}
+.text-dark {
+  color: var(--text-dark);
+}
+
+.text-red {
+  color: var(--text-red);
+}
+
+/* Aplicar variables en clases */
+.font-light {
+  font-weight: var(--font-light);
+}
+.font-medium {
+  font-weight: var(--font-medium);
+}
+.font-bold {
+  font-weight: var(--font-bold);
+}
+/* ==============================
+   EFECTOS VISUALES
+================================ */
+
+/* Sombra de texto (hero / banners) */
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* ==============================
+   CONTENEDORES
+================================ */
+
+/* ==============================
+   ESTILOS PREMIUM STAHLFORM
+   ============================== */
+
+/* Gradiente industrial */
+.bg-industrial {
+  background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);
+}
+
+/* Efecto Vidrio (Glassmorphism) */
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+}
+
+/* Acentos Inclinados (Dossier Style) */
+.slanted-accent {
+  position: relative;
+  overflow: hidden;
+}
+
+.slanted-accent::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100px;
+  width: 200px;
+  height: 100%;
+  background: var(--accent);
+  transform: skewX(-20deg);
+  opacity: 0.1;
+  z-index: 0;
+}
+
+/* Texto Neón / Brillante */
+.text-neon {
+  color: var(--accent);
+  text-shadow: 0 0 10px rgba(217, 224, 33, 0.5);
+}
+
+/* Botón Stahl */
+.btn-stahl {
+  background: var(--accent);
+  color: var(--secondary);
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-sm);
+  font-weight: var(--font-bold);
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-stahl:hover {
+  background: var(--accent-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenedor máximo global */
+.custom-container {
+  width: 100%;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+

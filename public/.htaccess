@@ -1,0 +1,19 @@
+# 1. Forzar el tipo de archivo
+AddType video/mp4 .mp4
+AddType video/webm .webm
+
+# 2. Habilitar peticiones parciales (Vital para Chrome/Safari)
+<IfModule mod_headers.c>
+    Header set Accept-Ranges bytes
+</IfModule>
+
+# 3. Desactivar compresión que rompe el video
+<IfModule mod_env.c>
+    SetEnvIfNoCase Request_URI \.mp4$ no-gzip dont-vary
+</IfModule>
+
+# 4. Asegurar que el servidor no intente "adivinar" el contenido
+<IfModule mod_mime.c>
+    AddEncoding gzip .gz
+    RemoveType .gz
+</IfModule>
