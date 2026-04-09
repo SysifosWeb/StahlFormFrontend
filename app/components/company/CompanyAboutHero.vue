@@ -1,3 +1,7 @@
+<script setup>
+import heroImage from '~/assets/img/Kevin_torno.png'
+</script>
+
 <template>
   <section class="relative w-full bg-white overflow-hidden">
     <div class="flex flex-col lg:flex-row min-h-[50vh] items-stretch">
@@ -45,7 +49,7 @@
       <!-- Right Column: Industrial Visual -->
       <div class="w-full lg:w-1/2 relative min-h-[300px] lg:min-h-auto">
          <div class="absolute inset-0 bg-secondary/10 z-10"></div>
-         <img src="/img/hero.png" alt="Industrial Workshop StahlForm" class="w-full h-full object-cover contrast-110 brightness-95" />
+         <img :src="heroImage" alt="Industrial Workshop StahlForm" class="w-full h-full object-cover contrast-110 brightness-95" />
          
          <!-- Overlays -->
          <div class="absolute inset-0 technical-grid pointer-events-none opacity-20"></div>

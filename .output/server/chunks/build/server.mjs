@@ -1,5 +1,5 @@
 import process from 'node:process';globalThis._importMeta_=globalThis._importMeta_||{url:"file:///_entry.js",env:process.env};import { hasInjectionContext, inject, getCurrentInstance, defineAsyncComponent, defineComponent, h, computed, unref, shallowRef, provide, shallowReactive, ref, Suspense, Fragment, createApp, onErrorCaptured, onServerPrefetch, createVNode, resolveDynamicComponent, reactive, effectScope, getCurrentScope, toRef, mergeProps, withCtx, nextTick, isReadonly, useSSRContext, isRef, isShallow, isReactive, toRaw } from 'vue';
-import { k as klona, e as createError$1, l as parseURL, m as encodePath, n as decodePath, o as hasProtocol, q as isScriptProtocol, j as joinURL, w as withQuery, r as defuFn, s as sanitizeStatusCode, t as getContext, $ as $fetch$1, v as baseURL, x as defu, y as executeAsync } from '../nitro/nitro.mjs';
+import { l as klona, i as createError$1, m as parseURL, n as encodePath, o as decodePath, q as hasProtocol, r as isScriptProtocol, k as joinURL, w as withQuery, v as defuFn, x as sanitizeStatusCode, y as getContext, $ as $fetch$1, z as baseURL, A as defu, B as executeAsync } from '../_/nitro.mjs';
 import { useRoute as useRoute$1, RouterView, createMemoryHistory, createRouter, START_LOCATION } from 'vue-router';
 import { _api, addAPIProvider, setCustomIconsLoader } from '@iconify/vue';
 import { ssrRenderSuspense, ssrRenderComponent, ssrRenderVNode, ssrRenderAttrs } from 'vue/server-renderer';
@@ -8,11 +8,11 @@ import 'node:https';
 import 'node:events';
 import 'node:buffer';
 import 'node:fs';
-import 'node:path';
-import 'node:crypto';
 import 'node:url';
 import '@iconify/utils';
+import 'node:crypto';
 import 'consola';
+import 'node:path';
 
 //#region src/utils.ts
 function flatHooks(configHooks, hooks = {}, parentName) {
@@ -604,36 +604,36 @@ const _routes = [
     name: "buscar",
     path: "/buscar",
     meta: __nuxt_page_meta$4 || {},
-    component: () => import('./buscar-Bl7GHhhZ.mjs')
+    component: () => import('./buscar-BvPgcNZL.mjs')
   },
   {
     name: "contacto",
     path: "/contacto",
     meta: __nuxt_page_meta$3 || {},
-    component: () => import('./contacto-BFAa6omr.mjs')
+    component: () => import('./contacto-BdxIbFQy.mjs')
   },
   {
     name: "nuestra-empresa",
     path: "/nuestra-empresa",
     meta: __nuxt_page_meta$2 || {},
-    component: () => import('./nuestra-empresa-C3S6pPqU.mjs')
+    component: () => import('./nuestra-empresa-w_YBPZ6u.mjs')
   },
   {
     name: "politicas",
     path: "/politicas",
     meta: __nuxt_page_meta$1 || {},
-    component: () => import('./politicas-M5MSh2av.mjs')
+    component: () => import('./politicas-DwYwrJH8.mjs')
   },
   {
     name: "servicios",
     path: "/servicios",
     meta: __nuxt_page_meta || {},
-    component: () => import('./servicios-CtabS613.mjs')
+    component: () => import('./servicios-D2MjAg8R.mjs')
   },
   {
     name: "index",
     path: "/",
-    component: () => import('./index-DZIMmx6Z.mjs')
+    component: () => import('./index-8adop_AU.mjs')
   }
 ];
 const _wrapInTransition = (props, children) => {
@@ -999,7 +999,7 @@ const revive_payload_server_MVtmlZaQpj6ApFmshWfUWl5PehCebzaBf2NuRMiIbms = /* @__
     }
   }
 });
-const LazyIcon = defineAsyncComponent(() => import('./index-DVbRzLsJ.mjs').then((r) => r["default"] || r.default || r));
+const LazyIcon = defineAsyncComponent(() => import('./index-D4HNuBg0.mjs').then((r) => r["default"] || r.default || r));
 const lazyGlobalComponents = [
   ["Icon", LazyIcon]
 ];
@@ -1308,8 +1308,8 @@ const plugins = [
   plugin_MeUvTuoKUi51yb_kBguab6hdcExVXeTtZtTg9TZZBB8
 ];
 const layouts = {
-  default: defineAsyncComponent(() => import('./default-DaRdWDV5.mjs').then((m) => m.default || m)),
-  secondary: defineAsyncComponent(() => import('./secondary-C2R6qDL7.mjs').then((m) => m.default || m))
+  default: defineAsyncComponent(() => import('./default-C5qRxknL.mjs').then((m) => m.default || m)),
+  secondary: defineAsyncComponent(() => import('./secondary-zKcin9s0.mjs').then((m) => m.default || m))
 };
 const routeRulesMatcher = _routeRulesMatcher;
 const LayoutLoader = defineComponent({

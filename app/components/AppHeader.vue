@@ -9,8 +9,11 @@ import posterImage from '~/assets/img/imgfondo.png'
             <img 
                 src="/img/hero.png" 
                 alt="Proceso de mecanizado industrial"
-                class="w-full h-full object-cover opacity-60 grayscale-[30%] brightness-75"
+                class="w-full h-full object-cover brightness-100"
             />
+            <div class="absolute inset-0 bg-black/60"></div>
+            <!-- Soft left-side gradient for perfect text contrast -->
+            <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent"></div>
         </div>
 
         <!-- Technical Overlays (Blueprint Style) -->
@@ -20,17 +23,16 @@ import posterImage from '~/assets/img/imgfondo.png'
         <!-- Content -->
         <div class="relative z-10 custom-container w-full">
             <div class="flex">
-                <div class="w-full md:w-10/12 lg:w-8/12 xl:w-7/12">
-                    <span class="inline-block px-3 py-1 mb-6 text-xs tracking-[0.3em] font-bold border-l-4 border-accent bg-primary/40 uppercase">
-                        Ingeniería en Movimiento
+                <div class="w-full md:w-10/12 lg:w-8/12 xl:w-7/12 border-l-[3px] border-accent pl-6 lg:pl-8 py-2">
+                    <span class="inline-block mb-3 text-[10px] md:text-xs tracking-[0.3em] font-bold text-gray-400 uppercase">
+                        STAHLFORM | INGENIERÍA EN MOVIMIENTO
                     </span>
-                    <h1 class="mb-8 font-bold text-4xl sm:text-5xl lg:text-7xl leading-[1.1] uppercase tracking-tight">
-                        Capacidad Técnica al <br/>
+                    <h1 class="mb-8 font-bold text-4xl sm:text-5xl lg:text-7xl leading-[1.1] uppercase tracking-tight text-white drop-shadow-2xl">
+                        Capacidad Técnica  <br/>al
                         <span class="text-accent underline underline-offset-[12px] decoration-1">Servicio</span> de Operaciones Críticas
                     </h1>
                     <div class="flex items-center gap-6">
-                        <div class="w-20 h-0.5 bg-accent opacity-60"></div>
-                        <p class="text-xs uppercase tracking-[0.2em] opacity-80 font-bold">
+                        <p class="text-xs uppercase tracking-[0.2em] font-bold text-gray-400">
                             Soluciones industriales de precisión
                         </p>
                     </div>
@@ -38,13 +40,7 @@ import posterImage from '~/assets/img/imgfondo.png'
             </div>
         </div>
 
-        <!-- Corner Details -->
-        <div class="absolute bottom-10 right-10 z-20 flex gap-4 opacity-30">
-            <div class="w-12 h-12 border border-white"></div>
-            <div class="w-12 h-12 border border-white flex items-center justify-center">
-                <div class="w-1 h-1 bg-white rounded-full"></div>
-            </div>
-        </div>
+
     </header>
 </template>
 

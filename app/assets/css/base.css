@@ -1,11 +1,11 @@
 :root {
   --font-family: 'Outfit', 'Inter', sans-serif;
 
-  /* StahlForm Brand Colors - New Forest Green Palette with Lime Accent */
-  --primary: #0b3d33;
+  /* StahlForm Brand Colors - Official Palette */
+  --primary: #003e49;
   --secondary: #1a1a1a;
-  --accent: #D9E021;
-  --accent-hover: #e5eb3a;
+  --accent: #c8d400;
+  --accent-hover: #d7e600;
   
   /* Legacy Variables Mapped to New Theme */
   --detail-primary: var(--accent);
@@ -14,7 +14,7 @@
   --detail-quaternary: #2a2a2a;
 
   --background-light: #FFFFFF;
-  --background-medium: #f5f5f5;
+  --background-medium: #eaeef3;
   --background-dark: #1a1a1a;
   
   /* Text colors */
@@ -34,7 +34,7 @@
   --radius-sm: 0rem; /* Squared corners for more technical look */
   --radius-md: 0rem;
   --radius-lg: 0rem;
-  --glass-bg: rgba(11, 61, 51, 0.8);
+  --glass-bg: rgba(0, 62, 73, 0.8);
   --glass-border: rgba(255, 255, 255, 0.1);
 }
 *,

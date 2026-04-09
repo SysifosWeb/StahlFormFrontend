@@ -1,7 +1,8 @@
 <script setup>
 import { ref, computed, onMounted } from 'vue'
 import { useRoute } from 'vue-router'
-import logoStahlForm from '~/assets/img/stahlform_logo.png'
+import logoStahlForm from '~/assets/img/02 Logo_BlancoWebP.webp'
+
 
 const isMenuOpen = ref(false)
 const isScrolled = ref(false)
@@ -34,9 +35,7 @@ onMounted(() => {
 
       <!-- LOGO -->
       <NuxtLink to="/" class="flex items-center group">
-        <span class="text-white font-bold tracking-[0.4em] uppercase text-2xl group-hover:scale-105 transition-transform duration-300">
-          STAHLFORM
-        </span>
+        <img :src="logoStahlForm" alt="StahlForm Logo" class="h-16 lg:h-20 w-auto group-hover:scale-105 transition-transform duration-300" />
       </NuxtLink>
 
       <!-- MENÚ DESKTOP -->

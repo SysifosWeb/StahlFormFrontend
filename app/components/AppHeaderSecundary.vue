@@ -1,4 +1,6 @@
 <script setup>
+import headerBg from '~/assets/img/Torno_2.png'
+
 defineProps({
     title: {
         type: String,
@@ -8,29 +10,28 @@ defineProps({
 </script>
 
 <template>
-    <header class="secondary-header-container bg-[#1a1a1a] relative overflow-hidden flex items-center">
-        <!-- Background Technical Layers -->
-        <div class="technical-bg-layer absolute inset-0 opacity-10 pointer-events-none"></div>
+    <header class="secondary-header-container relative overflow-hidden flex items-center bg-[#111111] font-sans">
+        <!-- Full Background Image with Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img :src="headerBg" alt="Banner Industrial" class="w-full h-full object-cover object-[50%_25%] brightness-100" />
+            <div class="absolute inset-0 bg-black/60"></div>
+            <!-- Soft left-side gradient for perfect text contrast -->
+            <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent"></div>
+        </div>
+
+        <!-- Technical Layers -->
+        <div class="technical-bg-layer absolute inset-0 opacity-10 pointer-events-none z-0"></div>
         <div class="absolute inset-0 z-0 technical-grid opacity-5"></div>
         
-        <div class="w-full relative z-10 flex flex-col lg:flex-row h-full">
-            <!-- Left Column: Title & Identity -->
-            <div class="w-full lg:w-1/2 flex items-center px-8 lg:px-20 py-12 lg:py-0 h-full relative">
-                <div class="border-l-4 border-accent pl-10">
-                    <h5 class="text-[10px] font-bold uppercase tracking-[0.4em] text-accent mb-4 opacity-70">StahlForm | Ingeniería</h5>
-                    <h1 class="text-4xl lg:text-6xl font-bold text-white uppercase tracking-tighter leading-[0.95] drop-shadow-xl">
-                      {{ title }}
-                    </h1>
-                </div>
-            </div>
-
-            <!-- Right Column: Industrial Visual -->
-            <div class="w-full lg:w-1/2 relative h-56 lg:h-full overflow-hidden">
-                <img src="/img/secondary_header_bg.png" alt="Industrial Detail" class="w-full h-full object-cover grayscale brightness-75 transition-all duration-700 hover:grayscale-0 hover:scale-105" />
-                <!-- 60% Black Overlay -->
-                <div class="absolute inset-0 bg-black/60"></div>
-                <!-- Technical Gradient blending -->
-                <div class="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-[#1a1a1a] to-transparent hidden lg:block"></div>
+        <div class="w-full relative z-10 custom-container flex items-center h-full">
+            <!-- Left Text Block -->
+            <div class="border-l-[3px] border-accent pl-6 lg:pl-8 py-2 max-w-4xl">
+                <h5 class="text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] md:tracking-[0.3em] text-gray-400 mb-2 md:mb-3">
+                    STAHLFORM | INGENIERÍA Y PROYECTOS EN MOVIMIENTO
+                </h5>
+                <h1 class="text-3xl md:text-5xl lg:text-5xl font-bold text-white uppercase tracking-tight leading-tight drop-shadow-2xl">
+                  {{ title }}
+                </h1>
             </div>
         </div>
     </header>

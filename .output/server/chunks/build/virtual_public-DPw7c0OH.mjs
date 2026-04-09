@@ -1,4 +1,4 @@
-import { p as publicAssetsURL } from '../nitro/nitro.mjs';
+import { p as publicAssetsURL } from '../_/nitro.mjs';
 
 const _imports_0 = publicAssetsURL("/img/blueprint_bg.png");
 
