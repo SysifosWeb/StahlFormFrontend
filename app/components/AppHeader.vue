@@ -1,7 +1,3 @@
-<script setup>
-import posterImage from '~/assets/img/imgfondo.png'
-</script>
-
 <template>
     <header class="relative w-screen h-[400px] lg:h-[85vh] flex items-center justify-center text-left text-white overflow-hidden bg-secondary">
         <!-- Hero Background Image -->
@@ -9,7 +5,7 @@ import posterImage from '~/assets/img/imgfondo.png'
             <img 
                 src="/img/hero.png" 
                 alt="Proceso de mecanizado industrial"
-                class="w-full h-full object-cover brightness-100"
+                class="w-full h-full object-cover object-center lg:object-right brightness-100"
             />
             <div class="absolute inset-0 bg-black/60"></div>
             <!-- Soft left-side gradient for perfect text contrast -->
@@ -23,16 +19,17 @@ import posterImage from '~/assets/img/imgfondo.png'
         <!-- Content -->
         <div class="relative z-10 custom-container w-full">
             <div class="flex">
-                <div class="w-full md:w-10/12 lg:w-8/12 xl:w-7/12 border-l-[3px] border-accent pl-6 lg:pl-8 py-2">
-                    <span class="inline-block mb-3 text-[10px] md:text-xs tracking-[0.3em] font-bold text-gray-400 uppercase">
+                <div class="w-full md:w-10/12 lg:w-8/12 xl:w-7/12 border-l-[3px] border-accent pl-4 lg:pl-8 py-2">
+                    <span class="inline-block mb-4 text-[9px] md:text-xs tracking-[0.3em] font-bold text-gray-400 uppercase">
                         STAHLFORM | INGENIERÍA EN MOVIMIENTO
                     </span>
-                    <h1 class="mb-8 font-bold text-4xl sm:text-5xl lg:text-7xl leading-[1.1] uppercase tracking-tight text-white drop-shadow-2xl">
-                        Capacidad Técnica  <br/>al
-                        <span class="text-accent underline underline-offset-[12px] decoration-1">Servicio</span> de Operaciones Críticas
+                    <h1 class="mb-6 font-bold text-[22px] sm:text-5xl lg:text-7xl leading-[1.3] lg:leading-[1.1] uppercase tracking-tight text-white drop-shadow-2xl">
+                        <span class="block mb-1">Capacidad Técnica</span>
+                        <span class="block mb-1">al <span class="text-accent underline underline-offset-[6px] lg:underline-offset-[12px] decoration-1">Servicio</span></span>
+                        <span class="block text-xl lg:text-7xl mt-2 lg:mt-5 opacity-90">de Operaciones Críticas</span>
                     </h1>
-                    <div class="flex items-center gap-6">
-                        <p class="text-xs uppercase tracking-[0.2em] font-bold text-gray-400">
+                    <div class="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-6 mt-6">
+                        <p class="text-[9px] md:text-xs uppercase tracking-[0.2em] font-bold text-gray-400">
                             Soluciones industriales de precisión
                         </p>
                     </div>

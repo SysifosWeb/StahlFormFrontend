@@ -1,5 +1,5 @@
 <template>
-  <section class="relative w-full bg-[#fcfcfc] py-24 overflow-hidden font-sans border-t border-gray-100">
+  <section class="relative w-full bg-[#fcfcfc] py-10 lg:py-20 overflow-hidden font-sans border-t border-gray-100">
     <!-- Premium Technical Layering -->
     <div class="absolute inset-x-0 top-0 h-full premium-glow"></div>
     <div class="absolute inset-0 z-0 technical-grid opacity-[0.02] pointer-events-none"></div>

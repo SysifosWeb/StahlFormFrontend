@@ -11,9 +11,10 @@
     <div class="absolute inset-0 technical-grid opacity-5 z-0"></div>
 
     <div class="custom-container relative z-10 text-center">
-      <h2 class="text-2xl md:text-5xl font-bold text-white uppercase tracking-tighter leading-tight max-w-5xl mx-auto drop-shadow-2xl">
-        Trazabilidad técnica y <span class="relative inline-block border-b-2 border-accent">seguridad</span> <br/>
-        como eje transversal de cada proyecto.
+      <h2 class="text-2xl md:text-5xl font-bold text-white uppercase tracking-tighter leading-[1.3] md:leading-tight max-w-5xl mx-auto drop-shadow-2xl">
+        <span class="block mb-2 md:inline">Trazabilidad técnica y</span>
+        <span class="block mb-2 md:inline ml-0 md:ml-3"><span class="relative inline-block border-b-2 border-accent">seguridad</span></span>
+        <span class="block mt-2 md:mt-0">como eje transversal de cada proyecto.</span>
       </h2>
       <div class="mt-10 flex justify-center items-center gap-10">
           <div class="h-[1.5px] w-14 bg-accent/40"></div>

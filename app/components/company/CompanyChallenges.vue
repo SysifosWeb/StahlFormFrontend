@@ -1,10 +1,10 @@
 <template>
-  <section class="relative w-full bg-white py-24 overflow-hidden font-sans border-t border-gray-100">
+  <section class="relative w-full bg-white py-10 lg:py-20 overflow-hidden font-sans border-t border-gray-100">
     <!-- Technical dots subtle -->
     <div class="absolute inset-0 z-0 technical-grid opacity-[0.03] pointer-events-none"></div>
     
     <div class="custom-container relative z-10">
-      <div class="text-center mb-20 px-4">
+      <div class="text-center mb-10 lg:mb-20 px-4">
          <h2 class="text-3xl lg:text-5xl font-bold text-secondary uppercase tracking-tighter mb-4">
             Desafíos <span class="text-primary underline underline-offset-8 decoration-primary/20">Operacionales</span>
          </h2>

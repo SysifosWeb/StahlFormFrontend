@@ -1,5 +1,5 @@
 <template>
-  <section class="relative w-full py-20 overflow-hidden font-sans">
+  <section class="relative w-full py-10 lg:py-20 overflow-hidden font-sans">
     <!-- Cinematic Industrial Background (Acorde al Home) -->
     <div class="absolute inset-0 z-0">
        <img src="/img/banner_industrial.png" alt="Industrial Operations" class="w-full h-full object-cover" />

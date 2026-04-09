@@ -616,7 +616,7 @@ const _routes = [
     name: "nuestra-empresa",
     path: "/nuestra-empresa",
     meta: __nuxt_page_meta$2 || {},
-    component: () => import('./nuestra-empresa-w_YBPZ6u.mjs')
+    component: () => import('./nuestra-empresa-brV_oaJX.mjs')
   },
   {
     name: "politicas",
@@ -628,12 +628,12 @@ const _routes = [
     name: "servicios",
     path: "/servicios",
     meta: __nuxt_page_meta || {},
-    component: () => import('./servicios-D2MjAg8R.mjs')
+    component: () => import('./servicios-C4REJIX8.mjs')
   },
   {
     name: "index",
     path: "/",
-    component: () => import('./index-8adop_AU.mjs')
+    component: () => import('./index-BSZ6wWMB.mjs')
   }
 ];
 const _wrapInTransition = (props, children) => {
@@ -1308,8 +1308,8 @@ const plugins = [
   plugin_MeUvTuoKUi51yb_kBguab6hdcExVXeTtZtTg9TZZBB8
 ];
 const layouts = {
-  default: defineAsyncComponent(() => import('./default-C5qRxknL.mjs').then((m) => m.default || m)),
-  secondary: defineAsyncComponent(() => import('./secondary-zKcin9s0.mjs').then((m) => m.default || m))
+  default: defineAsyncComponent(() => import('./default-Cmxprt-t.mjs').then((m) => m.default || m)),
+  secondary: defineAsyncComponent(() => import('./secondary-DG0LzNfA.mjs').then((m) => m.default || m))
 };
 const routeRulesMatcher = _routeRulesMatcher;
 const LayoutLoader = defineComponent({

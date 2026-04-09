@@ -1,5 +1,5 @@
 <template>
-  <section class="py-32 bg-white relative overflow-hidden flex flex-col items-center">
+  <section class="py-12 lg:py-24 bg-white relative overflow-hidden flex flex-col items-center">
     <!-- Full-width Workshop Background (Blueprint) -->
     <div class="absolute inset-0 z-0 opacity-10 pointer-events-none">
       <img src="/img/blueprint_bg.png" alt="Engineering Blueprint" class="w-full h-full object-cover" />
@@ -9,7 +9,7 @@
     <div class="absolute inset-0 technical-grid opacity-5 z-0"></div>
     
     <div class="custom-container relative z-10 w-full">
-      <div class="text-center mb-24">
+      <div class="text-center mb-12 lg:mb-24">
         <h2 class="text-xs font-bold tracking-[0.5em] uppercase text-primary mb-4 opacity-70">Excelencia Operativa</h2>
         <h3 class="text-3xl lg:text-5xl font-bold uppercase tracking-tight text-secondary">Unidades de Negocio</h3>
       </div>
@@ -17,7 +17,7 @@
       <div class="grid grid-cols-1 md:grid-cols-3 gap-12 w-full">
         <!-- Servicio en Terreno -->
         <div class="business-card-extended group">
-          <div class="flex flex-col items-start gap-8 w-full h-full">
+          <div class="flex flex-col items-center text-center lg:items-start lg:text-left gap-8 w-full h-full">
             <div class="icon-hero-wrapper flex-shrink-0">
                <!-- Icon: Location -->
               <svg class="w-14 h-14 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -25,7 +25,7 @@
                 <path stroke-linecap="square" stroke-linejoin="round" stroke-width="1.2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
               </svg>
             </div>
-            <div class="space-y-4 flex-grow">
+            <div class="space-y-4 flex-grow w-full">
               <h4 class="text-xl font-bold uppercase tracking-widest text-secondary group-hover:text-primary transition-colors">Servicio en Terreno</h4>
               <p class="text-sm text-gray-500 font-light leading-loose">
                 Evaluación, diagnóstico e instalación directamente en faena. Despliegue técnico ágil para la máxima disponibilidad operacional.
@@ -38,7 +38,7 @@
 
         <!-- Servicio en Taller -->
         <div class="business-card-extended group">
-          <div class="flex flex-col items-start gap-8 w-full h-full">
+          <div class="flex flex-col items-center text-center lg:items-start lg:text-left gap-8 w-full h-full">
             <div class="icon-hero-wrapper flex-shrink-0">
                <!-- Icon: Gear -->
               <svg class="w-14 h-14 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -46,7 +46,7 @@
                 <path stroke-linecap="square" stroke-linejoin="round" stroke-width="1.2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
               </svg>
             </div>
-            <div class="space-y-4 flex-grow">
+            <div class="space-y-4 flex-grow w-full">
               <h4 class="text-xl font-bold uppercase tracking-widest text-secondary group-hover:text-primary transition-colors">Servicio en Taller</h4>
               <p class="text-sm text-gray-500 font-light leading-loose">
                 Reparación y fabricación de componentes mecánicos con trazabilidad. Recuperación estructural bajo estándares rigurosos.
@@ -59,14 +59,14 @@
 
         <!-- Ingeniería Aplicada -->
         <div class="business-card-extended group">
-          <div class="flex flex-col items-start gap-8 w-full h-full">
+          <div class="flex flex-col items-center text-center lg:items-start lg:text-left gap-8 w-full h-full">
             <div class="icon-hero-wrapper flex-shrink-0">
                <!-- Icon: Document -->
               <svg class="w-14 h-14 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="square" stroke-linejoin="round" stroke-width="1.2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
               </svg>
             </div>
-            <div class="space-y-4 flex-grow">
+            <div class="space-y-4 flex-grow w-full">
               <h4 class="text-xl font-bold uppercase tracking-widest text-secondary group-hover:text-primary transition-colors">Ingeniería Aplicada</h4>
               <p class="text-sm text-gray-500 font-light leading-loose">
                 Rediseño integral, memorias de cálculo y soluciones a medida. Innovación aplicada a la mejora continua de procesos.
