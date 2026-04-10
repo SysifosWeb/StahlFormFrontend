@@ -1,8 +1,0 @@
-const AppHeader_vue_vue_type_style_index_0_scoped_ae7206e4_lang = ".blueprint-overlay[data-v-ae7206e4]{background-image:linear-gradient(hsla(0,0%,100%,.03) 1px,transparent 0),linear-gradient(90deg,hsla(0,0%,100%,.03) 1px,transparent 0);background-size:80px 80px}.blueprint-overlay[data-v-ae7206e4],.technical-grid[data-v-ae7206e4]{inset:0;position:absolute;z-index:1}.technical-grid[data-v-ae7206e4]{background-image:radial-gradient(hsla(0,0%,100%,.05) 1px,transparent 0);background-size:20px 20px}h1[data-v-ae7206e4]{text-shadow:0 10px 30px rgba(0,0,0,.5)}";
-
-const AppHeaderStyles_D7zw_IYU = [
-  AppHeader_vue_vue_type_style_index_0_scoped_ae7206e4_lang
-];
-
-export { AppHeaderStyles_D7zw_IYU as default };
-//# sourceMappingURL=AppHeader-styles.D7zw_IYU.mjs.map
