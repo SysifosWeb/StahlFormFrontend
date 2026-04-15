@@ -3,9 +3,9 @@
         <!-- Hero Background Image -->
         <div class="absolute inset-0 z-0">
             <img 
-                src="/img/hero.png" 
+                src="~/assets/img/Torno_03.png" 
                 alt="Proceso de mecanizado industrial"
-                class="w-full h-full object-cover object-center lg:object-right brightness-100"
+                class="w-full h-full object-cover object-center lg:object-right brightness-100 -scale-x-100"
             />
             <div class="absolute inset-0 bg-black/60"></div>
             <!-- Soft left-side gradient for perfect text contrast -->

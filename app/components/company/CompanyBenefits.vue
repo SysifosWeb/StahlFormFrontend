@@ -2,9 +2,11 @@
   <section class="relative w-full py-10 lg:py-20 overflow-hidden font-sans">
     <!-- Cinematic Industrial Background (Acorde al Home) -->
     <div class="absolute inset-0 z-0">
-       <img src="/img/banner_industrial.png" alt="Industrial Operations" class="w-full h-full object-cover" />
+       <img src="~/assets/img/Torno_2.png" alt="Industrial Operations" class="w-full h-full object-cover" />
        <div class="absolute inset-0 bg-gradient-to-b from-[#0d0d0d]/95 via-[#0d0d0d]/80 to-[#0d0d0d]/95"></div>
        <div class="absolute inset-0 bg-secondary/40"></div>
+       <!-- Blueprint overlay (same as CompanyAboutHero) -->
+       <div class="absolute inset-0 bg-[url('/img/blueprint_bg.png')] bg-scroll lg:bg-fixed bg-cover bg-center opacity-10 grayscale mix-blend-overlay pointer-events-none"></div>
     </div>
     
     <div class="custom-container relative z-10 flex flex-col items-center">

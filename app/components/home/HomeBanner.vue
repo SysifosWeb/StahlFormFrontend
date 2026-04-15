@@ -2,7 +2,7 @@
   <section class="relative w-full h-[55vh] flex items-center justify-center overflow-hidden bg-[#1a1a1a]">
     <!-- Image Background (Cinematic/Industrial) -->
     <div class="absolute inset-0 z-0">
-      <img src="/img/banner_industrial.png" alt="Industrial Workshop" class="w-full h-full object-cover opacity-40 mix-blend-luminosity" />
+      <img src="~/assets/img/Torno-01.png" alt="Industrial Workshop" class="w-full h-full object-cover opacity-40 mix-blend-luminosity" />
       <div class="absolute inset-0 bg-gradient-to-b from-white to-secondary opacity-20"></div>
       <div class="absolute inset-0 bg-gradient-to-t from-[#0f0f0f] via-transparent to-[#0f0f0f] opacity-90"></div>
     </div>
@@ -29,7 +29,10 @@
 .technical-grid {
     position: absolute;
     inset: 0;
-    background-image: radial-gradient(rgba(217, 224, 33, 0.4) 1px, transparent 0);
-    background-size: 50px 50px;
+    background-image: 
+        url("data:image/svg+xml,%3Csvg width='200' height='200' viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='rgba(200, 212, 0, 0.15)' stroke-width='0.8'%3E%3Cpath d='M20 20h60M20 15v10M80 15v10' /%3E%3Ctext x='35' y='14' fill='rgba(200, 212, 0, 0.3)' font-family='monospace' font-size='8'%3E850.00mm%3C/text%3E%3Ccircle cx='150' cy='50' r='20' stroke-dasharray='2,2' /%3E%3Cpath d='M150 20v60M120 50h60' stroke-width='0.3' /%3E%3Cpath d='M40 150h40' /%3E%3Ctext x='48' y='140' fill='rgba(255, 255, 255, 0.2)' font-family='monospace' font-size='7'%3EWIDTH_X%3C/text%3E%3C/g%3E%3C/svg%3E"),
+        linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 400px 400px, 100px 100px;
 }
 </style>

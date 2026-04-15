@@ -11,5 +11,6 @@
   <HomeValue />
   <HomeBusinessUnits />
   <HomeTrust />
+  <HomeBento />
   <HomeBanner />
 </template>
