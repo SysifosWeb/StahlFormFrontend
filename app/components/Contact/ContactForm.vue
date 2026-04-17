@@ -13,8 +13,15 @@ const formData = ref({
 
 const errors = ref({})
 const loading = ref(false)
-const showSuccess = ref(false)
 const fileName = ref('')
+
+const notification = ref({ show: false, type: 'success', title: '', message: '' })
+const showNotification = (type, title, message) => {
+  notification.value = { show: true, type, title, message }
+  setTimeout(() => {
+    notification.value.show = false
+  }, 5000)
+}
 
 const handleFileChange = (event) => {
   const file = event.target.files[0]
@@ -40,7 +47,7 @@ const handleFileChange = (event) => {
 const handleSubmit = async () => {
   loading.value = true
   errors.value = {}
-  showSuccess.value = false
+  notification.value.show = false
 
   const body = new FormData()
   for (const key in formData.value) {
@@ -56,12 +63,12 @@ const handleSubmit = async () => {
       body
     })
     
-    showSuccess.value = true
     // Resetear formulario
     formData.value = { nombre: '', email: '', telefono: '', mensaje: '', motivo: '', otroMotivo: '', documento: null }
     fileName.value = ''
-    alert('Mensaje enviado con éxito')
+    showNotification('success', 'Requerimiento Recibido', 'Un ingeniero se pondrá en contacto pronto.')
   } catch (err) {
+    showNotification('error', 'Error del Sistema', 'No se pudo procesar su solicitud. Intente nuevamente.')
     if (err.response?._data?.errors) {
       errors.value = err.response._data.errors
     } else {
@@ -75,6 +82,33 @@ const handleSubmit = async () => {
 
 <template>
   <div class="relative bg-white overflow-hidden font-sans">
+
+    <!-- Notificación Toast Profesional -->
+    <Teleport to="body">
+      <Transition
+        enter-active-class="transition duration-500 ease-out"
+        enter-from-class="transform translate-y-12 opacity-0"
+        enter-to-class="transform translate-y-0 opacity-100"
+        leave-active-class="transition duration-400 ease-in"
+        leave-from-class="transform translate-y-0 opacity-100"
+        leave-to-class="transform translate-y-12 opacity-0"
+      >
+        <div v-if="notification.show" class="fixed bottom-8 right-8 z-[100] flex items-center gap-4 px-6 py-5 rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.3)] min-w-[320px] backdrop-blur-md"
+             :class="notification.type === 'success' ? 'bg-[#003e49]/95 border-l-4 border-[#c8d400]' : 'bg-red-900/95 border-l-4 border-red-500'">
+          <div v-if="notification.type === 'success'" class="w-10 h-10 rounded-full bg-[#c8d400]/20 flex items-center justify-center flex-shrink-0">
+            <svg class="w-5 h-5 text-[#c8d400]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+          </div>
+          <div v-else class="w-10 h-10 rounded-full bg-red-500/20 flex items-center justify-center flex-shrink-0">
+            <svg class="w-5 h-5 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"></path></svg>
+          </div>
+          <div>
+            <h4 class="font-bold text-[11px] tracking-widest uppercase text-white">{{ notification.title }}</h4>
+            <p class="text-[13px] text-gray-300 mt-0.5 leading-tight">{{ notification.message }}</p>
+          </div>
+        </div>
+      </Transition>
+    </Teleport>
+
     <!-- Technical Blueprint Backdrop (Subtle Whisper) -->
     <div class="absolute inset-0 z-0 opacity-[0.05] grayscale pointer-events-none">
        <img src="/img/blueprint_bg.png" alt="Engineering Blueprint" class="w-full h-full object-cover" />
