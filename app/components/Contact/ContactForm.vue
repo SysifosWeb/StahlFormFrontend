@@ -120,10 +120,10 @@ const handleSubmit = async () => {
 
     <section id="formulario-contacto" class="relative z-10 py-12 lg:py-20">
       <div class="custom-container">
-        <div class="flex flex-col lg:flex-row gap-16 lg:gap-24 items-center">
+        <div class="flex flex-col md:flex-row gap-10 md:gap-12 lg:gap-24 items-center">
           
           <!-- Left Column: Narrative & Technical Contacts -->
-          <div class="lg:w-2/5 space-y-12">
+          <div class="w-full md:w-2/5 space-y-8 md:space-y-10 lg:space-y-12">
              <div class="space-y-6">
                 <div class="flex items-center gap-4">
                    <div class="h-[2px] w-12 bg-accent"></div>
@@ -146,21 +146,21 @@ const handleSubmit = async () => {
                    <div class="w-1.5 h-12 bg-accent group-hover:scale-y-125 transition-transform origin-bottom duration-500"></div>
                    <div>
                       <p class="text-[9px] sf-bold text-gray-400 uppercase tracking-widest mb-1">Ingeniería & Ventas</p>
-                      <p class="text-xl sf-bold text-secondary">contacto@stahlform.cl</p>
+                      <p class="text-xl sf-bold text-secondary">kpasten@stahlformpyc.cl</p>
                    </div>
                 </div>
                 <div class="flex items-center gap-6 group">
                    <div class="w-1.5 h-12 bg-accent group-hover:scale-y-125 transition-transform origin-bottom duration-500"></div>
                    <div>
                       <p class="text-[9px] sf-bold text-gray-400 uppercase tracking-widest mb-1">Asistencia Crítica</p>
-                      <p class="text-xl sf-bold text-secondary">+56 2 2345 6789</p>
+                      <p class="text-xl sf-bold text-secondary">+56 9 44539842</p>
                    </div>
                 </div>
              </div>
           </div>
 
           <!-- Right Column: High-Precision Technical Sheet (Form) -->
-          <div class="lg:w-3/5 w-full">
+          <div class="w-full md:w-3/5">
             <div class="bg-white shadow-[0_40px_100px_-20px_rgba(0,0,0,0.12)] rounded-[40px] border border-gray-200 relative overflow-hidden group">
                <!-- System Status Label -->
                <div class="absolute top-0 right-0 p-10 opacity-0 group-hover:opacity-100 transition-opacity duration-700 hidden lg:flex flex-col items-end">

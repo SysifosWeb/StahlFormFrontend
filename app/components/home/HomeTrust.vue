@@ -36,7 +36,7 @@ const clientLogos = [
           <!-- Infinite Marquee -->
           <div class="flex gap-12 lg:gap-20 py-8 lg:py-12 animate-infinite-scroll w-max">
             <div v-for="(logo, index) in [...clientLogos, ...clientLogos, ...clientLogos]" :key="index" class="flex-shrink-0 flex items-center">
-               <img :src="`/img/clientes/${logo}`" 
+               <img :src="`/img/clientes/${logo}?v=2`" 
                     :alt="logo" 
                     class="h-8 md:h-12 w-auto opacity-100 transition-all duration-700 cursor-pointer hover:scale-110" />
             </div>

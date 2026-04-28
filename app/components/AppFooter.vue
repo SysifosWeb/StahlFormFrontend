@@ -66,7 +66,7 @@ import logoStahlForm from '~/assets/img/02 Logo_VerdeWebP.webp'
              </li>
              <li class="group">
                 <span class="text-[9px] sf-bold text-accent uppercase tracking-widest block mb-1">Consultas Directas</span>
-                <a href="mailto:adm@stahlform.cl" class="text-xs sf-light text-white/70 hover:text-accent transition-colors">adm@stahlform.cl</a>
+                <a href="mailto:kpasten@stahlformpyc.cl" class="text-xs sf-light text-white/70 hover:text-accent transition-colors">kpasten@stahlformpyc.cl</a>
              </li>
            </ul>
         </div>
@@ -108,7 +108,7 @@ import logoStahlForm from '~/assets/img/02 Logo_VerdeWebP.webp'
           <div class="flex items-center gap-3">
              <div class="w-1.5 h-1.5 bg-accent rounded-full animate-pulse"></div>
              <p class="text-[10px] uppercase tracking-[0.3em] text-white/50 sf-bold">
-                2026 StahlForm Inversiones PyC LTDA.
+                2026 StahlForm  PyC LTDA.
              </p>
           </div>
           <a href="https://sysifosweb.cl" target="_blank" class="text-[10px] uppercase tracking-[0.2em] text-white/50 hover:text-accent transition-colors duration-300 sf-bold flex items-center gap-2">
