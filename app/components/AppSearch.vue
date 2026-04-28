@@ -1,4 +1,4 @@
-<script setup>
+﻿<script setup>
 import { ref } from 'vue'
 
 const props = defineProps({
@@ -38,7 +38,7 @@ const buscar = () => {
       type="text"
       placeholder="Buscar..."
       :class="[
-        'outline-none bg-transparent placeholder:text-gray-400 text-dark font-light min-w-0',
+        'outline-none bg-transparent placeholder:text-gray-400 sf-text-dark sf-light min-w-0',
         variant === 'desktop'
           ? 'px-2 py-1 text-sm'
           : 'flex-1 px-4 py-2.5 text-base'
@@ -50,7 +50,7 @@ const buscar = () => {
         'flex-shrink-0 bg-detail-primary text-white rounded-full flex items-center justify-center transition-all duration-200 hover:brightness-110 active:scale-95',
         variant === 'desktop' ? 'w-9 h-9' : 'w-11 h-11 shadow-sm'
       ]"
-      aria-label="Realizar búsqueda"
+      aria-label="Realizar bÃºsqueda"
     >
       <Icon 
         name="heroicons:magnifying-glass" 
@@ -60,3 +60,4 @@ const buscar = () => {
     </button>
   </form>
 </template>
+

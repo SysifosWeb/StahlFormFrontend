@@ -1,4 +1,4 @@
-<script setup>
+﻿<script setup>
   useHead({
     title: 'StahlForm | Ingeniería y Proyectos en Movimiento',
     meta: [
@@ -14,3 +14,4 @@
   <HomeBento />
   <HomeBanner />
 </template>
+

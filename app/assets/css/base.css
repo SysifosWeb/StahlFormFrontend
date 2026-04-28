@@ -1,29 +1,21 @@
 :root {
-  --font-family: 'Outfit', 'Inter', sans-serif;
+  --font-family: 'aktiv-grotesk', sans-serif;
 
   /* StahlForm Brand Colors - Official Palette */
   --primary: #003e49;
-  --secondary: #1a1a1a;
+  --secondary: #0d2a2d;
   --accent: #c8d400;
   --accent-hover: #d7e600;
   
-  /* Legacy Variables Mapped to New Theme */
-  --detail-primary: var(--accent);
-  --detail-secondary: #4a4a4a;
-  --detail-dark: #1a1a1a;
-  --detail-quaternary: #2a2a2a;
-
   --background-light: #FFFFFF;
   --background-medium: #eaeef3;
-  --background-dark: #1a1a1a;
+  --background-dark: #003e49;
   
   /* Text colors */
-  --text-light: #FFFFFF;
-  --text-medium: #d1d1d1;
-  --text-medium-dark: #888888;
-  --text-dark: #1a1a1a;
-  --text-dark-2: #000000;
-  --text-accent: var(--accent);
+  --text-primary: #003e49;
+  --text-accent: #c8d400;
+  --text-dark: #0d2a2d;
+  --text-light: #eaeef3;
 
   /* Font Weights */
   --font-light: 300;
@@ -44,6 +36,8 @@
   margin: 0;
   padding: 0;
   font-family: var(--font-family);
+  font-weight: 200;
+  font-style: normal;
 }
 
 html, body {

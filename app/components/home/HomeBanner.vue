@@ -1,24 +1,24 @@
 <template>
-  <section class="relative w-full h-[55vh] flex items-center justify-center overflow-hidden bg-[#1a1a1a]">
+  <section class="relative w-full h-[55vh] flex items-center justify-center overflow-hidden bg-primary">
     <!-- Image Background (Cinematic/Industrial) -->
     <div class="absolute inset-0 z-0">
-      <img src="~/assets/img/Torno-01.png" alt="Industrial Workshop" class="w-full h-full object-cover opacity-40 mix-blend-luminosity" />
-      <div class="absolute inset-0 bg-gradient-to-b from-white to-secondary opacity-20"></div>
-      <div class="absolute inset-0 bg-gradient-to-t from-[#0f0f0f] via-transparent to-[#0f0f0f] opacity-90"></div>
+      <img src="~/assets/img/Torno-01.png" alt="Industrial Workshop" class="w-full h-full object-cover opacity-50 mix-blend-luminosity" />
+      <div class="absolute inset-0 bg-gradient-to-b from-white to-primary opacity-20"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-primary opacity-90"></div>
     </div>
 
     <!-- Background Blueprint detail (extra layer) -->
     <div class="absolute inset-0 technical-grid opacity-5 z-0"></div>
 
     <div class="custom-container relative z-10 text-center">
-      <h2 class="text-2xl md:text-5xl font-bold text-white uppercase tracking-tighter leading-[1.3] md:leading-tight max-w-5xl mx-auto drop-shadow-2xl">
-        <span class="block mb-2 md:inline">Trazabilidad técnica y</span>
-        <span class="block mb-2 md:inline ml-0 md:ml-3"><span class="relative inline-block border-b-2 border-accent">seguridad</span></span>
-        <span class="block mt-2 md:mt-0">como eje transversal de cada proyecto.</span>
+      <h2 class="text-3xl lg:text-6xl sf-bold text-white uppercase tracking-tighter leading-tight max-w-5xl mx-auto drop-shadow-2xl">
+        <span class="block mb-2 md:inline">INGENIERÍA PARA </span>
+        <span class="block mb-2 md:inline ml-0 md:ml-3 text-accent italic">Operaciones</span>
+        <span class="block mt-2 md:mt-0">CRÍTICAS.</span>
       </h2>
       <div class="mt-10 flex justify-center items-center gap-10">
           <div class="h-[1.5px] w-14 bg-accent/40"></div>
-          <p class="text-[9px] uppercase font-bold tracking-[0.8em] text-accent/90">StahlForm Commitment</p>
+          <p class="text-[9px] uppercase sf-bold tracking-[0.8em] text-accent/90">StahlForm Commitment</p>
           <div class="h-[1.5px] w-14 bg-accent/40"></div>
       </div>
     </div>
@@ -36,3 +36,4 @@
     background-size: 400px 400px, 100px 100px;
 }
 </style>
+

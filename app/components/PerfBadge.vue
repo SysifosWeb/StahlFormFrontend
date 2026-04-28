@@ -1,4 +1,4 @@
-<script setup>
+﻿<script setup>
 defineProps({
   label: {
     type: String,
@@ -12,3 +12,4 @@ defineProps({
     {{ label }}
   </div>
 </template>
+

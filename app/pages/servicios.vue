@@ -1,7 +1,7 @@
-<script setup>
+﻿<script setup>
 definePageMeta({
   layout: 'secondary',
-  title: 'Nuestros Servicios'
+  title: 'Nuestros <span class="text-accent underline underline-offset-8">Servicios</span>'
 })
 
 useHead({

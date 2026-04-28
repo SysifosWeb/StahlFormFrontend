@@ -57,13 +57,13 @@
   border-radius: 2px;
 }
 
-.text-light {
+.sf-text-light {
   color: var(--text-light);
 }
-.text-medium {
+.sf-text-medium {
   color: var(--text-medium);
 }
-.text-dark {
+.sf-text-dark {
   color: var(--text-dark);
 }
 
@@ -72,13 +72,13 @@
 }
 
 /* Aplicar variables en clases */
-.font-light {
+.sf-light {
   font-weight: var(--font-light);
 }
-.font-medium {
+.sf-medium {
   font-weight: var(--font-medium);
 }
-.font-bold {
+.sf-bold{
   font-weight: var(--font-bold);
 }
 /* ==============================

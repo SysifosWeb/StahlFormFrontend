@@ -1,7 +1,7 @@
-<script setup>
+﻿<script setup>
 import { ref, computed, onMounted } from 'vue'
 import { useRoute } from 'vue-router'
-import logoStahlForm from '~/assets/img/02 Logo_BlancoWebP.webp'
+import logoStahlForm from '~/assets/img/02 Logo_VerdeWebP.webp'
 
 
 const isMenuOpen = ref(false)
@@ -38,7 +38,7 @@ onMounted(() => {
         <img :src="logoStahlForm" alt="StahlForm Logo" class="h-10 lg:h-20 w-auto group-hover:scale-105 transition-transform duration-300" />
       </NuxtLink>
 
-      <!-- MENÚ DESKTOP -->
+      <!-- MENÃš DESKTOP -->
       <div class="hidden lg:flex items-center gap-10 ml-auto">
         <ul class="flex items-center gap-4">
           <li v-for="item in [
@@ -49,7 +49,7 @@ onMounted(() => {
           ]" :key="item.to">
             <NuxtLink
               :to="item.to"
-              class="nav-link text-sm tracking-widest font-bold"
+              class="nav-link text-sm tracking-widest sf-bold"
               :class="{ active: currentRoute === item.to }"
             >
               {{ item.label }}
@@ -59,7 +59,7 @@ onMounted(() => {
 
       </div>
 
-      <!-- BOTÓN HAMBURGUESA -->
+      <!-- BOTÃ“N HAMBURGUESA -->
       <button
         class="lg:hidden text-accent focus:outline-none flex items-center justify-center transition-transform hover:scale-110 active:scale-95"
         @click="toggleMenu"
@@ -74,7 +74,7 @@ onMounted(() => {
       </button>
     </div>
 
-    <!-- MENÚ MÓVIL (Industrial Glass Style) -->
+    <!-- MENÃš MÃ“VIL (Industrial Glass Style) -->
     <Transition name="slide-down">
       <div
         v-if="isMounted && isMenuOpen"
@@ -109,7 +109,7 @@ onMounted(() => {
           >
             <NuxtLink
               :to="item.to"
-              class="mobile-nav-link text-xl font-bold tracking-[0.3em] text-white hover:text-accent transition-all pl-6 block border-l-2 border-transparent"
+              class="mobile-nav-link text-xl sf-bold tracking-[0.3em] text-white hover:text-accent transition-all pl-6 block border-l-2 border-transparent"
               :class="{ 'active-mobile': currentRoute === item.to }"
               @click="closeMenu"
             >
@@ -118,11 +118,11 @@ onMounted(() => {
           </li>
         </ul>
 
-        <!-- FOOTER AREA DEL MENÚ -->
+        <!-- FOOTER AREA DEL MENÃš -->
         <div class="mt-auto relative z-10 border-t border-white/10 pt-10 pb-4 space-y-4 flex flex-col items-center">
           <!-- Vision Pillar -->
-          <p class="text-[10px] text-center uppercase tracking-[0.3em] leading-tight text-gray-400 font-bold max-w-xs mx-auto">
-            CAPACIDAD TÉCNICA AL <span class="text-accent">SERVICIO</span> DE OPERACIONES CRÍTICAS
+          <p class="text-[10px] text-center uppercase tracking-[0.3em] leading-tight text-gray-400 sf-bold max-w-xs mx-auto">
+            CAPACIDAD TÃ‰CNICA AL <span class="text-accent">SERVICIO</span> DE OPERACIONES CRÃTICAS
           </p>
 
           <!-- Redes Sociales -->
@@ -142,7 +142,7 @@ onMounted(() => {
           </div>
 
           <!-- Copyright -->
-          <p class="text-[9px] uppercase tracking-[0.4em] text-gray-500 leading-tight">© 2026 StahlForm</p>
+          <p class="text-[9px] uppercase tracking-[0.4em] text-gray-500 leading-tight">Â© 2026 StahlForm</p>
         </div>
       </div>
     </Transition>

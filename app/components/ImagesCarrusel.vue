@@ -1,4 +1,4 @@
-<script setup>
+﻿<script setup>
 import { ref, computed, onMounted, onUnmounted } from 'vue'
 
 const props = defineProps({
@@ -117,3 +117,4 @@ const prev = () => {
     </button>
   </div>
 </template>
+

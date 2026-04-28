@@ -1,4 +1,4 @@
-<script setup>
+﻿<script setup>
 import { ref, onMounted } from 'vue'
 
 const props = defineProps({
@@ -48,3 +48,4 @@ onMounted(() => {
     </div>
   </div>
 </template>
+

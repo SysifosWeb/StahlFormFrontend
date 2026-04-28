@@ -1,17 +1,33 @@
 <template>
-  <section class="py-12 lg:py-24 bg-white relative overflow-hidden flex flex-col items-center">
-    <!-- Full-width Workshop Background (Blueprint) -->
-    <div class="absolute inset-0 z-0 opacity-10 pointer-events-none">
-      <img src="/img/blueprint_bg.png" alt="Engineering Blueprint" class="w-full h-full object-cover" />
+  <section class="py-12 lg:py-24 bg-primary relative overflow-hidden flex flex-col items-center">
+    <!-- Subtle Workshop Overlay -->
+    <div class="absolute inset-0 z-0 opacity-10 pointer-events-none mix-blend-overlay">
+      <img src="~/assets/img/Torno_2.png" alt="Industrial Background" class="w-full h-full object-cover" />
     </div>
 
-    <!-- Background Blueprint lines (extra detail) -->
-    <div class="absolute inset-0 technical-grid opacity-5 z-0"></div>
+    <!-- Branding Geometric Shapes (Slide 1 Style) -->
+    <div class="absolute -right-32 -top-32 w-[800px] h-full z-0 opacity-15 pointer-events-none transform rotate-12">
+        <svg viewBox="0 0 800 1000" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-accent w-full h-full">
+            <path d="M100 200L700 500V650L100 350V200Z" fill="currentColor"/>
+            <path d="M100 500L700 800V950L100 650V500Z" fill="currentColor" opacity="0.6"/>
+        </svg>
+    </div>
+    
+    <!-- Secondary Shape Bottom -->
+    <div class="absolute -left-20 bottom-0 w-[400px] h-[400px] z-0 opacity-10 pointer-events-none">
+        <svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-accent w-full h-full">
+            <path d="M0 400L400 0H200L0 200Z" fill="currentColor"/>
+        </svg>
+    </div>
     
     <div class="custom-container relative z-10 w-full">
       <div class="text-center mb-12 lg:mb-24">
-        <h2 class="text-xs font-bold tracking-[0.5em] uppercase text-primary mb-4 opacity-70">Excelencia Operativa</h2>
-        <h3 class="text-3xl lg:text-5xl font-bold uppercase tracking-tight text-secondary">Unidades de Negocio</h3>
+        <div class="flex items-center justify-center gap-4 mb-4">
+           <div class="w-12 h-[2px] bg-accent"></div>
+           <span class="text-[10px] sf-bold uppercase tracking-[0.4em] text-accent">Excelencia Operativa</span>
+           <div class="w-12 h-[2px] bg-accent"></div>
+        </div>
+        <h2 class="text-4xl lg:text-6xl sf-bold uppercase tracking-tighter text-white leading-tight">Unidades de Negocio</h2>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-12 w-full">
@@ -20,18 +36,18 @@
           <div class="flex flex-col items-center text-center lg:items-start lg:text-left gap-8 w-full h-full">
             <div class="icon-hero-wrapper flex-shrink-0">
                <!-- Icon: Location -->
-              <svg class="w-14 h-14 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <svg class="w-14 h-14 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="square" stroke-linejoin="round" stroke-width="1.2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
                 <path stroke-linecap="square" stroke-linejoin="round" stroke-width="1.2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
               </svg>
             </div>
             <div class="space-y-4 flex-grow w-full">
-              <h4 class="text-xl font-bold uppercase tracking-widest text-secondary group-hover:text-primary transition-colors">Servicio en Terreno</h4>
-              <p class="text-sm text-gray-500 font-light leading-loose">
-                Evaluación, diagnóstico e instalación directamente en faena. Despliegue técnico ágil para la máxima disponibilidad operacional.
+              <h4 class="text-xl sf-bold uppercase tracking-widest text-accent transition-colors">Servicio en Terreno</h4>
+              <p class="text-sm text-[var(--background-medium)] sf-light leading-loose">
+                Evaluación, diagnóstico e instalación directamente en faena. Asesoría técnica ágil para la máxima disponibilidad operacional.
               </p>
             </div>
-            <NuxtLink to="/servicios" class="btn-ghost-small w-full text-center">Ver Detalles</NuxtLink>
+            <!-- <NuxtLink to="/servicios" class="btn-ghost-small w-full text-center">Ver Detalles</NuxtLink> -->
           </div>
           <div class="card-accent-line"></div>
         </div>
@@ -41,18 +57,18 @@
           <div class="flex flex-col items-center text-center lg:items-start lg:text-left gap-8 w-full h-full">
             <div class="icon-hero-wrapper flex-shrink-0">
                <!-- Icon: Gear -->
-              <svg class="w-14 h-14 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <svg class="w-14 h-14 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="square" stroke-linejoin="round" stroke-width="1.2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
                 <path stroke-linecap="square" stroke-linejoin="round" stroke-width="1.2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
               </svg>
             </div>
             <div class="space-y-4 flex-grow w-full">
-              <h4 class="text-xl font-bold uppercase tracking-widest text-secondary group-hover:text-primary transition-colors">Servicio en Taller</h4>
-              <p class="text-sm text-gray-500 font-light leading-loose">
-                Reparación y fabricación de componentes mecánicos con trazabilidad. Recuperación estructural bajo estándares rigurosos.
+              <h4 class="text-xl sf-bold uppercase tracking-widest text-accent">Servicio en Taller</h4>
+              <p class="text-sm text-[var(--background-medium)] sf-light leading-loose">
+                Reparación y Fabricación de componentes mecánicos con trazabilidad. Reparación estructural bajo estándares rigurosos.
               </p>
             </div>
-            <NuxtLink to="/servicios" class="btn-ghost-small w-full text-center">Ver Detalles</NuxtLink>
+            <!-- <NuxtLink to="/servicios" class="btn-ghost-small w-full text-center">Ver Detalles</NuxtLink> -->
           </div>
           <div class="card-accent-line"></div>
         </div>
@@ -62,17 +78,17 @@
           <div class="flex flex-col items-center text-center lg:items-start lg:text-left gap-8 w-full h-full">
             <div class="icon-hero-wrapper flex-shrink-0">
                <!-- Icon: Document -->
-              <svg class="w-14 h-14 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <svg class="w-14 h-14 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="square" stroke-linejoin="round" stroke-width="1.2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
               </svg>
             </div>
             <div class="space-y-4 flex-grow w-full">
-              <h4 class="text-xl font-bold uppercase tracking-widest text-secondary group-hover:text-primary transition-colors">Ingeniería Aplicada</h4>
-              <p class="text-sm text-gray-500 font-light leading-loose">
-                Rediseño integral, memorias de cálculo y soluciones a medida. Innovación aplicada a la mejora continua de procesos.
+              <h4 class="text-xl sf-bold uppercase tracking-widest text-accent">Ingeniería Aplicada</h4>
+              <p class="text-sm text-[var(--background-medium)] sf-light leading-loose">
+                Rediseño integral, Memoria de cálculo y soluciones a medida. Inspección técnica aplicada a la mejora continua de procesos.
               </p>
             </div>
-            <NuxtLink to="/servicios" class="btn-ghost-small w-full text-center">Ver Detalles</NuxtLink>
+            <!-- <NuxtLink to="/servicios" class="btn-ghost-small w-full text-center">Ver Detalles</NuxtLink> -->
           </div>
           <div class="card-accent-line"></div>
         </div>
@@ -85,19 +101,19 @@
 .business-card-extended {
   padding: 3rem 2.5rem;
   transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-  background: white;
+  background: var(--primary);
   position: relative;
-  box-shadow: 0 20px 40px -10px rgba(0,0,0,0.05);
-  border: 1px solid rgba(0,0,0,0.02);
+  box-shadow: 0 10px 30px -10px rgba(0,0,0,0.3);
+  border: 1px solid rgba(255,255,255,0.05);
   display: flex;
   flex-direction: column;
 }
 
 .business-card-extended:hover {
   transform: translateY(-10px);
-  box-shadow: 0 40px 80px -20px rgba(0,0,0,0.08);
+  box-shadow: 0 40px 80px -20px rgba(0,0,0,0.4);
   z-index: 20;
-  border-color: rgba(11, 61, 51, 0.1);
+  border-color: var(--accent);
 }
 
 .icon-hero-wrapper {
@@ -106,18 +122,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #fcfcfc;
-  border: 1px solid rgba(0,0,0,0.03);
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.05);
   transition: all 0.5s ease;
 }
 
 .business-card-extended:hover .icon-hero-wrapper {
-  background: var(--primary);
-  border-color: var(--primary);
+  background: var(--accent);
+  border-color: var(--accent);
 }
 
 .business-card-extended:hover .icon-hero-wrapper svg {
-  color: white;
+  color: var(--primary);
   transform: rotate(10deg);
 }
 
@@ -127,7 +143,7 @@
   left: 0;
   width: 0;
   height: 4px;
-  background: var(--primary);
+  background: var(--accent);
   transition: width 0.6s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
@@ -141,21 +157,21 @@
   text-transform: uppercase;
   letter-spacing: 0.25em;
   padding: 0.9rem 1.5rem;
-  border: 1.5px solid rgba(0,0,0,0.1);
-  color: var(--secondary);
+  border: 1.5px solid rgba(255,255,255,0.1);
+  color: white;
   transition: all 0.4s ease;
 }
 
 .btn-ghost-small:hover {
-  background: var(--primary);
-  color: white;
-  border-color: var(--primary);
+  background: var(--accent);
+  color: var(--primary);
+  border-color: var(--accent);
 }
 
 .technical-grid {
     position: absolute;
     inset: 0;
-    background-image: radial-gradient(rgba(0,0,0,0.1) 1px, transparent 0);
+    background-image: radial-gradient(rgba(255,255,255,0.1) 1px, transparent 0);
     background-size: 40px 40px;
 }
 </style>

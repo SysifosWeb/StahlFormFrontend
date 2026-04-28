@@ -1,4 +1,4 @@
-<script setup>
+﻿<script setup>
 const route = useRoute()
 </script>
 
@@ -14,3 +14,4 @@ const route = useRoute()
     <AppFooter />
   </div>
 </template>
+

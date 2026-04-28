@@ -19,18 +19,14 @@ defineProps({
             <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent"></div>
         </div>
 
-        <!-- Technical Layers -->
-        <div class="technical-bg-layer absolute inset-0 opacity-10 pointer-events-none z-0"></div>
-        <div class="absolute inset-0 z-0 technical-grid opacity-5"></div>
-        
+
         <div class="w-full relative z-10 custom-container flex items-center h-full">
             <!-- Left Text Block -->
             <div class="border-l-[3px] border-accent pl-6 lg:pl-8 py-2 max-w-4xl">
-                <h5 class="text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] md:tracking-[0.3em] text-gray-400 mb-2 md:mb-3">
+                <!-- <h5 class="text-[10px] md:text-xs sf-bold uppercase tracking-[0.2em] md:tracking-[0.3em] text-gray-400 mb-2 md:mb-3">
                     STAHLFORM | INGENIERÍA Y PROYECTOS EN MOVIMIENTO
-                </h5>
-                <h1 class="text-3xl md:text-5xl lg:text-5xl font-bold text-white uppercase tracking-tight leading-tight drop-shadow-2xl">
-                  {{ title }}
+                </h5> -->
+                <h1 v-html="title" class="text-3xl md:text-5xl lg:text-5xl sf-bold text-white uppercase tracking-tight leading-tight drop-shadow-2xl">
                 </h1>
             </div>
         </div>
@@ -48,15 +44,6 @@ defineProps({
     }
 }
 
-.technical-bg-layer {
-    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 10l80 80M90 10L10 90' stroke='%23ffffff' stroke-opacity='0.1' stroke-width='0.5' fill='none'/%3E%3Ccircle cx='50' cy='50' r='5' stroke='%23ffffff' stroke-opacity='0.1' fill='none'/%3E%3C/svg%3E");
-    background-size: 150px 150px;
-}
-
-.technical-grid {
-    background-image: radial-gradient(var(--accent) 1px, transparent 0);
-    background-size: 40px 40px;
-}
 
 h1 {
     text-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);

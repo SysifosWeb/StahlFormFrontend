@@ -1,10 +1,10 @@
-<script setup>
+﻿<script setup>
 import { Servicios } from '@/assets/data/servicios.js'
 import { Proyectos } from '@/assets/data/proyectos.js'
 
 definePageMeta({
   layout: 'secondary',
-  title: 'Resultados de Búsqueda'
+  title: 'Resultados de BÃºsqueda'
 })
 
 const route = useRoute()
@@ -38,7 +38,7 @@ const results = computed(() => {
 })
 
 useHead({
-  title: () => searchQuery.value ? `Búsqueda: ${searchQuery.value} | StahlForm` : 'Buscar | StahlForm',
+  title: () => searchQuery.value ? `BÃºsqueda: ${searchQuery.value} | StahlForm` : 'Buscar | StahlForm',
   meta: [
     { name: 'description', content: 'Encuentra servicios y proyectos en StahlForm.' }
   ]
@@ -49,11 +49,11 @@ useHead({
   <div class="min-h-screen bg-slate-50 py-12 lg:py-16">
     <div class="container mx-auto px-4 max-w-7xl">
       <div class="mb-12">
-        <h1 class="text-3xl lg:text-4xl font-bold text-dark mb-2">
+        <h1 class="text-3xl lg:text-4xl sf-bold sf-text-dark mb-2">
           Resultados para: <span class="text-detail-primary">{{ searchQuery }}</span>
         </h1>
         <div class="title-accent"></div>
-        <p v-if="results.length > 0" class="mt-2 text-medium font-light">
+        <p v-if="results.length > 0" class="mt-2 sf-text-medium sf-light">
           Se han encontrado {{ results.length }} {{ results.length === 1 ? 'resultado' : 'resultados' }}.
         </p>
       </div>
@@ -71,10 +71,10 @@ useHead({
                 <img :src="item.src" :alt="item.title" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
               </div>
               <div class="flex flex-col p-6 md:p-8 w-full md:flex-1 gap-4 justify-center">
-                <span class="text-xs font-bold uppercase tracking-wider text-detail-primary">Servicios</span>
-                <h2 class="font-bold text-dark text-xl lg:text-2xl group-hover:text-detail-primary transition-colors">{{ item.title }}</h2>
-                <p class="text-medium text-sm md:text-base font-light leading-relaxed line-clamp-4">{{ item.deck }}</p>
-                <div class="mt-4 flex items-center gap-2 text-detail-primary font-bold text-sm">
+                <span class="text-xs sf-bold uppercase tracking-wider text-detail-primary">Servicios</span>
+                <h2 class="sf-bold sf-text-dark text-xl lg:text-2xl group-hover:text-detail-primary transition-colors">{{ item.title }}</h2>
+                <p class="sf-text-medium text-sm md:text-base sf-light leading-relaxed line-clamp-4">{{ item.deck }}</p>
+                <div class="mt-4 flex items-center gap-2 text-detail-primary sf-bold text-sm">
                   Ver Servicio
                   <Icon name="heroicons:arrow-right" />
                 </div>
@@ -93,10 +93,10 @@ useHead({
                 <img :src="item.src" :alt="item.title" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
               </div>
               <div class="flex flex-col p-6 md:p-8 w-full md:flex-1 gap-4 justify-center">
-                <span class="text-xs font-bold uppercase tracking-wider text-detail-primary">Proyecto Destacado</span>
-                <h2 class="font-bold text-dark text-xl lg:text-2xl group-hover:text-detail-primary transition-colors">{{ item.title }}</h2>
-                <p class="text-medium text-sm md:text-base font-light leading-relaxed line-clamp-4">{{ item.description }}</p>
-                <div class="mt-4 flex items-center gap-2 text-detail-primary font-bold text-sm">
+                <span class="text-xs sf-bold uppercase tracking-wider text-detail-primary">Proyecto Destacado</span>
+                <h2 class="sf-bold sf-text-dark text-xl lg:text-2xl group-hover:text-detail-primary transition-colors">{{ item.title }}</h2>
+                <p class="sf-text-medium text-sm md:text-base sf-light leading-relaxed line-clamp-4">{{ item.description }}</p>
+                <div class="mt-4 flex items-center gap-2 text-detail-primary sf-bold text-sm">
                   Ver en Proyectos
                   <Icon name="heroicons:arrow-right" />
                 </div>
@@ -109,13 +109,13 @@ useHead({
 
       <div v-else class="text-center py-20 bg-white rounded-xl shadow-sm">
         <Icon name="heroicons:magnifying-glass" size="4rem" class="text-gray-200 mb-6 mx-auto" />
-        <h3 class="text-2xl font-bold text-dark mb-2">No se encontraron resultados</h3>
-        <p class="text-medium font-light">
-          Prueba con otros términos de búsqueda.
+        <h3 class="text-2xl sf-bold sf-text-dark mb-2">No se encontraron resultados</h3>
+        <p class="sf-text-medium sf-light">
+          Prueba con otros tÃ©rminos de bÃºsqueda.
         </p>
         <NuxtLink 
           to="/" 
-          class="inline-block mt-8 px-8 py-3 bg-detail-primary text-white font-bold rounded-lg shadow-md hover:bg-red-700 transition"
+          class="inline-block mt-8 px-8 py-3 bg-detail-primary text-white sf-bold rounded-lg shadow-md hover:bg-red-700 transition"
         >
           Volver al Inicio
         </NuxtLink>
@@ -123,3 +123,4 @@ useHead({
     </div>
   </div>
 </template>
+

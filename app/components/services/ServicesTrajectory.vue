@@ -1,38 +1,35 @@
 <template>
-  <section class="relative w-full bg-[#fafafa] py-12 lg:py-24 overflow-hidden font-sans border-t border-gray-100">
-    <!-- Sophisticated Technical Layers -->
-    <div class="absolute inset-x-0 top-0 h-full premium-glow"></div>
+  <section class="relative w-full bg-secondary py-12 lg:py-24 overflow-hidden font-sans border-none">
+    <!-- Dossier Background (Slide 3 Style) -->
+    <div class="absolute inset-0 z-0">
+        <img src="~/assets/img/Kevin_torno.png" alt="Workshop Backdrop" class="w-full h-full object-cover opacity-20 grayscale mix-blend-overlay" />
+        <div class="absolute inset-0 bg-gradient-to-br from-primary via-primary/95 to-transparent"></div>
+    </div>
     
-    <!-- Fine Technical Grid -->
-    <div class="absolute inset-0 z-0 technical-grid opacity-[0.03] pointer-events-none"></div>
-
-    <!-- Blueprint Trace (Strategic placement) -->
-    <div class="absolute -right-20 top-20 w-1/3 h-full opacity-[0.06] pointer-events-none grayscale">
-       <img src="/img/blueprint_bg.png" alt="" class="w-full h-full object-contain" />
+    <!-- Large Branding Shapes -->
+    <div class="absolute -left-24 -bottom-24 w-[600px] h-[800px] z-0 opacity-10 pointer-events-none transform -rotate-12">
+        <svg viewBox="0 0 600 800" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-accent w-full h-full">
+            <path d="M100 100L500 300V450L100 250V100Z" fill="currentColor"/>
+            <path d="M50 350L450 550V700L50 500V350Z" fill="currentColor" opacity="0.6"/>
+        </svg>
     </div>
-
-    <!-- Side Precision Measure Line -->
-    <div class="absolute left-0 top-0 h-full w-[2px] bg-gradient-to-b from-transparent via-primary/10 to-transparent flex flex-col justify-between py-20 px-2">
-       <div v-for="i in 10" :key="i" class="w-2 h-[1px] bg-primary/20"></div>
-    </div>
-
     <div class="custom-container relative z-10 flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
       
       <!-- Left Column: Approach Text -->
       <div class="w-full lg:w-1/2">
          <div class="flex items-center gap-4 mb-8">
-            <div class="h-[2px] w-12 bg-primary"></div>
-            <span class="text-xs font-bold uppercase tracking-[0.4em] text-primary">Ingeniería de Clase Mundial</span>
+            <div class="h-[2px] w-12 bg-accent"></div>
+            <span class="text-xs sf-bold uppercase tracking-[0.4em] text-accent">Ingeniería de Clase Mundial</span>
          </div>
          
-         <h2 class="text-3xl lg:text-6xl font-bold text-secondary uppercase tracking-tighter leading-tight mb-8">
+         <h2 class="text-4xl lg:text-7xl sf-bold text-white uppercase tracking-tighter leading-tight mb-8">
             Enfoque técnico <br/>
-            <span class="text-primary italic">Personalizado</span>
+            <span class="text-accent italic">Personalizado</span>
          </h2>
          
-         <div class="space-y-6 text-gray-600 font-light leading-relaxed text-base lg:text-lg">
+         <div class="space-y-6 text-gray-300 sf-light leading-relaxed text-base lg:text-lg border-l border-accent/20 pl-8">
             <p>
-               En <span class="text-primary font-bold">StahlForm</span>, cada servicio está respaldado por un riguroso análisis de ingeniería. No aplicamos soluciones genéricas; desarrollamos estrategias específicas para los desafíos operativos de cada cliente.
+               En <span class="text-primary sf-bold">StahlForm</span>, cada servicio está respaldado por un riguroso análisis de Ingeniería. No aplicamos soluciones genéricas; desarrollamos estrategias específicas para los desafíos operativos de cada cliente.
             </p>
             <p>
                Nuestra capacidad de integrar **fotogrametría, escaneo 3D y simulaciones de carga** nos permite entregar componentes con una precisión milimétrica, reduciendo los tiempos de parada y optimizando la vida útil de sus equipos críticos.
@@ -45,34 +42,25 @@
          
          <!-- Counter 1 -->
          <div class="flex flex-col items-center text-center p-8 bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-primary/20 transition-all duration-500 group">
-            <span class="text-5xl lg:text-7xl font-bold text-primary tracking-tighter mb-2 group-hover:scale-110 transition-transform duration-500">15</span>
-            <p class="text-[10px] font-bold text-gray-400 uppercase tracking-[0.2em]">Años de <br/> Trayectoria</p>
+            <span class="text-5xl lg:text-7xl sf-bold text-accent tracking-tighter mb-2 group-hover:scale-110 transition-transform duration-500">15</span>
+            <p class="text-[10px] sf-bold text-gray-400 uppercase tracking-[0.2em]">Años de <br/> Trayectoria</p>
          </div>
 
          <!-- Counter 2 -->
          <div class="flex flex-col items-center text-center p-8 bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-primary/20 transition-all duration-500 group">
-            <span class="text-5xl lg:text-7xl font-bold text-primary tracking-tighter mb-2 group-hover:scale-110 transition-transform duration-500">500+</span>
-            <p class="text-[10px] font-bold text-gray-400 uppercase tracking-[0.2em]">Proyectos <br/> Exitosos</p>
+            <span class="text-5xl lg:text-7xl sf-bold text-accent tracking-tighter mb-2 group-hover:scale-110 transition-transform duration-500">500+</span>
+            <p class="text-[10px] sf-bold text-gray-400 uppercase tracking-[0.2em]">Proyectos <br/> Exitosos</p>
          </div>
 
          <!-- Counter 3 -->
          <div class="flex flex-col items-center text-center p-8 bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-primary/20 transition-all duration-500 group">
-            <span class="text-5xl lg:text-7xl font-bold text-primary tracking-tighter mb-2 group-hover:scale-110 transition-transform duration-500">100%</span>
-            <p class="text-[10px] font-bold text-gray-400 uppercase tracking-[0.2em]">Trazabilidad <br/> Técnica</p>
+            <span class="text-5xl lg:text-7xl sf-bold text-accent tracking-tighter mb-2 group-hover:scale-110 transition-transform duration-500">100%</span>
+            <p class="text-[10px] sf-bold text-gray-400 uppercase tracking-[0.2em]">Trazabilidad <br/> Técnica</p>
          </div>
-
       </div>
-
     </div>
   </section>
 </template>
 
 <style scoped>
-.technical-grid {
-    background: radial-gradient(var(--primary) 1px, transparent 0);
-    background-size: 50px 50px;
-}
-.premium-glow {
-    background: radial-gradient(circle at 50% 0%, white 0%, transparent 100%);
-}
 </style>

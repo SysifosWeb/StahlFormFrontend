@@ -8,17 +8,17 @@
 </script>
 
 <template>
-  <section id="taller-bento" class="py-24 bg-white border-t border-gray-100">
+  <section id="taller-bento" class="py-24 bg-[var(--background-medium)] border-t border-gray-100">
     <div class="custom-container">
       
       <!-- Section Header -->
       <div class="mb-12">
         <div class="flex items-center gap-4 mb-4">
           <div class="w-12 h-[2px] bg-[#c8d400]"></div>
-          <span class="text-[10px] font-bold uppercase tracking-[0.4em] text-[#003e49]">Nuestras Instalaciones</span>
+          <span class="text-[10px] sf-bold uppercase tracking-[0.4em] text-[#003e49]">Nuestras Instalaciones</span>
         </div>
-        <h2 class="text-4xl lg:text-5xl font-black uppercase tracking-tighter text-[#1a1a1a]">
-          Ingeniería en <span class="text-[#003e49] italic">Acción:</span> Nuestro Taller
+        <h2 class="text-4xl lg:text-6xl sf-bold uppercase tracking-tighter text-secondary leading-tight">
+          Ingeniería en <span class="text-accent italic">Acción</span>
         </h2>
       </div>
 
@@ -38,10 +38,9 @@
           <div class="absolute bottom-8 left-8 right-8 z-10">
              <div class="flex items-center gap-2 mb-4">
                 <div class="w-2 h-2 rounded-full bg-[#d4ff00] animate-pulse"></div>
-                <!-- <span class="text-[10px] font-mono text-white/80 uppercase tracking-widest">SF_WORKSHOP_9:16</span> -->
              </div>
-             <h4 class="text-2xl lg:text-3xl font-bold text-white uppercase tracking-tighter leading-none">
-                Procesos en <br/> Tiempo Real
+             <h4 class="text-2xl lg:text-3xl sf-bold text-white uppercase tracking-tighter leading-none">  
+                Ensayo no <br/> destructivo
              </h4>
           </div>
         </div>
@@ -84,10 +83,6 @@
           />
           <!-- 30% Petroleum Overlay -->
           <div class="absolute inset-0 bg-[#0d2a2d] opacity-30 transition-opacity duration-500 group-hover:opacity-0"></div>
-          
-          <div class="absolute bottom-6 left-6">
-             <!-- <span class="text-[10px] font-mono text-white/90 uppercase tracking-widest bg-black/40 backdrop-blur-sm px-3 py-1.5 border border-white/10 rounded-sm">SF_COMP_772</span> -->
-          </div>
         </div>
 
         <!-- BLOCK 4: Square Photo (1x1) - Precision Piece -->
@@ -105,8 +100,7 @@
           </div>
 
           <div class="absolute bottom-6 left-6 right-6">
-             <h4 class="text-xl font-bold text-white uppercase tracking-tighter mb-1">Precisión Certificada</h4>
-             <!-- <span class="text-[10px] font-mono text-[#d4ff00] uppercase tracking-widest">QC_CALIBRATION_OK</span> -->
+             <h4 class="text-xl sf-bold text-white uppercase tracking-tighter mb-1">Precisión Certificada</h4>
           </div>
         </div>
 

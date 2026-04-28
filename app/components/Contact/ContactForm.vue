@@ -1,4 +1,4 @@
-<script setup>
+﻿<script setup>
 import { ref } from 'vue'
 // SEO con useHead nativo de Nuxt
 const formData = ref({
@@ -66,7 +66,7 @@ const handleSubmit = async () => {
     // Resetear formulario
     formData.value = { nombre: '', email: '', telefono: '', mensaje: '', motivo: '', otroMotivo: '', documento: null }
     fileName.value = ''
-    showNotification('success', 'Requerimiento Recibido', 'Un ingeniero se pondrá en contacto pronto.')
+    showNotification('success', 'Requerimiento Recibido', 'Un ingeniero se pondrÃ¡ en contacto pronto.')
   } catch (err) {
     showNotification('error', 'Error del Sistema', 'No se pudo procesar su solicitud. Intente nuevamente.')
     if (err.response?._data?.errors) {
@@ -83,7 +83,7 @@ const handleSubmit = async () => {
 <template>
   <div class="relative bg-white overflow-hidden font-sans">
 
-    <!-- Notificación Toast Profesional -->
+    <!-- NotificaciÃ³n Toast Profesional -->
     <Teleport to="body">
       <Transition
         enter-active-class="transition duration-500 ease-out"
@@ -102,7 +102,7 @@ const handleSubmit = async () => {
             <svg class="w-5 h-5 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"></path></svg>
           </div>
           <div>
-            <h4 class="font-bold text-[11px] tracking-widest uppercase text-white">{{ notification.title }}</h4>
+            <h4 class="sf-bold text-[11px] tracking-widest uppercase text-white">{{ notification.title }}</h4>
             <p class="text-[13px] text-gray-300 mt-0.5 leading-tight">{{ notification.message }}</p>
           </div>
         </div>
@@ -117,7 +117,7 @@ const handleSubmit = async () => {
 
     <!-- Coordinate Accents in Corners for "Engineering Terminal" feel -->
     <div class="absolute top-12 left-12 opacity-30 cursor-default">
-       <span class="text-[9px] font-mono text-secondary uppercase tracking-widest">[ 29.9880° S, 71.3535° W ]</span>
+       <span class="text-[9px] font-mono text-secondary uppercase tracking-widest">[ 29.9880Â° S, 71.3535Â° W ]</span>
     </div>
     <div class="absolute bottom-12 right-12 opacity-30 cursor-default">
        <span class="text-[9px] font-mono text-secondary uppercase tracking-widest">S-TLFRM // SYS_2024</span>
@@ -132,15 +132,15 @@ const handleSubmit = async () => {
              <div class="space-y-6">
                 <div class="flex items-center gap-4">
                    <div class="h-[2px] w-12 bg-primary"></div>
-                   <span class="text-[10px] font-bold text-primary uppercase tracking-[0.4em]">StahlForm Core Ingeniería</span>
+                   <span class="text-[10px] sf-bold text-primary uppercase tracking-[0.4em]">StahlForm Core Ingeniería</span>
                 </div>
                 
-                <h2 class="text-4xl lg:text-7xl font-bold text-secondary uppercase tracking-tighter leading-none">
+                <h2 class="text-4xl lg:text-6xl sf-bold text-secondary uppercase tracking-tighter leading-tight">
                    Inicie su <br/>
                    <span class="text-primary italic">Proyecto</span>
                 </h2>
 
-                <p class="text-gray-500 font-light text-lg leading-relaxed max-w-md">
+                <p class="text-gray-500 sf-light text-lg leading-relaxed max-w-md">
                    Proporcione los detalles técnicos iniciales para que nuestro equipo pueda realizar una evaluación preliminar de sus activos.
                 </p>
              </div>
@@ -150,15 +150,15 @@ const handleSubmit = async () => {
                 <div class="flex items-center gap-6 group">
                    <div class="w-1.5 h-12 bg-primary group-hover:scale-y-125 transition-transform origin-bottom duration-500"></div>
                    <div>
-                      <p class="text-[9px] font-bold text-gray-400 uppercase tracking-widest mb-1">Ingeniería & Ventas</p>
-                      <p class="text-xl font-bold text-secondary">contacto@stahlform.cl</p>
+                      <p class="text-[9px] sf-bold text-gray-400 uppercase tracking-widest mb-1">Ingeniería & Ventas</p>
+                      <p class="text-xl sf-bold text-secondary">contacto@stahlform.cl</p>
                    </div>
                 </div>
                 <div class="flex items-center gap-6 group">
                    <div class="w-1.5 h-12 bg-primary group-hover:scale-y-125 transition-transform origin-bottom duration-500"></div>
                    <div>
-                      <p class="text-[9px] font-bold text-gray-400 uppercase tracking-widest mb-1">Asistencia Crítica</p>
-                      <p class="text-xl font-bold text-secondary">+56 2 2345 6789</p>
+                      <p class="text-[9px] sf-bold text-gray-400 uppercase tracking-widest mb-1">Asistencia Crítica</p>
+                      <p class="text-xl sf-bold text-secondary">+56 2 2345 6789</p>
                    </div>
                 </div>
              </div>
@@ -181,17 +181,17 @@ const handleSubmit = async () => {
                      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
                         
                         <div class="relative group">
-                           <label class="absolute -top-3 left-0 bg-white px-2 text-[10px] font-bold uppercase tracking-widest text-primary z-10 transition-colors group-focus-within:text-secondary">Nombre Completo</label>
+                           <label class="absolute -top-3 left-0 bg-white px-2 text-[10px] sf-bold uppercase tracking-widest text-primary z-10 transition-colors group-focus-within:text-secondary">Nombre Completo</label>
                            <input
                               v-model="formData.nombre"
                               type="text"
-                              placeholder="Ej. Juan Pérez"
+                              placeholder="Ej. Juan PÃ©rez"
                               class="w-full bg-transparent border-b-2 border-gray-100 py-4 outline-none focus:border-primary transition-colors text-secondary placeholder:text-gray-200"
                            />
                         </div>
 
                         <div class="relative group">
-                           <label class="absolute -top-3 left-0 bg-white px-2 text-[10px] font-bold uppercase tracking-widest text-primary z-10 transition-colors group-focus-within:text-secondary">Correo Directo</label>
+                           <label class="absolute -top-3 left-0 bg-white px-2 text-[10px] sf-bold uppercase tracking-widest text-primary z-10 transition-colors group-focus-within:text-secondary">Correo Directo</label>
                            <input
                               v-model="formData.email"
                               type="email"
@@ -201,7 +201,7 @@ const handleSubmit = async () => {
                         </div>
 
                         <div class="relative group md:col-span-2">
-                           <label class="absolute -top-3 left-0 bg-white px-2 text-[10px] font-bold uppercase tracking-widest text-primary z-10 transition-colors group-focus-within:text-secondary">Número de Contacto</label>
+                           <label class="absolute -top-3 left-0 bg-white px-2 text-[10px] sf-bold uppercase tracking-widest text-primary z-10 transition-colors group-focus-within:text-secondary">Número de Contacto</label>
                            <input
                               v-model="formData.telefono"
                               type="tel"
@@ -211,11 +211,11 @@ const handleSubmit = async () => {
                         </div>
 
                         <div class="relative group md:col-span-2">
-                           <label class="absolute -top-3 left-0 bg-white px-2 text-[10px] font-bold uppercase tracking-widest text-primary z-10 transition-colors group-focus-within:text-secondary">Especificaciones del Requerimiento</label>
+                           <label class="absolute -top-3 left-0 bg-white px-2 text-[10px] sf-bold uppercase tracking-widest text-primary z-10 transition-colors group-focus-within:text-secondary">Especificaciones del Requerimiento</label>
                            <textarea
                               v-model="formData.mensaje"
                               rows="3"
-                              placeholder="Describa el equipo, falla o necesidad técnica..."
+                              placeholder="Describa el equipo, falla o necesidad tÃ©cnica..."
                               class="w-full bg-transparent border-b-2 border-gray-100 py-4 outline-none focus:border-primary transition-colors text-secondary placeholder:text-gray-200 resize-none"
                            ></textarea>
                         </div>
@@ -223,12 +223,12 @@ const handleSubmit = async () => {
 
                      <!-- Optimized Action Area -->
                      <div class="flex flex-col md:flex-row items-center justify-between gap-6 pt-2 mt-4">
-                        <p class="text-[9px] text-gray-400 uppercase tracking-widest font-bold">Respuesta Técnica: <span class="text-secondary">En menos de 24h</span></p>
+                        <p class="text-[9px] text-gray-400 uppercase tracking-widest sf-bold">Respuesta Técnica: <span class="text-secondary">En menos de 24h</span></p>
 
                         <button
                            type="submit"
                            :disabled="loading"
-                           class="w-full md:w-auto h-16 px-12 rounded-xl bg-primary text-white font-bold flex items-center justify-center gap-5 group hover:bg-[#1a5c4d] transition-all shadow-xl shadow-primary/10 hover:shadow-[#1a5c4d]/30"
+                           class="w-full md:w-auto h-16 px-12 rounded-xl bg-primary text-white sf-bold flex items-center justify-center gap-5 group hover:bg-[#1a5c4d] transition-all shadow-xl shadow-primary/10 hover:shadow-[#1a5c4d]/30"
                         >
                            <span class="text-xs uppercase tracking-[0.2em] italic">{{ loading ? 'Procesando...' : 'Enviar Requerimiento' }}</span>
                            <svg v-if="!loading" class="w-5 h-5 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
@@ -248,3 +248,4 @@ const handleSubmit = async () => {
 <style scoped>
 /* Las fuentes se cargan en nuxt.config.ts para mejor rendimiento */
 </style>
+

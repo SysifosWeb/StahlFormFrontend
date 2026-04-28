@@ -1,4 +1,4 @@
-<script setup>
+﻿<script setup>
 definePageMeta({
   layout: 'secondary',
   title: 'Nuestra empresa'

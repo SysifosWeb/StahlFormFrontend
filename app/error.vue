@@ -1,4 +1,4 @@
-<script setup>
+﻿<script setup>
 defineProps({
   error: Object
 })
@@ -9,7 +9,7 @@ const handleError = () => clearError({ redirect: '/' })
 <template>
   <div class="flex flex-col items-center justify-center min-h-screen bg-dark-primary text-white font-['Poppins']">
     <div class="text-center p-8">
-      <h1 class="text-9xl font-bold text-detail-primary mb-4 animate-bounce">
+      <h1 class="text-9xl sf-bold text-detail-primary mb-4 animate-bounce">
         404
       </h1>
       <h2 class="text-3xl md:text-4xl font-semibold mb-6">
@@ -21,7 +21,7 @@ const handleError = () => clearError({ redirect: '/' })
       
       <button
         @click="handleError"
-        class="bg-detail-primary hover:bg-red-700 text-white font-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center gap-2 mx-auto"
+        class="bg-detail-primary hover:bg-red-700 text-white sf-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center gap-2 mx-auto"
       >
         Volver al Inicio
       </button>
@@ -49,3 +49,4 @@ const handleError = () => clearError({ redirect: '/' })
   }
 }
 </style>
+
