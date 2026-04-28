@@ -1,4 +1,4 @@
-import { d as defineEventHandler, r as readMultipartFormData, c as createError } from '../../nitro/nitro.mjs';
+import { d as defineEventHandler, u as useRuntimeConfig, r as readMultipartFormData, c as createError } from '../../nitro/nitro.mjs';
 import nodemailer from 'nodemailer';
 import 'node:http';
 import 'node:https';
@@ -13,6 +13,7 @@ import 'consola';
 
 const contacts_post = defineEventHandler(async (event) => {
   try {
+    const config = useRuntimeConfig(event);
     const formData = await readMultipartFormData(event);
     if (!formData) {
       throw createError({ statusCode: 400, statusMessage: "No data provided" });
@@ -35,18 +36,18 @@ const contacts_post = defineEventHandler(async (event) => {
       throw createError({ statusCode: 400, data: { errors: { general: ["Faltan campos requeridos (nombre, email, mensaje)."] } } });
     }
     const transporter = nodemailer.createTransport({
-      host: process.env.SMTP_HOST,
-      port: Number(process.env.SMTP_PORT),
+      host: config.smtpHost,
+      port: Number(config.smtpPort),
       secure: true,
       // true for 465, false for 587
       auth: {
-        user: process.env.SMTP_USER,
-        pass: process.env.SMTP_PASS
+        user: config.smtpUser,
+        pass: config.smtpPass
       }
     });
     const attachments = fileAttachment ? [fileAttachment] : [];
     const adminMailOptions = {
-      from: `"StahlForm Web" <${process.env.SMTP_USER}>`,
+      from: `"StahlForm Web" <${config.smtpUser}>`,
       to: "contacto@sysifosweb.cl",
       // Correo destino de los mensajes
       replyTo: email,
@@ -88,7 +89,7 @@ const contacts_post = defineEventHandler(async (event) => {
       attachments
     };
     const clientMailOptions = {
-      from: `"StahlForm Core Ingenier\xEDa" <${process.env.SMTP_USER}>`,
+      from: `"StahlForm Core Ingenier\xEDa" <${config.smtpUser}>`,
       to: email,
       subject: `Recepci\xF3n de su Requerimiento - StahlForm`,
       html: `
