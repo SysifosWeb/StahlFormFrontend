@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     smtpUser: process.env.SMTP_USER,
     smtpPass: process.env.SMTP_PASS,
   },
-  ssr: false,
+  ssr: true,
   compatibilityDate: '2025-07-15',
   devtools: { enabled: false },
   modules: ['@nuxt/fonts', '@nuxtjs/tailwindcss', '@nuxt/icon'],

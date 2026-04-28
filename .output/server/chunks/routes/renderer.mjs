@@ -1,18 +1,11 @@
 import { createRenderer, getRequestDependencies, getPreloadLinks, getPrefetchLinks } from 'vue-bundle-renderer/runtime';
 import { b as buildAssetsURL, u as useRuntimeConfig, g as getResponseStatusText, a as getResponseStatus, e as defineRenderHandler, p as publicAssetsURL, f as getQuery, c as createError, h as destr, i as getRouteRules, j as joinURL, k as useNitroApp } from '../nitro/nitro.mjs';
+import { renderToString } from 'vue/server-renderer';
 import { createHead as createHead$1, propsToString, renderSSRHead } from 'unhead/server';
 import { stringify, uneval } from 'devalue';
-import { isRef, toValue } from 'vue';
-import 'node:http';
-import 'node:https';
-import 'node:events';
-import 'node:buffer';
-import 'node:fs';
-import 'node:path';
-import 'node:crypto';
-import 'node:url';
-import '@iconify/utils';
-import 'consola';
+import { FlatMetaPlugin } from 'unhead/plugins';
+import { walkResolver } from 'unhead/utils';
+import { isRef, toValue, hasInjectionContext, inject, ref, watchEffect, getCurrentInstance, onBeforeUnmount, onDeactivated, onActivated } from 'vue';
 
 const VueResolver = (_, value) => {
   return isRef(value) ? toValue(value) : value;
@@ -32,6 +25,56 @@ function vueInstall(head) {
 }
 
 // @__NO_SIDE_EFFECTS__
+function injectHead() {
+  if (hasInjectionContext()) {
+    const instance = inject(headSymbol);
+    if (instance) {
+      return instance;
+    }
+  }
+  throw new Error("useHead() was called without provide context, ensure you call it through the setup() function.");
+}
+function useHead(input, options = {}) {
+  const head = options.head || /* @__PURE__ */ injectHead();
+  return head.ssr ? head.push(input || {}, options) : clientUseHead(head, input, options);
+}
+function clientUseHead(head, input, options = {}) {
+  const deactivated = ref(false);
+  let entry;
+  watchEffect(() => {
+    const i = deactivated.value ? {} : walkResolver(input, VueResolver);
+    if (entry) {
+      entry.patch(i);
+    } else {
+      entry = head.push(i, options);
+    }
+  });
+  const vm = getCurrentInstance();
+  if (vm) {
+    onBeforeUnmount(() => {
+      entry.dispose();
+    });
+    onDeactivated(() => {
+      deactivated.value = true;
+    });
+    onActivated(() => {
+      deactivated.value = false;
+    });
+  }
+  return entry;
+}
+function useSeoMeta(input = {}, options = {}) {
+  const head = options.head || /* @__PURE__ */ injectHead();
+  head.use(FlatMetaPlugin);
+  const { title, titleTemplate, ...meta } = input;
+  return useHead({
+    title,
+    titleTemplate,
+    _flatMeta: meta
+  }, options);
+}
+
+// @__NO_SIDE_EFFECTS__
 function createHead(options = {}) {
   const head = createHead$1({
     ...options,
@@ -41,7 +84,7 @@ function createHead(options = {}) {
   return head;
 }
 
-const NUXT_PAYLOAD_INLINE = true;
+const NUXT_PAYLOAD_INLINE = false;
 const NUXT_RUNTIME_PAYLOAD_EXTRACTION = false;
 
 const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"},{"name":"author","content":"StahlForm PyC Ltda."},{"name":"robots","content":"index, follow"},{"name":"theme-color","content":"#003e49"},{"name":"geo.region","content":"CL-CO"},{"name":"geo.placename","content":"La Serena, Coquimbo"},{"name":"geo.position","content":"-29.9059;-71.2501"},{"name":"ICBM","content":"-29.9059, -71.2501"},{"property":"og:site_name","content":"StahlForm PyC"},{"property":"og:type","content":"website"},{"property":"og:locale","content":"es_CL"},{"property":"og:image","content":"https://www.stahlform.cl/img/og-stahlform.png"},{"property":"og:image:width","content":"1200"},{"property":"og:image:height","content":"630"},{"property":"og:image:type","content":"image/png"},{"name":"twitter:card","content":"summary_large_image"},{"name":"twitter:image","content":"https://www.stahlform.cl/img/og-stahlform.png"}],"link":[{"rel":"icon","type":"image/png","href":"/favicon.png"},{"rel":"canonical","href":"https://www.stahlform.cl"}],"style":[],"script":[],"noscript":[],"htmlAttrs":{"lang":"es-CL"},"charset":"utf-8","viewport":"width=device-width, initial-scale=1","titleTemplate":"%s"};
@@ -63,7 +106,31 @@ const appId = "nuxt-app";
 const APP_ROOT_OPEN_TAG = `<${appRootTag}${propsToString(appRootAttrs)}>`;
 const APP_ROOT_CLOSE_TAG = `</${appRootTag}>`;
 // @ts-expect-error file will be produced after app build
+const getServerEntry = () => import('../build/server.mjs').then((r) => r.default || r);
+// @ts-expect-error file will be produced after app build
 const getPrecomputedDependencies = () => import('../build/client.precomputed.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
+// -- SSR Renderer --
+const getSSRRenderer = lazyCachedFunction(async () => {
+	// Load server bundle
+	const createSSRApp = await getServerEntry();
+	if (!createSSRApp) {
+		throw new Error("Server bundle is not available");
+	}
+	// Load precomputed dependencies
+	const precomputed = await getPrecomputedDependencies();
+	// Create renderer
+	const renderer = createRenderer(createSSRApp, {
+		precomputed,
+		manifest: undefined,
+		renderToString: renderToString$1,
+		buildAssetsURL
+	});
+	async function renderToString$1(input, context) {
+		const html = await renderToString(input, context);
+		return APP_ROOT_OPEN_TAG + html + APP_ROOT_CLOSE_TAG;
+	}
+	return renderer;
+});
 // -- SPA Renderer --
 const getSPARenderer = lazyCachedFunction(async () => {
 	const precomputed = await getPrecomputedDependencies();
@@ -113,8 +180,10 @@ function lazyCachedFunction(fn) {
 	};
 }
 function getRenderer(ssrContext) {
-	return getSPARenderer() ;
+	return ssrContext.noSSR ? getSPARenderer() : getSSRRenderer();
 }
+// @ts-expect-error file will be produced after app build
+const getSSRStyles = lazyCachedFunction(() => import('../build/styles.mjs').then((r) => r.default || r));
 
 function renderPayloadResponse(ssrContext) {
 	return {
@@ -133,7 +202,7 @@ function renderPayloadJsonScript(opts) {
 		"type": "application/json",
 		"innerHTML": contents,
 		"data-nuxt-data": appId,
-		"data-ssr": false
+		"data-ssr": !(opts.ssrContext.noSSR)
 	};
 	{
 		payload.id = "__NUXT_DATA__";
@@ -175,7 +244,7 @@ function createSSRContext(event) {
 		url: event.path,
 		event,
 		runtimeConfig: useRuntimeConfig(event),
-		noSSR: true,
+		noSSR: event.context.nuxt?.noSSR || (false),
 		head: createHead(unheadOptions),
 		error: false,
 		nuxt: undefined,
@@ -191,7 +260,22 @@ function setSSRError(ssrContext, error) {
 	ssrContext.url = error.url;
 }
 
+async function renderInlineStyles(usedModules) {
+	const styleMap = await getSSRStyles();
+	const inlinedStyles = new Set();
+	for (const mod of usedModules) {
+		if (mod in styleMap && styleMap[mod]) {
+			for (const style of await styleMap[mod]()) {
+				inlinedStyles.add(style);
+			}
+		}
+	}
+	return Array.from(inlinedStyles).map((style) => ({ innerHTML: style }));
+}
+
 const renderSSRHeadOptions = {"omitLineBreaks":true};
+
+const entryIds = [];
 
 // @ts-expect-error private property consumed by vite-generated url helpers
 globalThis.__buildAssetsURL = buildAssetsURL;
@@ -251,7 +335,12 @@ const handler = defineRenderHandler(async (event) => {
 	}
 	const payloadURL = _PAYLOAD_EXTRACTION ? joinURL(ssrContext.runtimeConfig.app.cdnURL || ssrContext.runtimeConfig.app.baseURL, ssrContext.url.replace(/\?.*$/, ""), PAYLOAD_FILENAME) + "?" + ssrContext.runtimeConfig.app.buildId : undefined;
 	// Render app
-	const renderer = await getRenderer();
+	const renderer = await getRenderer(ssrContext);
+	{
+		for (const id of entryIds) {
+			ssrContext.modules.add(id);
+		}
+	}
 	const _rendered = await renderer.renderToString(ssrContext).catch(async (error) => {
 		// We use error to bypass full render if we have an early response we can make
 		// TODO: remove _renderResponse in nuxt v5
@@ -265,7 +354,7 @@ const handler = defineRenderHandler(async (event) => {
 	});
 	// Render inline styles
 	// TODO: remove _renderResponse in nuxt v5
-	const inlinedStyles = [];
+	const inlinedStyles = !ssrContext["~renderResponse"] && !ssrContext._renderResponse && !isRenderingPayload ? await renderInlineStyles(ssrContext.modules ?? []) : [];
 	await ssrContext.nuxt?.hooks.callHook("app:rendered", {
 		ssrContext,
 		renderResult: _rendered
@@ -396,5 +485,10 @@ function renderHTMLDocument(html) {
 	return "<!DOCTYPE html>" + `<html${joinAttrs(html.htmlAttrs)}>` + `<head>${joinTags(html.head)}</head>` + `<body${joinAttrs(html.bodyAttrs)}>${joinTags(html.bodyPrepend)}${joinTags(html.body)}${joinTags(html.bodyAppend)}</body>` + "</html>";
 }
 
-export { handler as default };
+const renderer = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  default: handler
+}, Symbol.toStringTag, { value: 'Module' }));
+
+export { useSeoMeta as a, headSymbol as h, renderer as r, useHead as u };
 //# sourceMappingURL=renderer.mjs.map
