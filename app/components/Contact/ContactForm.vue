@@ -112,13 +112,7 @@ const handleSubmit = async () => {
     </Teleport>
 
 
-    <!-- Coordinate Accents in Corners for "Engineering Terminal" feel -->
-    <div class="absolute top-12 left-12 opacity-30 cursor-default">
-      <span class="text-[9px] font-mono text-secondary uppercase tracking-widest">[ 29.9880Â° S, 71.3535Â° W ]</span>
-    </div>
-    <div class="absolute bottom-12 right-12 opacity-30 cursor-default">
-      <span class="text-[9px] font-mono text-secondary uppercase tracking-widest">S-TLFRM // SYS_2024</span>
-    </div>
+
 
     <section id="formulario-contacto" class="relative z-10 py-12 lg:py-20">
       <div class="custom-container">
@@ -133,9 +127,9 @@ const handleSubmit = async () => {
                   Ingeniería</span>
               </div>
 
-              <h2 class="text-4xl lg:text-6xl sf-bold text-secondary uppercase tracking-tighter leading-tight">
+              <h2 class="text-4xl lg:text-6xl font-black text-primary uppercase tracking-tighter leading-tight">
                 Inicie su <br />
-                <span class="text-primary italic">Proyecto</span>
+                <span class="font-black italic">Proyecto</span>
               </h2>
 
               <p class="text-gray-500 sf-light text-lg leading-relaxed max-w-md">
@@ -152,7 +146,7 @@ const handleSubmit = async () => {
                 </div>
                 <div>
                   <p class="text-[9px] sf-bold text-gray-400 uppercase tracking-widest mb-1">Ingeniería & Ventas</p>
-                  <p class="text-xl sf-bold text-secondary">kpasten@stahlformpyc.cl</p>
+                  <p class="text-xl sf-medium text-primary">kpasten@stahlformpyc.cl</p>
                 </div>
               </div>
               <div class="flex items-center gap-6 group">
@@ -161,7 +155,7 @@ const handleSubmit = async () => {
                 </div>
                 <div>
                   <p class="text-[9px] sf-bold text-gray-400 uppercase tracking-widest mb-1">Asistencia Crítica</p>
-                  <p class="text-xl sf-bold text-secondary">+56 9 44539842</p>
+                  <p class="text-xl sf-medium text-primary">+56 9 44539842</p>
                 </div>
               </div>
             </div>

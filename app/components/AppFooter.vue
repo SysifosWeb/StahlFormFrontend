@@ -136,7 +136,7 @@ import logoStahlForm from '~/assets/img/02 Logo_VerdeWebP.webp'
 
                   <iframe
                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3458.098237758977!2d-71.21116789999999!3d-29.91907389999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9691cac39c786537%3A0xe99c090da285b406!2sAv.%20Panor%C3%A1mica%20910%2C%201702224%20La%20Serena%2C%20Coquimbo!5e0!3m2!1ses!2scl!4v1777404294046!5m2!1ses!2scl"
-                     width="270" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                     class="w-full h-full" style="border:0;" allowfullscreen="" loading="lazy"
                      referrerpolicy="no-referrer-when-downgrade"></iframe>
                </div>
             </div>

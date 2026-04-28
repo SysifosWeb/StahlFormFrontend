@@ -33,9 +33,9 @@ import recurso38 from '~/assets/img/Recurso 38 (2).png'
             <div class="flex items-center gap-3 mb-4">
               <span class="text-[10px] sf-bold uppercase tracking-[0.5em] text-primary/70">Ingeniería Avanzada</span>
             </div>
-            <h2 class="text-3xl lg:text-7xl sf-bold uppercase tracking-tighter leading-[0.9]" style="font-weight: 700;">
-              <span class="text-primary sf-medium">Capacidad</span><br/>
-              <span class="text-white sf-medium italic inline-block mt-1">Multidisciplinaria</span>
+            <h2 class="text-3xl lg:text-6xl font-black text-white uppercase tracking-tighter leading-[0.9]">
+              <span class="text-primary font-black">Capacidad</span><br/>
+              <span class="text-white font-black inline-block mt-1">Multidisciplinaria</span>
             </h2>
           </div>
 

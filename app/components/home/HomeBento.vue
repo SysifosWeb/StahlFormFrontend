@@ -15,10 +15,10 @@
       <div class="mb-12">
         <div class="flex items-center gap-4 mb-4">
           <div class="w-12 h-[2px] bg-[#c8d400]"></div>
-          <span class="text-[10px] sf-bold uppercase tracking-[0.4em] text-[#003e49]">Nuestras Instalaciones</span>
+          <span class="text-[10px] font-black uppercase tracking-[0.4em] text-[#003e49]">Nuestras Instalaciones</span>
         </div>
-        <h2 class="text-4xl lg:text-6xl sf-bold uppercase tracking-tighter text-secondary leading-tight">
-          Ingeniería en <span class="text-accent italic">Acción</span>
+        <h2 class="text-4xl lg:text-6xl font-black uppercase tracking-tighter text-primary leading-tight">
+          Ingeniería en <span class="text-accent font-black">Acción</span>
         </h2>
       </div>
 

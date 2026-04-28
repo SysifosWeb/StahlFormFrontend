@@ -11,9 +11,9 @@
     
     <div class="custom-container relative z-10 flex flex-col items-center">
       <div class="text-center mb-20 max-w-2xl">
-         <h2 class="text-4xl lg:text-6xl sf-bold text-primary uppercase tracking-tighter mb-8 leading-tight">
+         <h2 class="text-4xl lg:text-6xl font-black text-primary uppercase tracking-tighter mb-8 leading-tight">
             Beneficios para su <br/>
-            <span class="text-accent italic">Operación</span>
+            <span class="text-primary font-black">Operación</span>
          </h2>
          <p class="text-sm sf-light text-primary leading-relaxed tracking-wide">
             Optimizamos la rentabilidad de su activo mediante una gestión de ingeniería centrada en la confiabilidad mecánica.

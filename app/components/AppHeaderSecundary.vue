@@ -26,7 +26,7 @@ defineProps({
                 <!-- <h5 class="text-[10px] md:text-xs sf-bold uppercase tracking-[0.2em] md:tracking-[0.3em] text-gray-400 mb-2 md:mb-3">
                     STAHLFORM | INGENIERÍA Y PROYECTOS EN MOVIMIENTO
                 </h5> -->
-                <h1 v-html="title" class="text-3xl md:text-5xl lg:text-5xl sf-bold text-white uppercase tracking-tight leading-tight drop-shadow-2xl">
+                <h1 v-html="title" class="text-3xl md:text-5xl lg:text-5xl font-black text-white uppercase tracking-tight leading-tight drop-shadow-2xl">
                 </h1>
             </div>
         </div>

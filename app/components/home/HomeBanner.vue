@@ -11,10 +11,10 @@
     <div class="absolute inset-0 technical-grid opacity-5 z-0"></div>
 
     <div class="custom-container relative z-10 text-center">
-      <h2 class="banner-title text-5xl lg:text-6xl text-white uppercase tracking-tighter leading-tight max-w-5xl mx-auto drop-shadow-2xl">
-        <span class="block mb-2 md:inline">INGENIERÍA PARA </span>
-        <span class="block mb-2 md:inline ml-0 md:ml-3 text-accent italic">Operaciones</span>
-        <span class="block mt-2 md:mt-0">CRÍTICAS.</span>
+      <h2 class="text-5xl lg:text-6xl text-white uppercase tracking-tighter leading-tight max-w-5xl mx-auto drop-shadow-2xl font-black">
+        <span class="block mb-2 md:inline font-black">INGENIERÍA PARA </span>
+        <span class="block mb-2 md:inline ml-0 md:ml-3 text-accent italic font-black font-black">Operaciones</span>
+        <span class="block mt-2 md:mt-0 font-black">CRÍTICAS.</span>
       </h2>
       <div class="mt-10 flex justify-center items-center gap-10">
           <div class="h-[1.5px] w-14 bg-accent/40"></div>

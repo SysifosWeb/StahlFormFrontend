@@ -26,28 +26,28 @@ import heroImage from '~/assets/img/Kevin_torno.png'
                <span class="text-xs sf-bold uppercase tracking-[0.4em] text-primary">Nuestra Visión</span>
             </div>
             
-            <h2 class="text-4xl lg:text-6xl sf-bold text-secondary uppercase tracking-tighter leading-tight mb-6">
+            <h2 class="text-4xl lg:text-6xl font-black text-primary uppercase tracking-tighter leading-tight mb-6">
                Socio Estratégico <br/>
-               <span class="text-accent italic">Técnico</span>
+               Técnico
             </h2>
             
-            <div class="space-y-4 text-gray-600 sf-light leading-relaxed text-base">
+            <div class="space-y-4 text-primary sf-light leading-relaxed text-base">
                <p>
-                  En <span class="text-accent sf-bold">StahlForm</span> no solo fabricamos; co-creamos soluciones. Entendemos que la continuidad operativa de nuestros clientes depende de la <span class="text-accent sf-bold italic">precisión</span> mecánica.
+                  En <span class="text-primary font-black">StahlForm</span> no solo fabricamos; co-creamos soluciones. Entendemos que la continuidad operativa de nuestros clientes depende de la <span class="text-primary font-black italic">precisión</span> mecánica.
                </p>
                <p>
-                  Aliado estratégico que aporta <span class="text-accent sf-bold">ingeniería aplicada</span> y una robusta infraestructura tecnológica para la gran minería.
+                  Aliado estratégico que aporta <span class="text-primary font-black">ingeniería aplicada</span> y una robusta infraestructura tecnológica para la gran minería.
                </p>
             </div>
 
          <div class="mt-12 grid grid-cols-2 gap-6 relative z-30 ">
-            <div class="background-medium p-6 rounded-2xl shadow-[0_15px_40px_rgba(0,0,0,0.1)] border border-white/20 flex flex-col items-center text-center transition-transform hover:-translate-y-2">
-               <p class="text-primary text-4xl lg:text-5xl mb-2 tracking-tighter sf-bold">15+</p>
-               <p class="text-[9px] uppercase tracking-widest sf-bold text-gray-400">Años de<br/>Experiencia</p>
+            <div class="bg-primary p-6 rounded-2xl shadow-[0_15px_40px_rgba(0,0,0,0.1)] border border-white/20 flex flex-col items-center text-center transition-transform hover:-translate-y-2">
+               <p class="text-accent text-4xl lg:text-5xl mb-2 tracking-tighter font-black">15+</p>
+               <p class="text-[9px] uppercase tracking-widest sf-bold text-white/80">Años de<br/>Experiencia</p>
             </div>
-            <div class="background-medium p-6 rounded-2xl shadow-[0_15px_40px_rgba(0,0,0,0.1)] border border-white/20 flex flex-col items-center text-center transition-transform hover:-translate-y-2">
-               <p class="text-primary text-4xl lg:text-5xl mb-2 tracking-tighter sf-bold">100%</p>
-               <p class="text-[9px] uppercase tracking-widest sf-bold text-gray-400">Trazabilidad<br/>Técnica</p>
+            <div class="bg-primary p-6 rounded-2xl shadow-[0_15px_40px_rgba(0,0,0,0.1)] border border-white/20 flex flex-col items-center text-center transition-transform hover:-translate-y-2">
+               <p class="text-accent text-4xl lg:text-5xl mb-2 tracking-tighter font-black">100%</p>
+               <p class="text-[9px] uppercase tracking-widest sf-bold text-white/80">Trazabilidad<br/>Técnica</p>
             </div>
          </div>
          </div>

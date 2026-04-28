@@ -22,9 +22,9 @@
             <div class="h-[1px] flex-1 bg-accent/20"></div>
          </div>
          
-         <h2 class="text-4xl lg:text-6xl sf-bold text-white uppercase tracking-tighter leading-tight mb-8">
+         <h2 class="text-4xl lg:text-6xl font-black text-white uppercase tracking-tighter leading-tight mb-8">
             Calidad <br/>
-            <span class="text-accent italic">Garantizada</span>
+            <span class="text-accent font-black">Garantizada</span>
          </h2>
 
          <p class="text-xl text-primary/70 sf-light leading-relaxed mb-10 italic">

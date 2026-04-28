@@ -20,13 +20,13 @@
          <!-- Left Column: Approach Text -->
          <div class="w-full lg:w-1/2">
             <div class="flex items-center gap-4 mb-8">
-               <div class="h-[2px] w-12 bg-accent"></div>
-               <span class="text-xs sf-bold uppercase tracking-[0.4em] text-accent">Ingeniería de Clase Mundial</span>
+               <div class="h-[2px] w-12 bg-primary"></div>
+               <span class="text-xs sf-bold uppercase tracking-[0.4em] text-primary">Ingeniería de Clase Mundial</span>
             </div>
 
-            <h2 class="text-4xl lg:text-7xl sf-bold text-primary uppercase tracking-tighter leading-tight mb-8">
+            <h2 class="text-4xl lg:text-7xl font-black text-primary uppercase tracking-tighter leading-tight mb-8">
                Enfoque técnico <br />
-               <span class="text-accent italic">Personalizado</span>
+               <span class=" font-black">Personalizado</span>
             </h2>
 
             <div
@@ -49,26 +49,26 @@
 
             <!-- Counter 1 -->
             <div
-               class="flex flex-col items-center text-center p-8 background-medium rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-primary/20 transition-all duration-500 group">
+               class="flex flex-col items-center text-center p-8 bg-primary rounded-3xl border border-white/10 shadow-sm hover:shadow-xl hover:border-accent/30 transition-all duration-500 group">
                <span
-                  class="text-5xl lg:text-7xl sf-bold text-accent tracking-tighter mb-2 group-hover:scale-110 transition-transform duration-500">15</span>
-               <p class="text-[10px] sf-bold text-gray-400 uppercase tracking-[0.2em]">Años de <br /> Trayectoria</p>
+                  class="text-4xl lg:text-6xl font-black text-accent tracking-tighter mb-2 group-hover:scale-110 transition-transform duration-500">15</span>
+               <p class="text-[10px] sf-bold text-white/80 uppercase tracking-[0.2em]">Años de <br /> Trayectoria</p>
             </div>
 
             <!-- Counter 2 -->
             <div
-               class="flex flex-col items-center text-center p-8 background-medium rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-primary/20 transition-all duration-500 group">
+               class="flex flex-col items-center text-center p-8 bg-primary rounded-3xl border border-white/10 shadow-sm hover:shadow-xl hover:border-accent/30 transition-all duration-500 group">
                <span
-                  class="text-5xl lg:text-7xl sf-bold text-accent tracking-tighter mb-2 group-hover:scale-110 transition-transform duration-500">500+</span>
-               <p class="text-[10px] sf-bold text-gray-400 uppercase tracking-[0.2em]">Proyectos <br /> Exitosos</p>
+                  class="text-4xl lg:text-6xl font-black text-accent tracking-tighter mb-2 group-hover:scale-110 transition-transform duration-500">500+</span>
+               <p class="text-[10px] sf-bold text-white/80 uppercase tracking-[0.2em]">Proyectos <br /> Exitosos</p>
             </div>
 
             <!-- Counter 3 -->
             <div
-               class="flex flex-col items-center text-center p-8 background-medium rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-primary/20 transition-all duration-500 group">
+               class="flex flex-col items-center text-center p-8 bg-primary rounded-3xl border border-white/10 shadow-sm hover:shadow-xl hover:border-accent/30 transition-all duration-500 group">
                <span
-                  class="text-5xl lg:text-7xl sf-bold text-accent tracking-tighter mb-2 group-hover:scale-110 transition-transform duration-500">100%</span>
-               <p class="text-[10px] sf-bold text-gray-400 uppercase tracking-[0.2em]">Trazabilidad <br /> Técnica</p>
+                  class="text-4xl lg:text-6xl font-black text-accent tracking-tighter mb-2 group-hover:scale-110 transition-transform duration-500">100%</span>
+               <p class="text-[10px] sf-bold text-white/80 uppercase tracking-[0.2em]">Trazabilidad <br /> Técnica</p>
             </div>
          </div>
       </div>

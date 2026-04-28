@@ -16,15 +16,15 @@ const clientLogos = [
             <span class="text-xs sf-bold uppercase tracking-[0.4em] text-primary">Aliado Estratégico</span>
           </div>
 
-          <h2 class="text-4xl lg:text-6xl sf-bold uppercase tracking-tighter text-primary leading-tight mb-8">
+          <h2 class="text-4xl lg:text-6xl font-black uppercase tracking-tighter text-primary leading-tight mb-8">
             Operando <br />
-            <span class="text-white italic">desde Coquimbo</span>
+            <span class="text-primary font-black">desde</span><br/>
+            Coquimbo
           </h2>
 
           <div class="mt-4 flex items-center gap-4">
-            <div class="w-8 h-[1px] bg-primary/40"></div>
-            <p class="text-[10px] uppercase tracking-[0.3em] text-primary/60 sf-bold">Respaldo Técnico de Clase Mundial
-            </p>
+            <div class="h-[2px] w-12 bg-primary flex-shrink-0"></div>
+            <span class="text-xs sf-bold uppercase tracking-[0.4em] text-primary">respaldo técnico</span>
           </div>
         </div>
 

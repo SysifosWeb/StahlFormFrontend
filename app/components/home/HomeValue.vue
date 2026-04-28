@@ -19,17 +19,17 @@ import hydraulicsImage from '~/assets/img/Bombas_hidraulicas.png'
              <span class="text-xs sf-bold uppercase tracking-[0.4em] text-accent">Nuestra Propuesta</span>
           </div>
 
-          <h2 class="text-4xl lg:text-6xl sf-bold uppercase tracking-tighter text-secondary leading-tight mb-8">
-            Ingeniería de Clase Mundial para <br/>
-            <span class="text-primary italic">Operaciones Infalibles</span>
+          <h2 class="text-4xl lg:text-6xl font-black uppercase tracking-tighter text-primary leading-tight mb-8">
+            Clase Mundial para <br/>
+            <span class="text-primary font-black">Operaciones Infalibles</span>
           </h2>
 
           <div class="space-y-6 text-gray-600 sf-light leading-relaxed text-base border-l-2 border-accent pl-6 lg:pl-8">
             <p>
-               Nuestra propuesta de valor se centra en la <span class="text-primary sf-bold">trazabilidad técnica</span> y la excelencia operativa. Transformamos activos complejos en sistemas de alto rendimiento.
+               Nuestra propuesta de valor se centra en la <span class="text-primary font-black">trazabilidad técnica</span> y la excelencia operativa. Transformamos activos complejos en sistemas de alto rendimiento.
             </p>
             <p>
-               Aseguramos que cada proyecto de <span class="text-primary sf-bold italic">StahlForm</span> se traduzca en éxito preventivo a través de ingeniería avanzada y precisión absoluta.
+               Aseguramos que cada proyecto de <span class="text-primary font-black italic">StahlForm</span> se traduzca en éxito preventivo a través de ingeniería avanzada y precisión absoluta.
             </p>
           </div>
         </div>
@@ -49,8 +49,8 @@ import hydraulicsImage from '~/assets/img/Bombas_hidraulicas.png'
               <path stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
             </svg>
           </div>
-          <h4 class="text-sm sf-bold uppercase tracking-widest text-primary mb-4">Continuidad</h4>
-          <p class="text-xs text-primary sf-light leading-loose uppercase tracking-widest font-bold">Aseguramos la operatividad ininterrumpida de sus activos críticos.</p>
+          <h4 class="text-sm font-black uppercase tracking-widest text-primary mb-4">Continuidad</h4>
+          <p class="text-xs text-primary sf-light leading-loose tracking-wide">Aseguramos la operatividad ininterrumpida de sus activos críticos.</p>
         </div>
 
         <!-- Benefit 2: Reducción de Fallas -->
@@ -60,8 +60,8 @@ import hydraulicsImage from '~/assets/img/Bombas_hidraulicas.png'
               <path stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
             </svg>
           </div>
-          <h4 class="text-sm sf-bold uppercase tracking-widest text-primary mb-4">Reducción de Fallas</h4>
-          <p class="text-xs text-primary sf-light leading-loose uppercase tracking-widest font-bold">Análisis predictivo para mitigar riesgos antes de que ocurran.</p>
+          <h4 class="text-sm font-black uppercase tracking-widest text-primary mb-4">Reducción de Fallas</h4>
+          <p class="text-xs text-primary sf-light leading-loose tracking-wide">Análisis predictivo para mitigar riesgos antes de que ocurran.</p>
         </div>
 
         <!-- Benefit 3: Decisiones Confiables -->
@@ -71,8 +71,8 @@ import hydraulicsImage from '~/assets/img/Bombas_hidraulicas.png'
               <path stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
             </svg>
           </div>
-          <h4 class="text-sm sf-bold uppercase tracking-widest text-primary mb-4">Decisiones Confiables</h4>
-          <p class="text-xs text-primary sf-light leading-loose uppercase tracking-widest font-bold">Información técnica precisa para una gestión de activos estratégica.</p>
+          <h4 class="text-sm font-black uppercase tracking-widest text-primary mb-4">Decisiones Confiables</h4>
+          <p class="text-xs text-primary sf-light leading-loose tracking-wide">Información técnica precisa para una gestión de activos estratégica.</p>
         </div>
 
         <!-- Benefit 4: Seguridad -->
@@ -82,8 +82,8 @@ import hydraulicsImage from '~/assets/img/Bombas_hidraulicas.png'
               <path stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
             </svg>
           </div>
-          <h4 class="text-sm sf-bold uppercase tracking-widest text-primary mb-4">Seguridad</h4>
-          <p class="text-xs text-primary sf-light leading-loose uppercase tracking-widest font-bold">Protocolos de blindaje operativo en entornos de alta exigencia.</p>
+          <h4 class="text-sm font-black uppercase tracking-widest text-primary mb-4">Seguridad</h4>
+          <p class="text-xs text-primary sf-light leading-loose tracking-wide">Protocolos de blindaje operativo en entornos de alta exigencia.</p>
         </div>
       </div>
     </div>
