@@ -54,7 +54,7 @@ import heroImage from '~/assets/img/Kevin_torno.png'
       </div>
 
       <!-- Right Column: Industrial Visual -->
-      <div class="w-full lg:w-1/2 relative min-h-[350px] lg:min-h-auto">
+      <div class="hidden lg:block w-full lg:w-1/2 relative min-h-[350px] lg:min-h-auto">
          <div class="absolute inset-0 bg-secondary/10 z-10 pointer-events-none"></div>
          <img :src="heroImage" alt="Industrial Workshop StahlForm" class="w-full h-full object-cover contrast-110 brightness-95" />
          

@@ -1,4 +1,4 @@
-﻿<script setup>
+<script setup>
 import { ref, computed, onMounted } from 'vue'
 import { useRoute } from 'vue-router'
 import logoStahlForm from '~/assets/img/02 Logo_VerdeWebP.webp'
@@ -86,7 +86,7 @@ onMounted(() => {
         <!-- HEADER AREA -->
         <div class="flex items-center justify-between relative z-10 mb-20">
           <NuxtLink to="/" @click="closeMenu">
-            <img :src="logoStahlForm" alt="StahlForm Logo" class="h-8 w-auto" />
+            <img :src="logoStahlForm" alt="StahlForm Logo" class="h-12 w-auto" />
           </NuxtLink>
           <button @click="closeMenu" class="text-accent hover:scale-110 transition-transform">
              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -122,7 +122,7 @@ onMounted(() => {
         <div class="mt-auto relative z-10 border-t border-white/10 pt-10 pb-4 space-y-4 flex flex-col items-center">
           <!-- Vision Pillar -->
           <p class="text-[10px] text-center uppercase tracking-[0.3em] leading-tight text-gray-400 sf-bold max-w-xs mx-auto">
-            CAPACIDAD TÃ‰CNICA AL <span class="text-accent">SERVICIO</span> DE OPERACIONES CRÃTICAS
+            CAPACIDAD TÉCNICA AL <span class="text-accent">SERVICIO</span> DE OPERACIONES CRÍTICAS
           </p>
 
           <!-- Redes Sociales -->
@@ -142,7 +142,7 @@ onMounted(() => {
           </div>
 
           <!-- Copyright -->
-          <p class="text-[9px] uppercase tracking-[0.4em] text-gray-500 leading-tight">Â© 2026 StahlForm</p>
+          <p class="text-[9px] uppercase tracking-[0.4em] text-gray-500 leading-tight">© 2026 StahlForm</p>
         </div>
       </div>
     </Transition>

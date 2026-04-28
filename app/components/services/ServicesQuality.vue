@@ -34,15 +34,15 @@
          <div class="space-y-6">
             <div class="flex items-center gap-4 group">
                <div class="w-8 h-[1px] bg-accent group-hover:w-12 transition-all"></div>
-               <span class="text-sm sf-bold text-white/60 sf-bold uppercase tracking-widest">Informes Técnicos</span>
+               <span class="text-sm sf-bold text-white/60  uppercase tracking-widest">Informes Técnicos</span>
             </div>
             <div class="flex items-center gap-4 group">
                <div class="w-8 h-[1px] bg-accent group-hover:w-12 transition-all"></div>
-               <span class="text-sm sf-bold text-accent group-hover:text-white transition-colors">Control de Calidad</span>
+               <span class="text-sm sf-bold text-white/60  uppercase tracking-widest">Control de Calidad</span>
             </div>
             <div class="flex items-center gap-4 group">
                <div class="w-8 h-[1px] bg-accent group-hover:w-12 transition-all"></div>
-               <span class="text-sm sf-bold text-accent group-hover:text-white transition-colors">Análisis de Datos</span>
+               <span class="text-sm sf-bold text-white/60  uppercase tracking-widest">Análisis de Datos</span>
             </div>
          </div>
       </div>

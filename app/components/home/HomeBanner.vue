@@ -11,7 +11,7 @@
     <div class="absolute inset-0 technical-grid opacity-5 z-0"></div>
 
     <div class="custom-container relative z-10 text-center">
-      <h2 class="text-3xl lg:text-6xl sf-bold text-white uppercase tracking-tighter leading-tight max-w-5xl mx-auto drop-shadow-2xl">
+      <h2 class="banner-title text-5xl lg:text-6xl text-white uppercase tracking-tighter leading-tight max-w-5xl mx-auto drop-shadow-2xl">
         <span class="block mb-2 md:inline">INGENIERÍA PARA </span>
         <span class="block mb-2 md:inline ml-0 md:ml-3 text-accent italic">Operaciones</span>
         <span class="block mt-2 md:mt-0">CRÍTICAS.</span>
@@ -34,6 +34,9 @@
         linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
         linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
     background-size: 400px 400px, 100px 100px;
+}
+.banner-title {
+    font-weight: 900 !important;
 }
 </style>
 

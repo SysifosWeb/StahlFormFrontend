@@ -94,7 +94,12 @@ import hydraulicsImage from '~/assets/img/Bombas_hidraulicas.png'
 .benefit-card {
     padding: 2rem 0;
     transition: transform 0.3s ease;
-    border-top: 2px solid var(--primary); /* Increased weight and primary color */
+}
+
+@media (min-width: 1024px) {
+    .benefit-card {
+        border-top: 2px solid var(--primary);
+    }
 }
 
 .benefit-card:hover {

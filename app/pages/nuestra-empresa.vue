@@ -1,13 +1,13 @@
 ﻿<script setup>
 definePageMeta({
   layout: 'secondary',
-  title: 'Nuestra empresa'
+  title: 'Nuestra <span class="text-accent underline underline-offset-8">empresa</span>'
 })
 
 useHead({
   title: 'Nosotros | StahlForm',
   meta: [
-    { name: 'description', content: 'Conoce más sobre la trayectoria, valores e infraestructura de nuestra empresa.' }
+    { name: 'description', content: 'Conoce nuestra historia, valores e infraestructura. Nos dedicamos a la mantención de maquinaria pesada, con soluciones críticas para minería.' }
   ]
 })
 </script>

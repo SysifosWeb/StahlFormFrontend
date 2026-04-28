@@ -1,4 +1,4 @@
-﻿<script setup>
+<script setup>
 import { ref } from 'vue'
 // SEO con useHead nativo de Nuxt
 const formData = ref({
@@ -81,7 +81,7 @@ const handleSubmit = async () => {
 </script>
 
 <template>
-  <div class="relative bg-white overflow-hidden font-sans">
+  <div class="relative bg-[#eaeef3] overflow-hidden font-sans">
 
     <!-- NotificaciÃ³n Toast Profesional -->
     <Teleport to="body">
@@ -109,11 +109,6 @@ const handleSubmit = async () => {
       </Transition>
     </Teleport>
 
-    <!-- Technical Blueprint Backdrop (Subtle Whisper) -->
-    <div class="absolute inset-0 z-0 opacity-[0.05] grayscale pointer-events-none">
-       <img src="/img/blueprint_bg.png" alt="Engineering Blueprint" class="w-full h-full object-cover" />
-       <div class="absolute inset-0 bg-gradient-to-b from-white/20 via-transparent to-white/20"></div>
-    </div>
 
     <!-- Coordinate Accents in Corners for "Engineering Terminal" feel -->
     <div class="absolute top-12 left-12 opacity-30 cursor-default">
@@ -131,7 +126,7 @@ const handleSubmit = async () => {
           <div class="lg:w-2/5 space-y-12">
              <div class="space-y-6">
                 <div class="flex items-center gap-4">
-                   <div class="h-[2px] w-12 bg-primary"></div>
+                   <div class="h-[2px] w-12 bg-accent"></div>
                    <span class="text-[10px] sf-bold text-primary uppercase tracking-[0.4em]">StahlForm Core Ingeniería</span>
                 </div>
                 
@@ -148,14 +143,14 @@ const handleSubmit = async () => {
              <!-- Contact Stats Integrated -->
              <div class="space-y-10 pt-4">
                 <div class="flex items-center gap-6 group">
-                   <div class="w-1.5 h-12 bg-primary group-hover:scale-y-125 transition-transform origin-bottom duration-500"></div>
+                   <div class="w-1.5 h-12 bg-accent group-hover:scale-y-125 transition-transform origin-bottom duration-500"></div>
                    <div>
                       <p class="text-[9px] sf-bold text-gray-400 uppercase tracking-widest mb-1">Ingeniería & Ventas</p>
                       <p class="text-xl sf-bold text-secondary">contacto@stahlform.cl</p>
                    </div>
                 </div>
                 <div class="flex items-center gap-6 group">
-                   <div class="w-1.5 h-12 bg-primary group-hover:scale-y-125 transition-transform origin-bottom duration-500"></div>
+                   <div class="w-1.5 h-12 bg-accent group-hover:scale-y-125 transition-transform origin-bottom duration-500"></div>
                    <div>
                       <p class="text-[9px] sf-bold text-gray-400 uppercase tracking-widest mb-1">Asistencia Crítica</p>
                       <p class="text-xl sf-bold text-secondary">+56 2 2345 6789</p>
@@ -166,7 +161,7 @@ const handleSubmit = async () => {
 
           <!-- Right Column: High-Precision Technical Sheet (Form) -->
           <div class="lg:w-3/5 w-full">
-            <div class="bg-white/95 backdrop-blur-sm shadow-[0_40px_100px_-20px_rgba(0,0,0,0.12)] rounded-[40px] border border-gray-100 relative overflow-hidden group">
+            <div class="bg-white shadow-[0_40px_100px_-20px_rgba(0,0,0,0.12)] rounded-[40px] border border-gray-200 relative overflow-hidden group">
                <!-- System Status Label -->
                <div class="absolute top-0 right-0 p-10 opacity-0 group-hover:opacity-100 transition-opacity duration-700 hidden lg:flex flex-col items-end">
                   <div class="flex items-center gap-2 mb-1">
@@ -185,8 +180,8 @@ const handleSubmit = async () => {
                            <input
                               v-model="formData.nombre"
                               type="text"
-                              placeholder="Ej. Juan PÃ©rez"
-                              class="w-full bg-transparent border-b-2 border-gray-100 py-4 outline-none focus:border-primary transition-colors text-secondary placeholder:text-gray-200"
+                              placeholder="Ej. Juan Pérez"
+                              class="w-full bg-transparent border-b-2 border-gray-100 py-4 outline-none focus:border-primary transition-colors text-secondary placeholder:text-primary/50"
                            />
                         </div>
 
@@ -196,7 +191,7 @@ const handleSubmit = async () => {
                               v-model="formData.email"
                               type="email"
                               placeholder="empresa@correo.cl"
-                              class="w-full bg-transparent border-b-2 border-gray-100 py-4 outline-none focus:border-primary transition-colors text-secondary placeholder:text-gray-200"
+                              class="w-full bg-transparent border-b-2 border-gray-100 py-4 outline-none focus:border-primary transition-colors text-secondary placeholder:text-primary/50"
                            />
                         </div>
 
@@ -206,7 +201,7 @@ const handleSubmit = async () => {
                               v-model="formData.telefono"
                               type="tel"
                               placeholder="+56 9 ...."
-                              class="w-full bg-transparent border-b-2 border-gray-100 py-4 outline-none focus:border-primary transition-colors text-secondary placeholder:text-gray-200"
+                              class="w-full bg-transparent border-b-2 border-gray-100 py-4 outline-none focus:border-primary transition-colors text-secondary placeholder:text-primary/50"
                            />
                         </div>
 
@@ -215,8 +210,8 @@ const handleSubmit = async () => {
                            <textarea
                               v-model="formData.mensaje"
                               rows="3"
-                              placeholder="Describa el equipo, falla o necesidad tÃ©cnica..."
-                              class="w-full bg-transparent border-b-2 border-gray-100 py-4 outline-none focus:border-primary transition-colors text-secondary placeholder:text-gray-200 resize-none"
+                              placeholder="Describa el equipo, falla o necesidad técnica..."
+                              class="w-full bg-transparent border-b-2 border-gray-100 py-4 outline-none focus:border-primary transition-colors text-secondary placeholder:text-primary/50 resize-none"
                            ></textarea>
                         </div>
                      </div>
@@ -228,7 +223,7 @@ const handleSubmit = async () => {
                         <button
                            type="submit"
                            :disabled="loading"
-                           class="w-full md:w-auto h-16 px-12 rounded-xl bg-primary text-white sf-bold flex items-center justify-center gap-5 group hover:bg-[#1a5c4d] transition-all shadow-xl shadow-primary/10 hover:shadow-[#1a5c4d]/30"
+                           class="w-full md:w-auto h-16 px-12 rounded-xl bg-accent text-primary sf-bold flex items-center justify-center gap-5 group hover:brightness-95 transition-all shadow-xl shadow-accent/20 hover:shadow-accent/40"
                         >
                            <span class="text-xs uppercase tracking-[0.2em] italic">{{ loading ? 'Procesando...' : 'Enviar Requerimiento' }}</span>
                            <svg v-if="!loading" class="w-5 h-5 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>

@@ -10,13 +10,13 @@ defineProps({
 </script>
 
 <template>
-    <header class="secondary-header-container relative overflow-hidden flex items-center bg-[#111111] font-sans">
+    <header class="secondary-header-container relative overflow-hidden flex items-center bg-primary font-sans">
         <!-- Full Background Image with Overlay -->
         <div class="absolute inset-0 z-0">
-            <img :src="headerBg" alt="Banner Industrial" class="w-full h-full object-cover object-[50%_25%] brightness-100" />
-            <div class="absolute inset-0 bg-black/60"></div>
+            <img :src="headerBg" alt="Banner Industrial" class="w-full h-full object-cover object-[50%_25%] brightness-110 mix-blend-luminosity opacity-80" />
+            <div class="absolute inset-0 bg-primary/40"></div>
             <!-- Soft left-side gradient for perfect text contrast -->
-            <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-primary via-primary/60 to-transparent opacity-95"></div>
         </div>
 
 
