@@ -1,5 +1,5 @@
 import { createRenderer, getRequestDependencies, getPreloadLinks, getPrefetchLinks } from 'vue-bundle-renderer/runtime';
-import { f as buildAssetsURL, u as useRuntimeConfig, g as getResponseStatusText, h as getResponseStatus, i as defineRenderHandler, p as publicAssetsURL, j as getQuery, e as createError, d as destr, k as getRouteRules, l as joinURL, b as useNitroApp } from '../_/nitro.mjs';
+import { b as buildAssetsURL, u as useRuntimeConfig, g as getResponseStatusText, a as getResponseStatus, e as defineRenderHandler, p as publicAssetsURL, f as getQuery, c as createError, h as destr, i as getRouteRules, j as joinURL, k as useNitroApp } from '../nitro/nitro.mjs';
 import { createHead as createHead$1, propsToString, renderSSRHead } from 'unhead/server';
 import { stringify, uneval } from 'devalue';
 import { isRef, toValue } from 'vue';
@@ -8,11 +8,11 @@ import 'node:https';
 import 'node:events';
 import 'node:buffer';
 import 'node:fs';
+import 'node:path';
+import 'node:crypto';
 import 'node:url';
 import '@iconify/utils';
-import 'node:crypto';
 import 'consola';
-import 'node:path';
 
 const VueResolver = (_, value) => {
   return isRef(value) ? toValue(value) : value;
@@ -44,7 +44,7 @@ function createHead(options = {}) {
 const NUXT_PAYLOAD_INLINE = true;
 const NUXT_RUNTIME_PAYLOAD_EXTRACTION = false;
 
-const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"}],"link":[{"rel":"icon","type":"image/png","href":"/favicon.png"}],"style":[],"script":[],"noscript":[]};
+const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"},{"name":"author","content":"StahlForm PyC Ltda."},{"name":"robots","content":"index, follow"},{"name":"theme-color","content":"#003e49"},{"name":"geo.region","content":"CL-CO"},{"name":"geo.placename","content":"La Serena, Coquimbo"},{"name":"geo.position","content":"-29.9059;-71.2501"},{"name":"ICBM","content":"-29.9059, -71.2501"},{"property":"og:site_name","content":"StahlForm PyC"},{"property":"og:type","content":"website"},{"property":"og:locale","content":"es_CL"},{"property":"og:image","content":"https://www.stahlformpyc.cl/img/og-stahlform.png"},{"property":"og:image:width","content":"1200"},{"property":"og:image:height","content":"630"},{"property":"og:image:type","content":"image/png"},{"name":"twitter:card","content":"summary_large_image"},{"name":"twitter:image","content":"https://www.stahlformpyc.cl/img/og-stahlform.png"}],"link":[{"rel":"icon","type":"image/png","href":"/favicon.png"},{"rel":"canonical","href":"https://www.stahlform.cl"}],"style":[],"script":[],"noscript":[],"htmlAttrs":{"lang":"es-CL"},"charset":"utf-8","viewport":"width=device-width, initial-scale=1","titleTemplate":"%s"};
 
 const appRootTag = "div";
 

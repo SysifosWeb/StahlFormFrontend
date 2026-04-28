@@ -1,5 +1,0 @@
----
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home/dbopymrl/public_html
-    - /bin/cp -a .output/public/. $DEPLOYPATH
