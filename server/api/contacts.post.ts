@@ -36,13 +36,18 @@ export default defineEventHandler(async (event) => {
 
     // Configuración del servidor de correo saliente
     // IMPORTANTE: Asegúrate de configurar estas variables de entorno en el servidor o cambiar los valores por defecto
+    const smtpHost = config.smtpHost || process.env.SMTP_HOST
+    const smtpPort = config.smtpPort || process.env.SMTP_PORT
+    const smtpUser = config.smtpUser || process.env.SMTP_USER
+    const smtpPass = config.smtpPass || process.env.SMTP_PASS
+
     const transporter = nodemailer.createTransport({
-      host: config.smtpHost,
-      port: Number(config.smtpPort),
+      host: smtpHost,
+      port: Number(smtpPort),
       secure: true, // true for 465, false for 587
       auth: {
-        user: config.smtpUser,
-        pass: config.smtpPass,
+        user: smtpUser,
+        pass: smtpPass,
       },
     })
 
@@ -51,7 +56,7 @@ export default defineEventHandler(async (event) => {
 
     // 1. Correo enviado a la administración (contacto@stahlform.cl)
     const adminMailOptions = {
-      from: `"StahlForm Web" <${config.smtpUser}>`,
+      from: `"StahlForm Web" <${smtpUser}>`,
       to: 'contacto@sysifosweb.cl', // Correo destino de los mensajes
       replyTo: email,
       subject: `Nuevo Requerimiento Técnico de: ${nombre}`,
@@ -94,7 +99,7 @@ export default defineEventHandler(async (event) => {
 
     // 2. Correo de Autorespuesta al Cliente Prometiendo Respuesta Rápida
     const clientMailOptions = {
-      from: `"StahlForm Core Ingeniería" <${config.smtpUser}>`,
+      from: `"StahlForm Core Ingeniería" <${smtpUser}>`,
       to: email,
       subject: `Recepción de su Requerimiento - StahlForm`,
       html: `
