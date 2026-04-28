@@ -43,13 +43,13 @@ export default defineNuxtConfig({
         { property: 'og:site_name', content: 'StahlForm PyC' },
         { property: 'og:type', content: 'website' },
         { property: 'og:locale', content: 'es_CL' },
-        { property: 'og:image', content: 'https://www.stahlformpyc.cl/img/og-stahlform.png' },
+        { property: 'og:image', content: 'https://www.stahlform.cl/img/og-stahlform.png' },
         { property: 'og:image:width', content: '1200' },
         { property: 'og:image:height', content: '630' },
         { property: 'og:image:type', content: 'image/png' },
         // Twitter Card defaults
         { name: 'twitter:card', content: 'summary_large_image' },
-        { name: 'twitter:image', content: 'https://www.stahlformpyc.cl/img/og-stahlform.png' }
+        { name: 'twitter:image', content: 'https://www.stahlform.cl/img/og-stahlform.png' }
       ]
     }
   }
