@@ -44,11 +44,15 @@ export default defineEventHandler(async (event) => {
     const transporter = nodemailer.createTransport({
       host: smtpHost,
       port: Number(smtpPort),
-      secure: true, // true for 465, false for 587
+      secure: Number(smtpPort) === 465, // true para 465, false para 587 y otros
       auth: {
         user: smtpUser,
         pass: smtpPass,
       },
+      tls: {
+        // Evita errores de certificados SSL al conectarse localmente en cPanel
+        rejectUnauthorized: false
+      }
     })
 
     // Preparar el archivo adjunto si existe
