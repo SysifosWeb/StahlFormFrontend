@@ -606,24 +606,24 @@ const _routes = [
     name: "contacto",
     path: "/contacto",
     meta: __nuxt_page_meta$2 || {},
-    component: () => import('./contacto-D8ZmNRyz.mjs')
+    component: () => import('./contacto-DxOxFwYt.mjs')
   },
   {
     name: "nuestra-empresa",
     path: "/nuestra-empresa",
     meta: __nuxt_page_meta$1 || {},
-    component: () => import('./nuestra-empresa-R7Y1D9Cd.mjs')
+    component: () => import('./nuestra-empresa-Dj25dvT-.mjs')
   },
   {
     name: "servicios",
     path: "/servicios",
     meta: __nuxt_page_meta || {},
-    component: () => import('./servicios-BqB4hVXu.mjs')
+    component: () => import('./servicios-Wl3KSVJE.mjs')
   },
   {
     name: "index",
     path: "/",
-    component: () => import('./index-7ugmY7em.mjs')
+    component: () => import('./index-BVb1wpHl.mjs')
   }
 ];
 const _wrapInTransition = (props, children) => {
@@ -1298,8 +1298,8 @@ const plugins = [
   plugin_MeUvTuoKUi51yb_kBguab6hdcExVXeTtZtTg9TZZBB8
 ];
 const layouts = {
-  default: defineAsyncComponent(() => import('./default-BbOjEewe.mjs').then((m) => m.default || m)),
-  secondary: defineAsyncComponent(() => import('./secondary-D_jGv7Hz.mjs').then((m) => m.default || m))
+  default: defineAsyncComponent(() => import('./default-B0zTcbJ4.mjs').then((m) => m.default || m)),
+  secondary: defineAsyncComponent(() => import('./secondary-c3cwQnGa.mjs').then((m) => m.default || m))
 };
 const routeRulesMatcher = _routeRulesMatcher;
 const LayoutLoader = defineComponent({

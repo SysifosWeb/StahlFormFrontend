@@ -57,7 +57,7 @@ export default defineEventHandler(async (event) => {
     // 1. Correo enviado a la administración (contacto@stahlform.cl)
     const adminMailOptions = {
       from: `"StahlForm Web" <${smtpUser}>`,
-      to: 'contacto@sysifosweb.cl', // Correo destino de los mensajes
+      to: 'contacto@stahlform.cl', // Correo destino de los mensajes
       replyTo: email,
       subject: `Nuevo Requerimiento Técnico de: ${nombre}`,
       html: `

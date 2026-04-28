@@ -52,7 +52,7 @@ const contacts_post = defineEventHandler(async (event) => {
     const attachments = fileAttachment ? [fileAttachment] : [];
     const adminMailOptions = {
       from: `"StahlForm Web" <${smtpUser}>`,
-      to: "contacto@sysifosweb.cl",
+      to: "contacto@stahlform.cl",
       // Correo destino de los mensajes
       replyTo: email,
       subject: `Nuevo Requerimiento T\xE9cnico de: ${nombre}`,
