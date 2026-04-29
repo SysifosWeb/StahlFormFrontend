@@ -26,14 +26,13 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         
         <!-- BLOCK 1: Vertical Photo Anchor (1x2) -->
-        <div class="lg:row-span-2 relative group overflow-hidden rounded-xl bg-[#0d2a2d] border border-gray-200 shadow-xl cursor-pointer h-[700px] lg:h-auto">
+        <div class="lg:row-span-2 relative group overflow-hidden rounded-xl border border-gray-200 shadow-xl cursor-pointer h-[700px] lg:h-auto">
           <img 
             src="~/assets/img/Fotografias/mecanizado_precision.jpeg" 
             alt="Mecanizado de Alta Precisión" 
-            class="w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-110"
+            class="w-full h-full object-cover block transition-transform duration-1000 ease-out group-hover:scale-110"
           />
-          <!-- 30% Petroleum Overlay -->
-          <div class="absolute inset-0 bg-[#0d2a2d] opacity-30 transition-opacity duration-500 group-hover:opacity-0"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
           
           <div class="absolute bottom-8 left-8 right-8 z-10">
              <div class="flex items-center gap-2 mb-4">
@@ -46,13 +45,15 @@
         </div>
 
         <!-- BLOCK 2: Horizontal Text Block (2x1) -->
-        <div class="lg:col-span-2 bg-[#0d2a2d] p-12 flex flex-col justify-center relative overflow-hidden rounded-xl border border-white/5 shadow-2xl min-h-[300px]">
-          <!-- Background Image with Opacity -->
+        <div class="lg:col-span-2 p-12 flex flex-col justify-center relative overflow-hidden rounded-xl border border-gray-200 shadow-2xl min-h-[300px]">
+          <!-- Background Image Full Color - No Filters -->
           <img 
-            src="~/assets/img/Fotografias/WhatsApp Image 2026-04-15 at 13.09.13.jpeg" 
-            class="absolute inset-0 w-full h-full object-cover opacity-20 pointer-events-none" 
+            src="~/assets/img/Fotografias_WEBP/Terreno_sthalform.webp" 
+            class="absolute inset-0 w-full h-full object-cover pointer-events-none" 
             alt="Fondo taller"
           />
+          <!-- Subtle dark overlay for readability -->
+          <div class="absolute inset-0 bg-black/20"></div>
           
           <!-- Abstract technical pattern -->
           <div class="absolute top-0 right-0 p-8 opacity-5 z-10">
@@ -64,7 +65,7 @@
           
           <h3 class="text-2xl lg:text-4xl font-black text-white leading-none uppercase tracking-tighter relative z-10 max-w-2xl">
             Capacidad técnica al <br/>
-            <span class="text-[#d4ff00] italic">servicio</span> de <br/>
+            <span class="text-[#d4ff00] font-black italic">servicio</span> de <br/>
             operaciones críticas
           </h3>
           
@@ -75,32 +76,26 @@
         </div>
 
         <!-- BLOCK 3: Square Photo (1x1) - Piece Close-up -->
-        <div class="relative group overflow-hidden rounded-xl bg-[#0d2a2d] border border-gray-200 shadow-lg cursor-pointer h-[328px]">
+        <div class="relative group overflow-hidden rounded-xl border border-gray-200 shadow-lg cursor-pointer h-[328px]">
           <img 
-            src="~/assets/img/Fotografias/WhatsApp Image 2026-04-15 at 13.09.11.jpeg" 
+            src="~/assets/img/Fotografias_WEBP/03_pieza.webp" 
             alt="Detalle de Pieza StahlForm" 
-            class="w-full h-full object-cover object-[center_calc(50%-10px)] transition-transform duration-1000 group-hover:scale-110"
+            class="w-full h-full object-cover block  transition-transform duration-1000 group-hover:scale-110"
           />
-          <!-- 30% Petroleum Overlay -->
-          <div class="absolute inset-0 bg-[#0d2a2d] opacity-30 transition-opacity duration-500 group-hover:opacity-0"></div>
         </div>
 
         <!-- BLOCK 4: Square Photo (1x1) - Precision Piece -->
-        <div class="relative group overflow-hidden rounded-xl bg-[#0d2a2d] border border-gray-200 shadow-lg cursor-pointer h-[328px]">
+        <div class="relative group overflow-hidden rounded-xl border border-gray-200 shadow-lg cursor-pointer h-[328px]">
           <img 
-            src="~/assets/img/Fotografias/pieza_detalle.jpeg" 
+            src="~/assets/img/Fotografias_WEBP/02_pieza.webp" 
             alt="Detalle de Rosca StahlForm" 
-            class="w-full h-full object-cover object-[center_calc(27%-15px)] transition-transform duration-1000 group-hover:scale-110"
+            class="w-full h-full object-cover block transition-transform duration-1000 group-hover:scale-110"
           />
-          <!-- 30% Petroleum Overlay -->
-          <div class="absolute inset-0 bg-[#0d2a2d] opacity-30 transition-opacity duration-500 group-hover:opacity-0"></div>
-          
-          <div class="absolute top-6 right-6 p-2 bg-white/10 backdrop-blur-md rounded-lg border border-white/10">
-             <Icon name="lucide:ruler" class="w-6 h-6 text-[#d4ff00]" />
-          </div>
+          <!-- Subtle dark overlay -->
+          <div class="absolute inset-0 bg-black/20"></div>
 
-          <div class="absolute bottom-6 left-6 right-6">
-             <h4 class="text-xl sf-bold text-white uppercase tracking-tighter mb-1">Precisión Certificada</h4>
+          <div class="absolute bottom-10 left-6 right-6">
+             <h4 class="text-xl sf-bold text-white uppercase tracking-tighter mb-1 drop-shadow-lg">Precisión Certificada</h4>
           </div>
         </div>
 

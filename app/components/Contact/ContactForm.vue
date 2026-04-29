@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue'
+import recursoDecor from '~/assets/img/Fotografias_WEBP/Recurso 1WebP.webp'
 // SEO con useHead nativo de Nuxt
 const formData = ref({
   nombre: '',
@@ -237,6 +238,11 @@ const handleSubmit = async () => {
         </div>
       </div>
     </section>
+
+    <!-- Decorative Recurso (Top Left) -->
+    <div class="absolute left-0 top-0 w-[400px] h-[400px] lg:w-[550px] lg:h-[550px] z-0 opacity-[0.05] pointer-events-none transform -translate-x-1/3 -translate-y-1/3">
+        <img :src="recursoDecor" alt="Decoration" class="w-full h-full object-contain" />
+    </div>
   </div>
 </template>
 

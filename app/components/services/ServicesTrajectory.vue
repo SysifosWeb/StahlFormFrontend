@@ -1,3 +1,6 @@
+<script setup>
+import recursoDecor from '~/assets/img/Fotografias_WEBP/Recurso 1WebP.webp'
+</script>
 <template>
    <section class="relative w-full bg-[#eaeef3] py-12 lg:py-24 overflow-hidden font-sans border-none">
       <!-- Dossier Background (Slide 3 Style) -->
@@ -71,6 +74,11 @@
                <p class="text-[10px] sf-bold text-white/80 uppercase tracking-[0.2em]">Trazabilidad <br /> Técnica</p>
             </div>
          </div>
+      </div>
+
+      <!-- Decorative Recurso -->
+      <div class="absolute right-0 bottom-0 w-[450px] h-[450px] lg:w-[600px] lg:h-[600px] z-0 opacity-[0.05] pointer-events-none transform translate-x-1/4 translate-y-1/4">
+          <img :src="recursoDecor" alt="Decoration" class="w-full h-full object-contain" />
       </div>
    </section>
 </template>

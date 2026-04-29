@@ -1,3 +1,6 @@
+<script setup>
+import recursoDecor from '~/assets/img/Fotografias_WEBP/Recurso 2WebP.webp'
+</script>
 <template>
   <section class="relative w-full py-10 lg:py-20 overflow-hidden font-sans bg-[var(--background-medium)]">
     <!-- Cinematic Industrial Background (Acorde al Home) -->
@@ -56,6 +59,11 @@
          <span class="text-[8px] sf-bold text-primary tracking-[1em] uppercase">High Performance Engineering</span>
          <div class="h-[1px] w-32 bg-gradient-to-r from-primary to-transparent"></div>
       </div>
+    </div>
+
+    <!-- Decorative Recurso (Top Right) -->
+    <div class="absolute right-0 top-0 w-[400px] h-[400px] lg:w-[550px] lg:h-[550px] z-0 opacity-[0.05] pointer-events-none transform translate-x-1/3 -translate-y-1/3">
+        <img :src="recursoDecor" alt="Decoration" class="w-full h-full object-contain" />
     </div>
   </section>
 </template>
