@@ -1,0 +1,161 @@
+import { mergeProps, unref, useSSRContext } from 'vue';
+import { ssrRenderComponent, ssrRenderAttrs, ssrRenderAttr } from 'vue/server-renderer';
+import { r as recursoDecor$1 } from './Recurso 1WebP-DLX6klwM.mjs';
+import { _ as _export_sfc } from './server.mjs';
+import { p as pipesImage } from './TuberiasAcero-CsA5ptkl.mjs';
+import { a as useSeoMeta, u as useHead } from './composables-YN-Ot5N5.mjs';
+import '../nitro/nitro.mjs';
+import 'node:http';
+import 'node:https';
+import 'node:events';
+import 'node:buffer';
+import 'node:fs';
+import 'node:path';
+import 'node:crypto';
+import 'node:url';
+import '@iconify/utils';
+import 'consola';
+import 'vue-router';
+import '@iconify/vue';
+import '../routes/renderer.mjs';
+import 'vue-bundle-renderer/runtime';
+import 'unhead/server';
+import 'devalue';
+import 'unhead/plugins';
+import 'unhead/utils';
+
+const _sfc_main$4 = {
+  __name: "CompanyAboutHero",
+  __ssrInlineRender: true,
+  setup(__props) {
+    return (_ctx, _push, _parent, _attrs) => {
+      _push(`<section${ssrRenderAttrs(mergeProps({ class: "relative w-full background-medium pb-12 lg:pb-0 z-20 overflow-hidden" }, _attrs))} data-v-cb7b6dbc><div class="absolute inset-0 z-0 pointer-events-none overflow-hidden background-medium" data-v-cb7b6dbc><div class="absolute -left-20 -top-20 w-[600px] h-full opacity-[0.03] text-primary rotate-12" data-v-cb7b6dbc><svg viewBox="0 0 600 800" fill="currentColor" data-v-cb7b6dbc><path d="M100 100L500 300V450L100 250V100Z" data-v-cb7b6dbc></path><path d="M50 350L450 550V700L50 500V350Z" opacity="0.6" data-v-cb7b6dbc></path></svg></div></div><div class="custom-container relative z-20" data-v-cb7b6dbc><div class="flex flex-col lg:flex-row min-h-[50vh] items-stretch relative py-12 lg:py-24 gap-16 lg:gap-24" data-v-cb7b6dbc><div class="w-full lg:w-1/2 flex items-center relative" data-v-cb7b6dbc><div class="absolute -left-12 -top-12 text-[200px] sf-bold text-gray-900 opacity-[0.02] pointer-events-none select-none" data-v-cb7b6dbc>VISION</div><div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 blur-3xl pointer-events-none" data-v-cb7b6dbc></div><div class="max-w-xl relative z-10" data-v-cb7b6dbc><div class="flex items-center gap-4 mb-6" data-v-cb7b6dbc><div class="h-[2px] w-12 bg-primary" data-v-cb7b6dbc></div><span class="text-xs sf-bold uppercase tracking-[0.4em] text-primary" data-v-cb7b6dbc>Nuestra Visión</span></div><h2 class="text-4xl lg:text-6xl font-black text-primary uppercase tracking-tighter leading-tight mb-6" data-v-cb7b6dbc> Socio Estratégico <br data-v-cb7b6dbc> Técnico </h2><div class="space-y-4 text-primary sf-light leading-relaxed text-base" data-v-cb7b6dbc><p data-v-cb7b6dbc> En <span class="text-primary font-black" data-v-cb7b6dbc>StahlForm</span> no solo fabricamos; co-creamos soluciones. Entendemos que la continuidad operativa de nuestros clientes depende de la <span class="text-primary font-black italic" data-v-cb7b6dbc>precisión</span> mecánica. </p><p data-v-cb7b6dbc> Aliado estratégico que aporta <span class="text-primary font-black" data-v-cb7b6dbc>ingeniería aplicada</span> y una robusta infraestructura tecnológica para la gran minería. </p></div></div></div><div class="w-full lg:w-1/2 relative flex items-center justify-center" data-v-cb7b6dbc><div class="w-full max-w-lg grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-12 relative z-30" data-v-cb7b6dbc><div class="bg-primary p-10 rounded-2xl shadow-[0_15px_40px_rgba(0,0,0,0.1)] border border-white/20 flex flex-col items-center justify-center text-center transition-transform hover:-translate-y-2" data-v-cb7b6dbc><p class="text-accent text-5xl lg:text-6xl mb-4 tracking-tighter font-black" data-v-cb7b6dbc>15+</p><p class="text-xs uppercase tracking-widest sf-bold text-white/80" data-v-cb7b6dbc>Años de<br data-v-cb7b6dbc>Experiencia</p></div><div class="bg-primary p-10 rounded-2xl shadow-[0_15px_40px_rgba(0,0,0,0.1)] border border-white/20 flex flex-col items-center justify-center text-center transition-transform hover:-translate-y-2" data-v-cb7b6dbc><p class="text-accent text-5xl lg:text-6xl mb-4 tracking-tighter font-black" data-v-cb7b6dbc>100%</p><p class="text-xs uppercase tracking-widest sf-bold text-white/80" data-v-cb7b6dbc>Trazabilidad<br data-v-cb7b6dbc>Técnica</p></div></div></div></div></div><div class="absolute right-0 bottom-0 w-[450px] h-[450px] lg:w-[600px] lg:h-[600px] z-0 opacity-[0.1] pointer-events-none transform translate-x-1/4 translate-y-1/3" data-v-cb7b6dbc><img${ssrRenderAttr("src", unref(recursoDecor$1))} alt="Decoration" class="w-full h-full object-contain" data-v-cb7b6dbc></div></section>`);
+    };
+  }
+};
+const _sfc_setup$4 = _sfc_main$4.setup;
+_sfc_main$4.setup = (props, ctx) => {
+  const ssrContext = useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/company/CompanyAboutHero.vue");
+  return _sfc_setup$4 ? _sfc_setup$4(props, ctx) : void 0;
+};
+const __nuxt_component_0 = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["__scopeId", "data-v-cb7b6dbc"]]);
+const _sfc_main$3 = {
+  __name: "CompanyPillars",
+  __ssrInlineRender: true,
+  setup(__props) {
+    return (_ctx, _push, _parent, _attrs) => {
+      _push(`<section${ssrRenderAttrs(mergeProps({ class: "relative w-full bg-primary pt-12 pb-16 lg:pt-24 lg:pb-24 overflow-hidden font-sans z-10 border-none" }, _attrs))}><div class="absolute inset-0 z-0 pointer-events-none opacity-[0.12] mix-blend-overlay"><img${ssrRenderAttr("src", unref(pipesImage))} alt="Industrial Pipes Background" class="w-full h-full object-cover grayscale"></div><div class="absolute -right-32 -top-32 w-[800px] h-full z-0 opacity-10 pointer-events-none transform rotate-12"><svg viewBox="0 0 800 1000" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-accent w-full h-full"><path d="M100 200L700 500V650L100 350V200Z" fill="currentColor"></path><path d="M100 500L700 800V950L100 650V500Z" fill="currentColor" opacity="0.6"></path></svg></div><div class="custom-container relative z-10"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16"><div class="group p-8 rounded-2xl transition-all duration-500 bg-white/5 backdrop-blur-md shadow-[0_15px_40px_rgba(0,0,0,0.05)] border border-white/20 hover:bg-white/10 hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(0,0,0,0.1)] relative z-10"><div class="mb-10 flex items-center gap-4"><div class="w-14 h-14 rounded-xl border-2 border-accent/20 flex items-center justify-center group-hover:bg-accent group-hover:border-accent transition-all duration-500"><svg class="w-7 h-7 text-accent group-hover:text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"></path></svg></div><div class="h-[1px] flex-grow bg-accent/20"></div></div><h3 class="text-xl sf-bold text-white sf-bold uppercase tracking-tighter mb-4 flex flex-col"><span class="text-accent text-[10px] tracking-[0.4em] mb-2 sf-bold italic">Metodología 01</span> Diagnóstico Preciso </h3><p class="text-sm sf-light text-gray-400 leading-relaxed uppercase tracking-wider"> Evaluación basada en fotogrametría e inspección técnica avanzada sin errores. </p></div><div class="group p-8 rounded-2xl transition-all duration-500 bg-white/5 backdrop-blur-md shadow-[0_15px_40px_rgba(0,0,0,0.05)] border border-white/20 hover:bg-white/10 hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(0,0,0,0.1)] relative z-10"><div class="mb-10 flex items-center gap-4"><div class="w-14 h-14 rounded-xl border-2 border-accent/20 flex items-center justify-center group-hover:bg-accent group-hover:border-accent transition-all duration-500"><svg class="w-7 h-7 text-accent group-hover:text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg></div><div class="h-[1px] flex-grow bg-accent/20"></div></div><h3 class="text-xl sf-bold text-white sf-bold uppercase tracking-tighter mb-4 flex flex-col"><span class="text-accent text-[10px] tracking-[0.4em] mb-2 sf-bold italic">Metodología 02</span> Ingeniería Aplicada </h3><p class="text-sm sf-light text-gray-400 leading-relaxed uppercase tracking-wider"> Cálculo técnico y diseño de ingeniería para elevar el rendimiento operativo. </p></div><div class="group p-8 rounded-2xl transition-all duration-500 bg-white/5 backdrop-blur-md shadow-[0_15px_40px_rgba(0,0,0,0.05)] border border-white/20 hover:bg-white/10 hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(0,0,0,0.1)] relative z-10"><div class="mb-10 flex items-center gap-4"><div class="w-14 h-14 rounded-xl border-2 border-accent/20 flex items-center justify-center group-hover:bg-accent group-hover:border-accent transition-all duration-500"><svg class="w-7 h-7 text-accent group-hover:text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg></div><div class="h-[1px] flex-grow bg-accent/20"></div></div><h3 class="text-xl sf-bold text-white sf-bold uppercase tracking-tighter mb-4 flex flex-col"><span class="text-accent text-[10px] tracking-[0.4em] mb-2 sf-bold italic">Metodología 03</span> Trazabilidad Técnica </h3><p class="text-sm sf-light text-gray-400 leading-relaxed uppercase tracking-wider"> Control digital total y certificación de procesos para la continuidad faena. </p></div><div class="group p-8 rounded-2xl transition-all duration-500 bg-white/5 backdrop-blur-md shadow-[0_15px_40px_rgba(0,0,0,0.05)] border border-white/20 hover:bg-white/10 hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(0,0,0,0.1)] relative z-10"><div class="mb-10 flex items-center gap-4"><div class="w-14 h-14 rounded-xl border-2 border-accent/20 flex items-center justify-center group-hover:bg-accent group-hover:border-accent transition-all duration-500"><svg class="w-7 h-7 text-accent group-hover:text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.954 11.954 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg></div><div class="h-[1px] flex-grow bg-accent/20"></div></div><h3 class="text-xl sf-bold text-white sf-bold uppercase tracking-tighter mb-4 flex flex-col"><span class="text-accent text-[10px] tracking-[0.4em] mb-2 sf-bold italic">Metodología 04</span> Seguridad </h3><p class="text-sm sf-light text-gray-400 leading-relaxed uppercase tracking-wider"> Prioridad en la integridad de las personas e ingeniería exenta de riesgos. </p></div></div></div></section>`);
+    };
+  }
+};
+const _sfc_setup$3 = _sfc_main$3.setup;
+_sfc_main$3.setup = (props, ctx) => {
+  const ssrContext = useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/company/CompanyPillars.vue");
+  return _sfc_setup$3 ? _sfc_setup$3(props, ctx) : void 0;
+};
+const torno3Image = "" + __buildAssetsURL("Tormo_5.CfrTrW-Z.webp");
+const _sfc_main$2 = {
+  __name: "CompanyChallenges",
+  __ssrInlineRender: true,
+  setup(__props) {
+    return (_ctx, _push, _parent, _attrs) => {
+      _push(`<section${ssrRenderAttrs(mergeProps({ class: "relative w-full bg-accent py-10 lg:py-20 overflow-hidden font-sans border-none" }, _attrs))}><div class="absolute inset-0 z-0 pointer-events-none opacity-[0.25] mix-blend-multiply"><img${ssrRenderAttr("src", unref(torno3Image))} alt="Industrial Machine Background" class="w-full h-full object-cover grayscale contrast-125"></div><div class="absolute -right-40 -bottom-40 w-[900px] h-full z-0 opacity-15 pointer-events-none transform rotate-45"><svg viewBox="0 0 900 1200" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-primary w-full h-full"><path d="M100 300L800 700V900L100 500V300Z" fill="currentColor"></path><path d="M100 700L800 1100V1300L100 900V700Z" fill="currentColor" opacity="0.6"></path></svg></div><div class="custom-container relative z-10"><div class="text-center mb-10 lg:mb-20 px-4"><h2 class="text-4xl lg:text-6xl font-black text-primary uppercase tracking-tighter mb-4 leading-tight"> Desafíos <span class="text-primary font-black">Operacionales</span></h2><p class="text-[10px] uppercase tracking-[0.6em] text-light sf-bold">Identificación y Solución de Cuellos de Botella Críticos</p></div><div class="flex flex-col lg:flex-row gap-8 lg:gap-12 items-stretch"><div class="w-full lg:w-1/2 bg-white/10 backdrop-blur-md p-10 lg:p-16 rounded-3xl border border-white/20 hover:bg-white/20 transition-all relative group shadow-xl"><div class="flex items-center gap-4 mb-10 border-b border-primary/20 pb-4 inline-flex"><h3 class="text-xl font-black text-primary uppercase tracking-widest">Impactos Críticos</h3></div><div class="space-y-12"><div class="flex items-start gap-6"><div class="flex-shrink-0 mt-1"><svg class="w-10 h-10 lg:w-12 lg:h-12 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div><div><h4 class="text-primary font-black uppercase tracking-widest mb-2 text-sm">Fallas No Programadas</h4><p class="text-xs text-primary sf-light tracking-wide leading-relaxed">Costos de detención que pueden superar los USD $50,000 por hora en plantas de alta producción.</p></div></div><div class="flex items-start gap-6"><div class="flex-shrink-0 mt-1"><svg class="w-10 h-10 lg:w-12 lg:h-12 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg></div><div><h4 class="text-primary font-black uppercase tracking-widest mb-2 text-sm">Desgaste Acelerado</h4><p class="text-xs text-primary sf-light tracking-wide leading-relaxed">Degradación de componentes por condiciones extremas de operación sin mantenimiento predictivo especializado.</p></div></div><div class="flex items-start gap-6"><div class="flex-shrink-0 mt-1"><svg class="w-10 h-10 lg:w-12 lg:h-12 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg></div><div><h4 class="text-primary font-black uppercase tracking-widest mb-2 text-sm">Incertidumbre Técnica</h4><p class="text-xs text-primary sf-light tracking-wide leading-relaxed">Falta de trazabilidad y certificación en reparaciones críticas que comprometen la seguridad faena.</p></div></div></div></div><div class="w-full lg:w-1/2 bg-white/10 backdrop-blur-md p-10 lg:p-16 rounded-3xl border border-white/20 hover:bg-white/20 transition-all relative group overflow-hidden shadow-xl"><h3 class="text-xl font-black text-primary uppercase tracking-widest mb-10 border-b border-primary/20 pb-4 inline-block">Solución StahlForm</h3><div class="space-y-12"><div class="flex items-start gap-6"><div class="flex-shrink-0 mt-1"><svg class="w-10 h-10 lg:w-12 lg:h-12 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.954 11.954 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg></div><div><h4 class="text-primary font-black uppercase tracking-widest mb-2 text-sm">Estandarización de Calidad</h4><p class="text-xs text-primary sf-light tracking-wide leading-relaxed">Protocolos de control rigurosos y materiales certificados según estándares internacionales.</p></div></div><div class="flex items-start gap-6"><div class="flex-shrink-0 mt-1"><svg class="w-10 h-10 lg:w-12 lg:h-12 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg></div><div><h4 class="text-primary font-black uppercase tracking-widest mb-2 text-sm">Ingeniería Estructurada</h4><p class="text-xs text-primary sf-light tracking-wide leading-relaxed">Metodologías de análisis de falla y rediseño activo para optimizar la resistencia y durabilidad.</p></div></div><div class="flex items-start gap-6"><div class="flex-shrink-0 mt-1"><svg class="w-10 h-10 lg:w-12 lg:h-12 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg></div><div><h4 class="text-primary font-black uppercase tracking-widest mb-2 text-sm">Auditoría y Certificación</h4><p class="text-xs text-primary sf-light tracking-wide leading-relaxed">Soporte técnico documentas de trazabilidad técnica total en cada una de nuestras entregas.</p></div></div></div></div></div></div></section>`);
+    };
+  }
+};
+const _sfc_setup$2 = _sfc_main$2.setup;
+_sfc_main$2.setup = (props, ctx) => {
+  const ssrContext = useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/company/CompanyChallenges.vue");
+  return _sfc_setup$2 ? _sfc_setup$2(props, ctx) : void 0;
+};
+const __nuxt_component_2 = Object.assign(_sfc_main$2, { __name: "CompanyChallenges" });
+const recursoDecor = "" + __buildAssetsURL("Recurso 2WebP.IANqi-Kg.webp");
+const _sfc_main$1 = {
+  __name: "CompanyBenefits",
+  __ssrInlineRender: true,
+  setup(__props) {
+    return (_ctx, _push, _parent, _attrs) => {
+      _push(`<section${ssrRenderAttrs(mergeProps({ class: "relative w-full py-10 lg:py-20 overflow-hidden font-sans bg-[var(--background-medium)]" }, _attrs))}><div class="absolute -left-32 -top-32 w-[800px] h-full z-0 opacity-10 pointer-events-none transform rotate-12"><svg viewBox="0 0 800 1000" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-primary w-full h-full"><path d="M100 200L700 500V650L100 350V200Z" fill="currentColor"></path><path d="M100 500L700 800V950L100 650V500Z" fill="currentColor" opacity="0.6"></path></svg></div><div class="custom-container relative z-10 flex flex-col items-center"><div class="text-center mb-20 max-w-2xl"><h2 class="text-4xl lg:text-6xl font-black text-primary uppercase tracking-tighter mb-8 leading-tight"> Beneficios para su <br><span class="text-primary font-black">Operación</span></h2><p class="text-sm sf-light text-primary leading-relaxed tracking-wide"> Optimizamos la rentabilidad de su activo mediante una gestión de ingeniería centrada en la confiabilidad mecánica. </p></div><div class="grid grid-cols-1 lg:grid-cols-2 gap-px w-full overflow-hidden rounded-3xl border border-primary/5"><div class="background-medium p-12 lg:p-16 flex flex-col items-center text-center group hover:bg-white/60 transition-all duration-700"><div class="mb-12 relative"><div class="absolute inset-0 bg-accent/30 blur-[80px] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-1000"></div><svg class="w-24 h-24 text-primary relative z-10 transition-transform duration-700 group-hover:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></div><h3 class="text-2xl lg:text-3xl sf-bold text-primary uppercase tracking-tighter mb-6 transition-colors">Continuidad Operacional</h3><p class="text-sm sf-light text-primary leading-relaxed max-w-sm opacity-80 group-hover:opacity-100 transition-opacity"> Soporte de ingeniería reactivo y preventivo diseñado para eliminar los cuellos de botella y asegurar el flujo constante de su producción en faena. </p><div class="mt-12 h-[2px] w-12 bg-primary group-hover:w-24 group-hover:bg-accent transition-all duration-700"></div></div><div class="bg-dark-primary p-12 lg:p-16 flex flex-col items-center text-center group hover:bg-primary/10 transition-all duration-700"><div class="mb-12 relative"><div class="absolute inset-0 bg-accent/30 blur-[80px] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-1000"></div><svg class="w-24 h-24 text-accent relative z-10 transition-transform duration-700 group-hover:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.954 11.954 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg></div><h3 class="text-2xl lg:text-3xl sf-bold text-accent uppercase tracking-tighter mb-6 group-hover:text-accent transition-colors">Reducción de Fallas</h3><p class="text-sm sf-light text-light leading-relaxed max-w-sm opacity-80 group-hover:opacity-100 transition-opacity"> Análisis proactivo de causa raíz y rediseño de componentes para mitigar averías recurrentes y extender los ciclos de mantenimiento de sus equipos. </p><div class="mt-12 h-[2px] w-12 background-medium group-hover:w-24 group-hover:bg-accent transition-all duration-700"></div></div></div><div class="mt-16 flex items-center gap-6 opacity-20"><div class="h-[1px] w-32 bg-gradient-to-l from-primary to-transparent"></div><span class="text-[8px] sf-bold text-primary tracking-[1em] uppercase">High Performance Engineering</span><div class="h-[1px] w-32 bg-gradient-to-r from-primary to-transparent"></div></div></div><div class="absolute right-0 top-0 w-[400px] h-[400px] lg:w-[550px] lg:h-[550px] z-0 opacity-[0.05] pointer-events-none transform translate-x-1/3 -translate-y-1/3"><img${ssrRenderAttr("src", unref(recursoDecor))} alt="Decoration" class="w-full h-full object-contain"></div></section>`);
+    };
+  }
+};
+const _sfc_setup$1 = _sfc_main$1.setup;
+_sfc_main$1.setup = (props, ctx) => {
+  const ssrContext = useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/company/CompanyBenefits.vue");
+  return _sfc_setup$1 ? _sfc_setup$1(props, ctx) : void 0;
+};
+const _sfc_main = {
+  __name: "nuestra-empresa",
+  __ssrInlineRender: true,
+  setup(__props) {
+    useSeoMeta({
+      title: "Nuestra Empresa | Historia, Valores e Infraestructura — StahlForm",
+      description: "Conoce a StahlForm PyC: más de 15 años de experiencia en ingeniería mecánica y mantención de maquinaria pesada para minería. Socio estratégico técnico con trazabilidad 100%, infraestructura de clase mundial desde Coquimbo, Chile.",
+      ogTitle: "Nuestra Empresa | StahlForm PyC — Ingeniería Mecánica desde Coquimbo",
+      ogDescription: "Más de 15 años co-creando soluciones de ingeniería para la gran minería. Trazabilidad técnica 100% y precisión mecánica de clase mundial.",
+      ogUrl: "https://www.stahlform.cl/nuestra-empresa",
+      ogType: "website",
+      twitterTitle: "Nuestra Empresa | StahlForm PyC",
+      twitterDescription: "Más de 15 años de experiencia en ingeniería mecánica y mantención de maquinaria pesada para minería."
+    });
+    useHead({
+      link: [
+        { rel: "canonical", href: "https://www.stahlform.cl/nuestra-empresa" }
+      ],
+      script: [
+        {
+          type: "application/ld+json",
+          innerHTML: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "AboutPage",
+            "name": "Nuestra Empresa — StahlForm PyC",
+            "description": "Historia, valores e infraestructura de StahlForm PyC, empresa de ingeniería mecánica en la Región de Coquimbo.",
+            "mainEntity": {
+              "@type": "Organization",
+              "name": "StahlForm PyC Ltda.",
+              "foundingDate": "2011",
+              "url": "https://www.stahlform.cl",
+              "numberOfEmployees": {
+                "@type": "QuantitativeValue",
+                "value": "50+"
+              },
+              "knowsAbout": [
+                "Ingeniería Mecánica",
+                "Mantención de Maquinaria Pesada",
+                "Mecanizado Industrial",
+                "Soldadura Especializada",
+                "Ensayos No Destructivos",
+                "Ingeniería Inversa"
+              ]
+            }
+          })
+        }
+      ]
+    });
+    return (_ctx, _push, _parent, _attrs) => {
+      const _component_CompanyAboutHero = __nuxt_component_0;
+      const _component_CompanyPillars = _sfc_main$3;
+      const _component_CompanyChallenges = __nuxt_component_2;
+      const _component_CompanyBenefits = _sfc_main$1;
+      _push(`<!--[-->`);
+      _push(ssrRenderComponent(_component_CompanyAboutHero, null, null, _parent));
+      _push(ssrRenderComponent(_component_CompanyPillars, null, null, _parent));
+      _push(ssrRenderComponent(_component_CompanyChallenges, null, null, _parent));
+      _push(ssrRenderComponent(_component_CompanyBenefits, null, null, _parent));
+      _push(`<!--]-->`);
+    };
+  }
+};
+const _sfc_setup = _sfc_main.setup;
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/nuestra-empresa.vue");
+  return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
+};
+
+export { _sfc_main as default };
+//# sourceMappingURL=nuestra-empresa-Bl5YbQmM.mjs.map

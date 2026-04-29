@@ -589,41 +589,41 @@ const __nuxt_page_meta$2 = {
 };
 const __nuxt_page_meta$1 = {
   layout: "secondary",
-  title: 'Nuestra <span class="text-accent underline underline-offset-8">empresa</span>'
+  title: 'Nuestra <span class="text-accent font-black italic ">empresa</span>'
 };
 const __nuxt_page_meta = {
   layout: "secondary",
-  title: 'Nuestros <span class="text-accent underline underline-offset-8">Servicios</span>'
+  title: 'Nuestros <span class="text-accent font-black italic ">Servicios</span>'
 };
 const _routes = [
   {
     name: "buscar",
     path: "/buscar",
     meta: __nuxt_page_meta$3 || {},
-    component: () => import('./buscar-C_9-M4mx.mjs')
+    component: () => import('./buscar-QTnrWrJV.mjs')
   },
   {
     name: "contacto",
     path: "/contacto",
     meta: __nuxt_page_meta$2 || {},
-    component: () => import('./contacto-DxOxFwYt.mjs')
+    component: () => import('./contacto-CZQreOxC.mjs')
   },
   {
     name: "nuestra-empresa",
     path: "/nuestra-empresa",
     meta: __nuxt_page_meta$1 || {},
-    component: () => import('./nuestra-empresa-Dj25dvT-.mjs')
+    component: () => import('./nuestra-empresa-Bl5YbQmM.mjs')
   },
   {
     name: "servicios",
     path: "/servicios",
     meta: __nuxt_page_meta || {},
-    component: () => import('./servicios-Wl3KSVJE.mjs')
+    component: () => import('./servicios-CFBWCUW-.mjs')
   },
   {
     name: "index",
     path: "/",
-    component: () => import('./index-BVb1wpHl.mjs')
+    component: () => import('./index-CSQzMZ9I.mjs')
   }
 ];
 const _wrapInTransition = (props, children) => {
@@ -989,7 +989,7 @@ const revive_payload_server_MVtmlZaQpj6ApFmshWfUWl5PehCebzaBf2NuRMiIbms = /* @__
     }
   }
 });
-const LazyIcon = defineAsyncComponent(() => import('./index-CotB5Wps.mjs').then((r) => r["default"] || r.default || r));
+const LazyIcon = defineAsyncComponent(() => import('./index-D-XZIUT-.mjs').then((r) => r["default"] || r.default || r));
 const lazyGlobalComponents = [
   ["Icon", LazyIcon]
 ];
@@ -1298,8 +1298,8 @@ const plugins = [
   plugin_MeUvTuoKUi51yb_kBguab6hdcExVXeTtZtTg9TZZBB8
 ];
 const layouts = {
-  default: defineAsyncComponent(() => import('./default-B0zTcbJ4.mjs').then((m) => m.default || m)),
-  secondary: defineAsyncComponent(() => import('./secondary-c3cwQnGa.mjs').then((m) => m.default || m))
+  default: defineAsyncComponent(() => import('./default-CoUa67iU.mjs').then((m) => m.default || m)),
+  secondary: defineAsyncComponent(() => import('./secondary-CVymvzSY.mjs').then((m) => m.default || m))
 };
 const routeRulesMatcher = _routeRulesMatcher;
 const LayoutLoader = defineComponent({

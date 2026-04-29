@@ -111,7 +111,7 @@ import logoStahlForm from '~/assets/img/02 Logo_VerdeWebP.webp'
                      <span class="text-[9px] sf-bold text-accent uppercase tracking-widest block mb-1">Consultas
                         Directas</span>
                      <a href="mailto:kpasten@stahlformpyc.cl"
-                        class="text-xs sf-light text-white/70 hover:text-accent transition-colors">kpasten@stahlformpyc.cl</a>
+                        class="text-xs sf-light text-white/70 hover:text-accent transition-colors">contacto@stahlform.cl</a>
                   </li>
                </ul>
             </div>

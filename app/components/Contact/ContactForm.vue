@@ -147,7 +147,7 @@ const handleSubmit = async () => {
                 </div>
                 <div>
                   <p class="text-[9px] sf-bold text-gray-400 uppercase tracking-widest mb-1">Ingeniería & Ventas</p>
-                  <p class="text-xl sf-medium text-primary">kpasten@stahlformpyc.cl</p>
+                  <p class="text-xl sf-medium text-primary">contacto@stahlform.cl</p>
                 </div>
               </div>
               <div class="flex items-center gap-6 group">
@@ -240,8 +240,9 @@ const handleSubmit = async () => {
     </section>
 
     <!-- Decorative Recurso (Top Left) -->
-    <div class="absolute left-0 top-0 w-[400px] h-[400px] lg:w-[550px] lg:h-[550px] z-0 opacity-[0.05] pointer-events-none transform -translate-x-1/3 -translate-y-1/3">
-        <img :src="recursoDecor" alt="Decoration" class="w-full h-full object-contain" />
+    <div
+      class="absolute left-0 top-0 w-[400px] h-[400px] lg:w-[550px] lg:h-[550px] z-0 opacity-[0.05] pointer-events-none transform -translate-x-1/3 -translate-y-1/3">
+      <img :src="recursoDecor" alt="Decoration" class="w-full h-full object-contain" />
     </div>
   </div>
 </template>
