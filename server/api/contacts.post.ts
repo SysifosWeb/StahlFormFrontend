@@ -36,10 +36,10 @@ export default defineEventHandler(async (event) => {
 
     // Configuración del servidor de correo saliente
     // IMPORTANTE: Asegúrate de configurar estas variables de entorno en el servidor o cambiar los valores por defecto
-    const smtpHost = config.smtpHost || process.env.SMTP_HOST
-    const smtpPort = config.smtpPort || process.env.SMTP_PORT
-    const smtpUser = config.smtpUser || process.env.SMTP_USER
-    const smtpPass = config.smtpPass || process.env.SMTP_PASS
+    const smtpHost = process.env.SMTP_HOST || config.smtpHost
+    const smtpPort = process.env.SMTP_PORT || config.smtpPort
+    const smtpUser = process.env.SMTP_USER || config.smtpUser
+    const smtpPass = process.env.SMTP_PASS || config.smtpPass
 
     const transporter = nodemailer.createTransport({
       host: smtpHost,

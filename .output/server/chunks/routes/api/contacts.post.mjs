@@ -35,10 +35,10 @@ const contacts_post = defineEventHandler(async (event) => {
     if (!nombre || !email || !mensaje) {
       throw createError({ statusCode: 400, data: { errors: { general: ["Faltan campos requeridos (nombre, email, mensaje)."] } } });
     }
-    const smtpHost = config.smtpHost || process.env.SMTP_HOST;
-    const smtpPort = config.smtpPort || process.env.SMTP_PORT;
-    const smtpUser = config.smtpUser || process.env.SMTP_USER;
-    const smtpPass = config.smtpPass || process.env.SMTP_PASS;
+    const smtpHost = process.env.SMTP_HOST || config.smtpHost;
+    const smtpPort = process.env.SMTP_PORT || config.smtpPort;
+    const smtpUser = process.env.SMTP_USER || config.smtpUser;
+    const smtpPass = process.env.SMTP_PASS || config.smtpPass;
     const transporter = nodemailer.createTransport({
       host: smtpHost,
       port: Number(smtpPort),
