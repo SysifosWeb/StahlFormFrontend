@@ -1,5 +1,5 @@
 <script setup>
-import torno3Image from '~/assets/img/Torno_03.png'
+import torno3Image from '~/assets/img/Fotografias_Webp/Tormo_5.webp'
 </script>
 
 <template>

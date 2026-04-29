@@ -1,5 +1,5 @@
 <script setup>
-import headerBg from '~/assets/img/Kevin_torno.png'
+import headerBg from '~/assets/img/Fotografias_WEBP/Torno_6.webp'
 
 defineProps({
     title: {
@@ -13,10 +13,10 @@ defineProps({
     <header class="secondary-header-container relative overflow-hidden flex items-center bg-primary font-sans">
         <!-- Full Background Image with Overlay -->
         <div class="absolute inset-0 z-0">
-            <img :src="headerBg" alt="Banner Industrial" class="w-full h-full object-cover object-[50%_40%] brightness-110 mix-blend-luminosity opacity-80" />
+            <img :src="headerBg" alt="Banner Industrial" class="w-full h-full object-cover object-[50%_30%] brightness-110 mix-blend-luminosity opacity-80 -scale-x-100" />
             <div class="absolute inset-0 bg-primary/40"></div>
             <!-- Soft left-side gradient for perfect text contrast -->
-            <div class="absolute inset-0 bg-gradient-to-r from-primary via-primary/60 to-transparent opacity-95"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-primary via-primary/50 to-transparent opacity-95"></div>
         </div>
 
 
@@ -35,12 +35,12 @@ defineProps({
 
 <style scoped>
 .secondary-header-container {
-    height: 380px; /* Reduced base height */
+    height: 390px; /* Reduced base height */
 }
 
 @media (min-width: 1500px) {
     .secondary-header-container {
-        height: 440px; /* Proportional taller on very wide screens */
+        height: 450px; /* Proportional taller on very wide screens */
     }
 }
 

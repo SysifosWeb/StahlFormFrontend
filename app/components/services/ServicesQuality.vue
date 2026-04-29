@@ -2,7 +2,7 @@
   <section class="relative w-full bg-primary py-12 lg:py-24 overflow-hidden font-sans border-none">
     <!-- Cinematic Industrial Background -->
     <div class="absolute inset-0 z-0">
-        <img src="~/assets/img/Kevin_torno.png" alt="Industrial Backdrop" class="w-full h-full object-cover grayscale opacity-10" />
+        <img src="~/assets/img/Fotografias_Webp/02_pieza.webp" alt="Industrial Backdrop" class="w-full h-full object-cover grayscale opacity-10" />
     </div>
     
     <!-- Branding Geometric Shapes (Slide 3 Style) -->
