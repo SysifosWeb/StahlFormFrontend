@@ -18,7 +18,7 @@
           <span class="text-[10px] font-black uppercase tracking-[0.4em] text-[#003e49]">Nuestras Instalaciones</span>
         </div>
         <h2 class="text-4xl lg:text-6xl font-black uppercase tracking-tighter text-primary leading-tight">
-          Ingeniería en <span class="text-accent font-black">Acción</span>
+          Ingeniería en <span class="text-accent font-black italic">Acción</span>
         </h2>
       </div>
 

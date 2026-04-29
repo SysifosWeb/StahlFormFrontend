@@ -30,7 +30,6 @@ import torno3Image from '~/assets/img/Torno_03.png'
         <!-- Left Column: The Problem -->
         <div class="w-full lg:w-1/2 bg-white/10 backdrop-blur-md p-10 lg:p-16 rounded-3xl border border-white/20 hover:bg-white/20 transition-all relative group shadow-xl">
            <div class="flex items-center gap-4 mb-10 border-b border-primary/20 pb-4 inline-flex">
-              <svg class="w-8 h-8 text-primary/30 group-hover:text-primary/50 transition-colors flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L1 21h22L12 2zm0 3.45L20.22 19H3.78L12 5.45zM11 16h2v2h-2v-2zm0-7h2v5h-2V9z"/></svg>
               <h3 class="text-xl font-black text-primary uppercase tracking-widest">Impactos Críticos</h3>
            </div>
            
@@ -84,7 +83,7 @@ import torno3Image from '~/assets/img/Torno_03.png'
 
               <div class="flex items-start gap-6">
                  <div class="flex-shrink-0 mt-1">
-                    <svg class="w-10 h-10 lg:w-12 lg:h-12 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a2 2 0 00-1.96 1.414l-.547 2.188a2 2 0 00.75 2.16l1.45 1.088a2 2 0 002.502-.24l1.503-1.503a2 2 0 00-.24-2.502l-1.088-1.45zm-14.856 0A2 2 0 015.594 14.881l2.387-.477a2 2 0 011.96 1.414l.547 2.188a2 2 0 01-.75 2.16l-1.45 1.088a2 2 0 01-2.502-.24L4.286 19.33a2 2 0 01.24-2.502l1.088-1.45z"></path></svg>
+                    <svg class="w-10 h-10 lg:w-12 lg:h-12 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                  </div>
                  <div>
                     <h4 class="text-primary font-black uppercase tracking-widest mb-2 text-sm">Ingeniería Estructurada</h4>

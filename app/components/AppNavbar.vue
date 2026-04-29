@@ -35,7 +35,7 @@ onMounted(() => {
 
       <!-- LOGO -->
       <NuxtLink to="/" class="flex items-center group">
-        <img :src="logoStahlForm" alt="StahlForm Logo" class="h-10 lg:h-20 w-auto group-hover:scale-105 transition-transform duration-300" />
+        <img :src="logoStahlForm" alt="StahlForm Logo" class="h-10 lg:h-14 xl:h-16 2xl:h-18 w-auto group-hover:scale-105 transition-transform duration-300" />
       </NuxtLink>
 
       <!-- MENÃš DESKTOP -->

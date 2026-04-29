@@ -1,7 +1,7 @@
 <script setup>
 definePageMeta({
   layout: 'secondary',
-  title: 'Nuestra <span class="text-accent underline underline-offset-8">empresa</span>'
+  title: 'Nuestra <span class="text-accent font-black italic underline underline-offset-8">empresa</span>'
 })
 
 useSeoMeta({

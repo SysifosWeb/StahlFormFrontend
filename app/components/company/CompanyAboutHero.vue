@@ -39,28 +39,21 @@ import heroImage from '~/assets/img/Kevin_torno.png'
                   Aliado estratégico que aporta <span class="text-primary font-black">ingeniería aplicada</span> y una robusta infraestructura tecnológica para la gran minería.
                </p>
             </div>
-
-         <div class="mt-12 grid grid-cols-2 gap-6 relative z-30 ">
-            <div class="bg-primary p-6 rounded-2xl shadow-[0_15px_40px_rgba(0,0,0,0.1)] border border-white/20 flex flex-col items-center text-center transition-transform hover:-translate-y-2">
-               <p class="text-accent text-4xl lg:text-5xl mb-2 tracking-tighter font-black">15+</p>
-               <p class="text-[9px] uppercase tracking-widest sf-bold text-white/80">Años de<br/>Experiencia</p>
-            </div>
-            <div class="bg-primary p-6 rounded-2xl shadow-[0_15px_40px_rgba(0,0,0,0.1)] border border-white/20 flex flex-col items-center text-center transition-transform hover:-translate-y-2">
-               <p class="text-accent text-4xl lg:text-5xl mb-2 tracking-tighter font-black">100%</p>
-               <p class="text-[9px] uppercase tracking-widest sf-bold text-white/80">Trazabilidad<br/>Técnica</p>
-            </div>
-         </div>
          </div>
       </div>
 
-      <!-- Right Column: Industrial Visual -->
-      <div class="hidden lg:block w-full lg:w-1/2 relative min-h-[350px] lg:min-h-auto">
-         <div class="absolute inset-0 bg-secondary/10 z-10 pointer-events-none"></div>
-         <img :src="heroImage" alt="Industrial Workshop StahlForm" class="w-full h-full object-cover contrast-110 brightness-95" />
-         
-         <!-- Overlays -->
-
-         <div class="absolute top-0 left-0 w-32 h-full bg-gradient-to-r from-[var(--background-medium)] to-transparent hidden lg:block z-20 pointer-events-none"></div>
+      <!-- Right Column: Metrics Cards -->
+      <div class="w-full lg:w-1/2 relative flex items-center justify-center p-10 lg:pr-[5%]">
+         <div class="w-full max-w-lg grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-12 relative z-30">
+            <div class="bg-primary p-10 rounded-2xl shadow-[0_15px_40px_rgba(0,0,0,0.1)] border border-white/20 flex flex-col items-center justify-center text-center transition-transform hover:-translate-y-2">
+               <p class="text-accent text-5xl lg:text-6xl mb-4 tracking-tighter font-black">15+</p>
+               <p class="text-xs uppercase tracking-widest sf-bold text-white/80">Años de<br/>Experiencia</p>
+            </div>
+            <div class="bg-primary p-10 rounded-2xl shadow-[0_15px_40px_rgba(0,0,0,0.1)] border border-white/20 flex flex-col items-center justify-center text-center transition-transform hover:-translate-y-2">
+               <p class="text-accent text-5xl lg:text-6xl mb-4 tracking-tighter font-black">100%</p>
+               <p class="text-xs uppercase tracking-widest sf-bold text-white/80">Trazabilidad<br/>Técnica</p>
+            </div>
+         </div>
       </div>
     </div>
   </section>

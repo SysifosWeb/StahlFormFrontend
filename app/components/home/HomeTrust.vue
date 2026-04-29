@@ -32,18 +32,18 @@ const clientLogos = [
         <div class="w-full lg:w-8/12 relative overflow-hidden mt-6 lg:mt-0">
           <!-- Fade masks -->
           <div
-            class="absolute inset-y-0 left-0 w-16 lg:w-32 bg-gradient-to-r from-accent to-transparent z-10 pointer-events-none">
+            class="absolute inset-y-0 left-0 w-24 lg:w-56 bg-gradient-to-r from-accent to-transparent z-10 pointer-events-none">
           </div>
           <div
-            class="absolute inset-y-0 right-0 w-16 lg:w-32 bg-gradient-to-l from-accent to-transparent z-10 pointer-events-none">
+            class="absolute inset-y-0 right-0 w-24 lg:w-56 bg-gradient-to-l from-accent to-transparent z-10 pointer-events-none">
           </div>
 
           <!-- Infinite Marquee -->
-          <div class="flex gap-12 lg:gap-20 py-8 lg:py-12 animate-infinite-scroll w-max">
+          <div class="flex gap-20 lg:gap-40 py-8 lg:py-12 animate-infinite-scroll w-max items-center justify-center">
             <div v-for="(logo, index) in [...clientLogos, ...clientLogos, ...clientLogos]" :key="index"
-              class="flex-shrink-0 flex items-center">
+              class="flex-shrink-0 flex items-center justify-center">
               <img :src="`/img/clientes/${logo}`" :alt="logo"
-                class="h-8 md:h-12 w-auto opacity-100 transition-all duration-700 cursor-pointer hover:scale-110" />
+                class="h-20 md:h-28 lg:h-36 w-auto opacity-100 transition-all duration-700 cursor-pointer hover:scale-110" />
             </div>
           </div>
         </div>
