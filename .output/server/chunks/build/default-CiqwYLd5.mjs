@@ -20,7 +20,7 @@ import '@iconify/vue';
 const _imports_0 = "" + __buildAssetsURL("Torno_03.DgXSi40H.png");
 const _sfc_main$1 = {};
 function _sfc_ssrRender$1(_ctx, _push, _parent, _attrs) {
-  _push(`<header${ssrRenderAttrs(mergeProps({ class: "relative w-screen h-[400px] lg:h-[85vh] flex items-center justify-center text-left text-white overflow-hidden bg-primary" }, _attrs))} data-v-488671b3><div class="absolute inset-0 z-0" data-v-488671b3><img${ssrRenderAttr("src", _imports_0)} alt="Proceso de mecanizado industrial" class="w-full h-full object-cover object-center lg:object-right brightness-110 -scale-x-100 mix-blend-luminosity opacity-80" data-v-488671b3><div class="absolute inset-0 bg-primary/40" data-v-488671b3></div><div class="absolute inset-0 bg-gradient-to-r from-primary via-primary/60 to-transparent opacity-95" data-v-488671b3></div></div><div class="relative z-10 custom-container w-full" data-v-488671b3><div class="flex" data-v-488671b3><div class="w-full md:w-10/12 lg:w-8/12 xl:w-7/12 border-l-[3px] border-accent pl-4 lg:pl-8 py-2" data-v-488671b3><h1 class="mb-6 text-2xl sm:text-5xl lg:text-7xl leading-[1.2] lg:leading-[1.1] uppercase tracking-tight text-white drop-shadow-2xl" data-v-488671b3><span class="block mb-1 font-black" data-v-488671b3>Capacidad Técnica</span><span class="block mb-1 font-black" data-v-488671b3>al <span class="text-accent font-black italic decoration-1" data-v-488671b3>Servicio</span></span><span class="block lg:text-7xl mt-2 lg:mt-5 opacity-90 font-black" data-v-488671b3>de Operaciones Críticas</span></h1><div class="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-6 mt-6" data-v-488671b3><p class="text-[9px] md:text-xs uppercase tracking-[0.2em] sf-bold text-gray-400" data-v-488671b3> Soluciones industriales de precisión </p></div></div></div></div></header>`);
+  _push(`<header${ssrRenderAttrs(mergeProps({ class: "relative w-screen h-[400px] lg:h-[85vh] flex items-center justify-center text-left text-white overflow-hidden bg-primary" }, _attrs))} data-v-48986b6f><div class="absolute inset-0 z-0" data-v-48986b6f><img${ssrRenderAttr("src", _imports_0)} alt="Proceso de mecanizado industrial" class="w-full h-full object-cover object-center lg:object-right brightness-110 -scale-x-100 mix-blend-luminosity opacity-80" data-v-48986b6f><div class="absolute inset-0 bg-primary/40" data-v-48986b6f></div><div class="absolute inset-0 bg-gradient-to-r from-primary via-primary/60 to-transparent opacity-95" data-v-48986b6f></div></div><div class="relative z-10 custom-container w-full" data-v-48986b6f><div class="flex" data-v-48986b6f><div class="w-full md:w-10/12 lg:w-8/12 xl:w-7/12 border-l-[3px] border-accent pl-4 lg:pl-8 py-2" data-v-48986b6f><h1 class="mb-6 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-[1.2] lg:leading-[1.1] uppercase tracking-tight text-white drop-shadow-2xl" data-v-48986b6f><span class="block mb-1 font-black" data-v-48986b6f>Capacidad Técnica</span><span class="block mb-1 font-black" data-v-48986b6f>al <span class="text-accent font-black italic decoration-1" data-v-48986b6f>Servicio</span></span><span class="block text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl opacity-90 font-black" data-v-48986b6f>de Operaciones Críticas</span></h1><div class="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-6 mt-6" data-v-48986b6f><p class="text-[9px] md:text-xs uppercase tracking-[0.2em] sf-bold text-gray-400" data-v-48986b6f> Soluciones industriales de precisión </p></div></div></div></div></header>`);
 }
 const _sfc_setup$1 = _sfc_main$1.setup;
 _sfc_main$1.setup = (props, ctx) => {
@@ -28,7 +28,7 @@ _sfc_main$1.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/AppHeader.vue");
   return _sfc_setup$1 ? _sfc_setup$1(props, ctx) : void 0;
 };
-const __nuxt_component_1 = /* @__PURE__ */ Object.assign(_export_sfc(_sfc_main$1, [["ssrRender", _sfc_ssrRender$1], ["__scopeId", "data-v-488671b3"]]), { __name: "AppHeader" });
+const __nuxt_component_1 = /* @__PURE__ */ Object.assign(_export_sfc(_sfc_main$1, [["ssrRender", _sfc_ssrRender$1], ["__scopeId", "data-v-48986b6f"]]), { __name: "AppHeader" });
 const _sfc_main = {};
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
   const _component_AppNavbar = __nuxt_component_0;
@@ -52,4 +52,4 @@ _sfc_main.setup = (props, ctx) => {
 const _default = /* @__PURE__ */ _export_sfc(_sfc_main, [["ssrRender", _sfc_ssrRender]]);
 
 export { _default as default };
-//# sourceMappingURL=default-CoUa67iU.mjs.map
+//# sourceMappingURL=default-CiqwYLd5.mjs.map
