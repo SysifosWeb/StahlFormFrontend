@@ -9,7 +9,7 @@ export default defineNuxtConfig({
   ssr: true,
   compatibilityDate: '2025-07-15',
   devtools: { enabled: false },
-  modules: ['@nuxt/fonts', '@nuxtjs/tailwindcss', '@nuxt/icon'],
+  modules: ['@nuxt/fonts', '@nuxtjs/tailwindcss', '@nuxt/icon', '@nuxt/image'],
   fonts: {
     families: [
       {

@@ -1,4 +1,4 @@
-﻿<script setup>
+<script setup>
 import { ref, onMounted, onUnmounted, computed } from 'vue'
 
 const props = defineProps({
@@ -114,10 +114,12 @@ onUnmounted(() => {
           width: !isMounted ? `calc(${100 / itemsVisible}% - 14px)` : isMobile ? `calc(${100 / mobileItemsVisible}% - 12px)` : isTablet ? 'calc(33.33% - 12px)' : `calc(${100 / itemsVisible}% - 14px)` 
         }"
       >
-        <img
+        <NuxtImg
           :src="image.src"
           :alt="image.title"
           class="max-w-[75%] max-h-[60%] object-contain brightness-0 invert opacity-60 group-hover:opacity-100 transition-opacity"
+          format="webp"
+          loading="lazy"
         />
       </div>
     </div>

@@ -1,4 +1,4 @@
-﻿<script setup>
+<script setup>
 import { ref, computed, onMounted, onUnmounted } from 'vue'
 
 const props = defineProps({
@@ -74,10 +74,14 @@ const prev = () => {
               class="group relative overflow-hidden rounded-xl shadow-lg"
             >
               <!-- Imagen -->
-              <img
+              <NuxtImg
                 :src="item.src"
                 :alt="item.title"
                 class="h-[400px] md:h-[580px] w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                format="webp"
+                loading="lazy"
+                width="600"
+                height="800"
               />
 
               <!-- Overlay -->
