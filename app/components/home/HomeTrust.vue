@@ -1,6 +1,6 @@
 <script setup>
 const clientLogos = [
-  'Aguas_del_Valle_Logotipo.svg', 'Logo-KSB.png', 'logo-recon.png'
+  'Aguas_del_Valle_Logotipo.svg','Maquisa.webp' , 'logo-recon.png', 'AqueDrill.webp', 'Logo-KSB.png' , 'UCN.webp'
 ]
 </script>
 
@@ -40,7 +40,7 @@ const clientLogos = [
 
           <!-- Infinite Marquee -->
           <div class="flex gap-20 lg:gap-40 py-8 lg:py-12 animate-infinite-scroll w-max items-center justify-center">
-            <div v-for="(logo, index) in [...clientLogos, ...clientLogos, ...clientLogos]" :key="index"
+            <div v-for="(logo, index) in [...clientLogos, ...clientLogos, ...clientLogos, ...clientLogos]" :key="index"
               class="flex-shrink-0 flex items-center justify-center">
               <img :src="`/img/clientes/${logo}`" :alt="logo"
                 class="h-20 md:h-28 lg:h-36 w-auto opacity-100 transition-all duration-700 cursor-pointer hover:scale-110" />
