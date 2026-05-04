@@ -58,13 +58,16 @@ const _sfc_main$3 = {
   setup(__props) {
     const clientLogos = [
       "Aguas_del_Valle_Logotipo.svg",
+      "Maquisa.webp",
+      "logo-recon.png",
+      "AqueDrill.webp",
       "Logo-KSB.png",
-      "logo-recon.png"
+      "UCN.webp"
     ];
     return (_ctx, _push, _parent, _attrs) => {
-      _push(`<section${ssrRenderAttrs(mergeProps({ class: "py-12 lg:py-24 bg-accent relative overflow-hidden border-none z-10 block" }, _attrs))} data-v-b9ebbb2e><div class="custom-container relative z-10" data-v-b9ebbb2e><div class="flex flex-col lg:flex-row items-center gap-10 lg:gap-20" data-v-b9ebbb2e><div class="w-full lg:w-4/12 flex flex-col items-center lg:items-start text-center lg:text-left" data-v-b9ebbb2e><div class="flex items-center gap-4 mb-6" data-v-b9ebbb2e><div class="h-[2px] w-12 bg-primary" data-v-b9ebbb2e></div><span class="text-xs sf-bold uppercase tracking-[0.4em] text-primary" data-v-b9ebbb2e>Aliado Estratégico</span></div><h2 class="text-4xl lg:text-6xl font-black uppercase tracking-tighter text-primary leading-tight mb-8" data-v-b9ebbb2e> Operando <br data-v-b9ebbb2e><span class="text-primary font-black" data-v-b9ebbb2e>desde</span><br data-v-b9ebbb2e> Coquimbo </h2><div class="mt-4 flex items-center gap-4" data-v-b9ebbb2e><div class="h-[2px] w-12 bg-primary flex-shrink-0" data-v-b9ebbb2e></div><span class="text-xs sf-bold uppercase tracking-[0.4em] text-primary" data-v-b9ebbb2e>respaldo técnico</span></div></div><div class="w-full lg:w-8/12 relative overflow-hidden mt-6 lg:mt-0" data-v-b9ebbb2e><div class="absolute inset-y-0 left-0 w-24 lg:w-56 bg-gradient-to-r from-accent to-transparent z-10 pointer-events-none" data-v-b9ebbb2e></div><div class="absolute inset-y-0 right-0 w-24 lg:w-56 bg-gradient-to-l from-accent to-transparent z-10 pointer-events-none" data-v-b9ebbb2e></div><div class="flex gap-20 lg:gap-40 py-8 lg:py-12 animate-infinite-scroll w-max items-center justify-center" data-v-b9ebbb2e><!--[-->`);
-      ssrRenderList([...clientLogos, ...clientLogos, ...clientLogos], (logo, index) => {
-        _push(`<div class="flex-shrink-0 flex items-center justify-center" data-v-b9ebbb2e><img${ssrRenderAttr("src", `/img/clientes/${logo}`)}${ssrRenderAttr("alt", logo)} class="h-20 md:h-28 lg:h-36 w-auto opacity-100 transition-all duration-700 cursor-pointer hover:scale-110" data-v-b9ebbb2e></div>`);
+      _push(`<section${ssrRenderAttrs(mergeProps({ class: "py-12 lg:py-24 bg-accent relative overflow-hidden border-none z-10 block" }, _attrs))} data-v-e94564ef><div class="custom-container relative z-10" data-v-e94564ef><div class="flex flex-col lg:flex-row items-center gap-10 lg:gap-20" data-v-e94564ef><div class="w-full lg:w-4/12 flex flex-col items-center lg:items-start text-center lg:text-left" data-v-e94564ef><div class="flex items-center gap-4 mb-6" data-v-e94564ef><div class="h-[2px] w-12 bg-primary" data-v-e94564ef></div><span class="text-xs sf-bold uppercase tracking-[0.4em] text-primary" data-v-e94564ef>Aliado Estratégico</span></div><h2 class="text-4xl lg:text-6xl font-black uppercase tracking-tighter text-primary leading-tight mb-8" data-v-e94564ef> Operando <br data-v-e94564ef><span class="text-primary font-black" data-v-e94564ef>desde</span><br data-v-e94564ef> Coquimbo </h2><div class="mt-4 flex items-center gap-4" data-v-e94564ef><div class="h-[2px] w-12 bg-primary flex-shrink-0" data-v-e94564ef></div><span class="text-xs sf-bold uppercase tracking-[0.4em] text-primary" data-v-e94564ef>respaldo técnico</span></div></div><div class="w-full lg:w-8/12 relative overflow-hidden mt-6 lg:mt-0" data-v-e94564ef><div class="absolute inset-y-0 left-0 w-24 lg:w-56 bg-gradient-to-r from-accent to-transparent z-10 pointer-events-none" data-v-e94564ef></div><div class="absolute inset-y-0 right-0 w-24 lg:w-56 bg-gradient-to-l from-accent to-transparent z-10 pointer-events-none" data-v-e94564ef></div><div class="flex gap-20 lg:gap-40 py-8 lg:py-12 animate-infinite-scroll w-max items-center justify-center" data-v-e94564ef><!--[-->`);
+      ssrRenderList([...clientLogos, ...clientLogos, ...clientLogos, ...clientLogos], (logo, index) => {
+        _push(`<div class="flex-shrink-0 flex items-center justify-center" data-v-e94564ef><img${ssrRenderAttr("src", `/img/clientes/${logo}`)}${ssrRenderAttr("alt", logo)} class="h-20 md:h-28 lg:h-36 w-auto opacity-100 transition-all duration-700 cursor-pointer hover:scale-110" data-v-e94564ef></div>`);
       });
       _push(`<!--]--></div></div></div></div></section>`);
     };
@@ -76,7 +79,7 @@ _sfc_main$3.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/home/HomeTrust.vue");
   return _sfc_setup$3 ? _sfc_setup$3(props, ctx) : void 0;
 };
-const __nuxt_component_2 = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-b9ebbb2e"]]);
+const __nuxt_component_2 = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-e94564ef"]]);
 const _imports_0$1 = "" + __buildAssetsURL("mecanizado_precision.CXnVPcvC.jpeg");
 const _imports_1 = "" + __buildAssetsURL("Terreno_sthalform.dlPd39bp.webp");
 const _imports_2 = "" + __buildAssetsURL("03_pieza.DY1DFZKK.webp");
@@ -189,4 +192,4 @@ _sfc_main.setup = (props, ctx) => {
 };
 
 export { _sfc_main as default };
-//# sourceMappingURL=index-CSQzMZ9I.mjs.map
+//# sourceMappingURL=index-DwXi2Liz.mjs.map
